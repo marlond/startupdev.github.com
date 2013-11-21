@@ -345,35 +345,3 @@ mvp:
       name: "Mario Sousa de Alencar"
       company: "Shopping Passion"
       description: "I can confirm that Startup DEV is full of extremely experienced people providing a great service for those who wish to start a business on the internet but do not have the technological knowledge to do it. However, the methodology is also very effective for entrepreneurs who already have a clearly defined MVP, so that in fact the idea can be transformed into a prototype to be tested."
-
-### Video infos
-video:
-  number_of_projects: 30
-
-  projects:
-    -
-      name: Manager Book
-      url: "http://www.youtube.com/embed/ym0-4acU2L4?feature=player_detailpage"
-      image: /images/projetos/video/managerbook.png
-    -
-      name: Samba Ads
-      url: "http://www.youtube.com/embed/Tjk7pGYj9QA?feature=player_detailpage"
-      image: /images/projetos/video/sambaads.png
-    -
-      name: Cleaner
-      url: "http://www.youtube.com/embed/eNgD7xhNBZk?feature=player_detailpage"
-      image: /images/projetos/video/cleaner.png
-    -
-      name: Adstruc
-      url: "http://www.youtube.com/embed/MpqNtHQB8-E?feature=player_detailpage"
-      image: /images/projetos/video/adstruc.png
-
-  testimonials:
-    -
-      name: "Mauro"
-      company: "RBM Solutions"
-      description: "We appreciated Chili Gum Videos work very much. Since the first time we got in touch we always had a great customer service and everything agreed was done flawlessly. Deadlines were met and all the necessary changes were communicated in advance. The most satisfying of all was the quality of the work delivered, far above expectations. I recommend Chili Gum Videos to everyone"
-    -
-      name: "Louise Kinane"
-      company: "Piriform"
-      description: "Chili Gum were a pleasure to work with and we are delighted with the final product! Their work was high quality, turnaround was quick, and they were very flexible in terms of tweaks we requested. We hope work with Chili Gum again soon and have no hesitation recommending them to others."

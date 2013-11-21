@@ -6,6 +6,15 @@ title: 'Produção de vídeo animado e storytelling para Startups - StartupDEV V
 favicon: '/favicon.png'
 class: 'video_page'
 permalink: 'videos-animados/'
+
+number_of_projects: 30
+
+projects:
+  -
+    name: Mobile App Design
+    url: "http://www.youtube.com/embed/p3sUPkEvt3M?feature=player_detailpage"
+    image: /images/projetos/video/mobile-app-design.png
+
 testimonials:
   -
     name: "Louise Kinane"
@@ -19,6 +28,7 @@ testimonials:
     name: "Mauro"
     company: "RBM Solutions"
     description: "O trabalho da Chili Gum Videos nos agradou muito. Desde o primeiro contato tivemos um ótimo atendimento e tudo que foi combinado foi feito de forma impecável. Os prazos foram cumpridos e toda alteração necessária era comunicada com antecedência. O mais satisfatório foi a qualidade do trabalho entregue, muito superior às expectativas. Recomendo à todos."
+
 ---
 
 {% include services_list.html %}
@@ -84,11 +94,11 @@ testimonials:
 
   <article class="projects">
     <div class="grid">
-      <h3>+ de {{ site.video.number_of_projects }} vídeos entregues com sucesso!</h3>
+      <h3>+ de {{ page.number_of_projects }} vídeos entregues com sucesso!</h3>
       <div id="projects_gallery">
         <ul>
 
-          {% for project in site.video.projects %}
+          {% for project in page.projects %}
           <li>
             <a rel="shadowbox;height=540;width=960" href="{{ project.url }}" title="{{ project.name }}" target="_blank" rel="nofollow" class="photo">
               <img src="{{ project.image }}" width="527" height="330" alt="{{  project.name }}" />

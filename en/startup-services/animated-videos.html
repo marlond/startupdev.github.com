@@ -6,6 +6,25 @@ title: 'Startupdev - Animated Videos'
 favicon: '/favicon.png'
 class: 'video_page'
 permalink: 'animated-videos/'
+
+number_of_projects: 30
+
+projects:
+  -
+    name: Mobile App Design
+    url: "http://www.youtube.com/embed/p3sUPkEvt3M?feature=player_detailpage"
+    image: /images/projetos/video/mobile-app-design.png
+
+testimonials:
+  -
+    name: "Mauro"
+    company: "RBM Solutions"
+    description: "We appreciated Chili Gum Videos work very much. Since the first time we got in touch we always had a great customer service and everything agreed was done flawlessly. Deadlines were met and all the necessary changes were communicated in advance. The most satisfying of all was the quality of the work delivered, far above expectations. I recommend Chili Gum Videos to everyone"
+  -
+    name: "Louise Kinane"
+    company: "Piriform"
+    description: "Chili Gum were a pleasure to work with and we are delighted with the final product! Their work was high quality, turnaround was quick, and they were very flexible in terms of tweaks we requested. We hope work with Chili Gum again soon and have no hesitation recommending them to others."
+
 ---
 
 {% include services_list_en.html %}
@@ -73,11 +92,11 @@ permalink: 'animated-videos/'
 
   <article class="projects">
     <div class="grid">
-      <h3>More than {{ site.video.number_of_projects }} successful videos!</h3>
+      <h3>More than {{ page.number_of_projects }} successful videos!</h3>
       <div id="projects_gallery">
         <ul>
 
-          {% for project in site.video.projects %}
+          {% for project in page.projects %}
           <li>
             <a rel="shadowbox;height=540;width=960" href="{{ project.url }}" title="{{ project.name }}" target="_blank" rel="nofollow" class="photo">
               <img src="{{ project.image }}" width="527" height="330" alt="{{  project.name }}" />
@@ -109,7 +128,7 @@ permalink: 'animated-videos/'
       <h3>Testimonials</h3>
       <div id="testimonials_gallery">
         <ul>
-          {% for testimonial in site.video.testimonials %}
+          {% for testimonial in page.testimonials %}
           <li>
             <p>"{{ testimonial.description }}"</p>
             <p class="client_name">{{ testimonial.name }} - {{ testimonial.company }}</p>
