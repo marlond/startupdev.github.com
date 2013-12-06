@@ -11,14 +11,17 @@ clients:
     name: Mediclog
     image: /images/app-design/mediclog.png
     description: Tire fotos das suas receitas, anote os remédios que precisa tomar que o MedicLog te lembra deste compromisso.
+    logo: /images/logos/mediclog.png
   -
     name: NutriCal
     image: /images/app-design/nutrical.png
     description: Com o NutriCal você tira uma foto do seu prato e o aplicativo calcula a quantidade de calorias que você está ingerindo por alimentação.
+    logo: /images/logos/nutrical.png
   -
     name: Homely
     image: /images/app-design/homely.png
     description: O Homely é uma ferramenta de gestão colaborativa de condomínios, que funciona como uma rede-social. Moradores podem interagir e apoiar o síndico na identificação e priorização de ações.
+    logo: /images/logos/homely.png
   
 schedule:
   year: 2013
@@ -114,10 +117,17 @@ schedule:
         <ul>
           {% for client in page.clients %}
           <li>
+
             <a href="{{ client.image }}" title="Ampliar a imagem" target="_blank" rel="nofollow" class="photo">
               <img src="{{ client.image }}" width="580" height="301" alt="{{ client.name }}" />
             </a>
+
             <h6>{{ client.name }}</h6>
+
+            <div class="imageicon">
+              <img src="{{ client.logo }}" alt="{{client.name}}">
+            </div>
+
             <p style="text-align: center">{{ client.description }}</p>
           </li>
           {% endfor %}

@@ -710,6 +710,13 @@ Projects
   opacity: 0.6;
 }
 
+#projects_gallery .imageicon img {
+  display:inline;
+}
+
+#projects_gallery .imageicon {
+  text-align:center;
+}
 
 
 
