@@ -224,8 +224,6 @@ Nav Bar
 }
 
 
-
-
 /* ====================
 Cover Landing
 ==================== */
@@ -443,8 +441,8 @@ How Works
   transition: all 0.3s;
 }
 .how-works .bt:hover {
-  background-color: #51a351;
-  border: 3px solid #51a351;
+  background-color: #ee8008;
+  border: 3px solid #ee8008;
   color: #fff;
 }
 .how-works .more span {
@@ -504,7 +502,7 @@ How Works slide shiligum
         padding: 100px 0 120px;
         clear: both;
 }
- 
+
 .how-it-works h3 {
         font-size: 60px;
         color: #ef580f;
@@ -513,41 +511,41 @@ How Works slide shiligum
         margin-bottom: 140px;
         text-shadow: 1px 2px 0px rgba(212, 79, 14, 1);
 }
- 
+
 #how-it-works-gallery {
         position: relative;
 }
- 
+
 #how-it-works-gallery-layers {
         margin: 0 100px;
         height: 350px;
 }
- 
+
 #how-it-works-gallery-layers li {
         height: 350px;
         width: 100%;
 }
- 
-#how-it-works-gallery-layers .photo { 
-        float: left; 
+
+#how-it-works-gallery-layers .photo {
+        float: left;
         margin-right: 30px;
 }
- 
-#how-it-works-gallery-layers h6 { 
+
+#how-it-works-gallery-layers h6 {
         color: #f0533c;
         font-size: 30px;
         margin: 10px 0 20px;
         font-weight: 900;
         letter-spacing: -0.01em;
 }
- 
+
 #how-it-works-gallery-layers p {
         font-size: 20px;
         line-height: 26px;
         letter-spacing: -0.02em;
         color: #464646;
 }
- 
+
 .arrow {
         width: 36px;
         height: 87px;
@@ -561,34 +559,34 @@ How Works slide shiligum
         -moz-opacity: 0.65;
         filter: alpha(opacity=65);
 }
- 
+
 .arrow:hover {
         opacity:1;
         -moz-opacity: 1;
-        filter: alpha(opacity=100);        
+        filter: alpha(opacity=100);
 }
- 
+
 #how-it-works-gallery-prev,
 #testimonials-gallery-prev {
         left: 0;
 }
- 
+
 #how-it-works-gallery-next,
 #testimonials-gallery-next {
         right: 0;
 }
- 
+
 #how-it-works-gallery-next { background-position: -36px 0; }
 #testimonials-gallery-next { background-position: -36px -87px; }
 #testimonials-gallery-prev { background-position: 0 -87px; }
- 
+
 #how-it-works-gallery-steps {
         width: 810px;
         height: 0;
         margin: 0 auto 80px;
         border-top: 10px solid #ef580f;
 }
- 
+
 #how-it-works-gallery-steps a {
         display: block;
         width: 30px;
@@ -603,9 +601,9 @@ How Works slide shiligum
         -moz-border-radius: 30px;
         border-radius: 30px;
 }
- 
+
 #how-it-works-gallery-steps a:last-child { margin-right: 0; }
- 
+
 #how-it-works-gallery-steps a span {
         width: 110px;
         padding: 0 4px 0 0;
@@ -624,7 +622,7 @@ How Works slide shiligum
         font-weight: 900;
         display: none;
 }
- 
+
 #how-it-works-gallery-steps a.activeSlide span {
         display: block;
 }
