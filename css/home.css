@@ -79,6 +79,7 @@ header ul li a:hover {
   text-transform: uppercase;
   line-height: 80px;
   text-shadow: 1px 1px 1px #234257;
+  margin-bottom: 80px;
 }
 
 .cover h2:after {
@@ -88,6 +89,35 @@ header ul li a:hover {
   content: '';
   display: block;
   margin: 15px auto 0;
+}
+
+.bt {
+  width: 370px;
+  height: 60px;
+  margin: 0 auto 30px;
+  display: block;
+  background-color: #fdb723;
+  border: 3px solid #fdb723;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.bt:hover {
+  background-color: #ee8008;
+  border: 3px solid #ee8008;
+  color: #fff;
 }
 
 #choose-service {
