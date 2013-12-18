@@ -7,53 +7,20 @@ favicon: '/favicon.png'
 class: 'mvp_page'
 css_file: 'mvp'
 permalink: 'mvp/'
-schedule:
-  year: 2013
-  data:
-    -
-      month: November
-      weeks:
-        -
-          date: 05/11
-          client: Paulo Nakamura
-          status: client
-        -
-          date: 12/11
-          client: Rita Troncoso
-          status: client
-        -
-          date: 19/11
-          status: unavailable
-        -
-          date: 26/09
-          status: unavailable
-        -
-          date:
-          status:
-    -
-      month: December
-      weeks:
-        -
-          date: 03/12
-          status: unavailable
-        -
-          date: 10/12
-          status: free
-        -
-          date: 17/12
-          status: free
-        -
-          date: 24/12
-          status: unavailable
-        -
-          date: 31/12
-          status: unavailable
-
 ---
 {% include services_list_en.html %}
 {% include live_chat.html %}
 <header id="top">
-  {% include main_nav_en.html %}
+  <nav id="nav">
+    <ul>
+      <li><a href="#" id="how-works">How it works</a></li>
+      <li><a href="#" id="projects">Projects</a></li>
+      <li><a href="#" id="who-we-are">Who we are</a></li>
+      <li><a href="#" id="testimonials">Testimonials</a></li>
+      <li><a href="#" id="contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="grid">
     <h1>
       <a href="/en/">
@@ -145,7 +112,7 @@ schedule:
       </div>
     </div>
   </article>
-  {% include page-schedule-en.html %}
+
   <article class="contact">
     <div class="grid">
       <h3>So, let's work together?</h3>
