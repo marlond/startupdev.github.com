@@ -233,11 +233,11 @@ mvp:
       name: ContaCal
       url: http://app.contacal.com.br/
       image: /images/projetos/mvp/contacal.jpg
-
+    -
       name: SocialFly
       url: http://www.socialfly.com.br/
       image: /images/projetos/mvp/socialfly.jpg
-
+    -
       name: MeaPets
       url: http://www.meapets.com.br/
       image: /images/projetos/mvp/meapets.jpg
