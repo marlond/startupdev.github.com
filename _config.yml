@@ -241,6 +241,10 @@ mvp:
       name: MeaPets
       url: http://www.meapets.com.br/
       image: /images/projetos/mvp/meapets.jpg
+    -
+      name: The Open Compass
+      url: http://www.theopencompass.com/
+      image: /images/projetos/mvp/the-open-compass.jpg
     # -
     #   name: Rank Monitor
     #   url: "#"
