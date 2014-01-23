@@ -103,7 +103,7 @@ Other Services
 
 #other-services ul li {
   float: left;
-  width: 20%;
+  width: 16%;
 }
 
 #other-services ul.en {
@@ -153,10 +153,14 @@ Other Services
 #other-services a.mobile-service {
   background: url('/images/icons/mobileapp-s.png') center center no-repeat;
 }
+#other-services a.mobile-mvp-service {
+  background: url('/images/icons/mobile-mvp-s.png') center center no-repeat;
+}
 
 #other-services a.vulnerabilidade-service {
   background: url('/images/icons/vulnerabilidade-s.png') center center no-repeat;
 }
+
 
 #other-services a:hover {
   opacity: 0.8;
