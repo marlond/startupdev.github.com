@@ -24,10 +24,7 @@ header {
   border-top: 4px solid #FFAE00;
   padding: 30px 0 20px;
   overflow: hidden;
-}
-
-header h1 {
-  float: left;
+  text-align: center;
 }
 
 header ul {
