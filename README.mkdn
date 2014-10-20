@@ -5,3 +5,8 @@
 Rode com
 
     $ jekyll -w serve
+    
+## Maintainers
+
+- [Márcio Costa](https://github.com/marcioc0sta )
+
