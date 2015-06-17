@@ -1,10 +1,9 @@
 safe: true
-lsi: false
 pygments: true
 exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb']
 permalink: :pretty
 
-number_of_projects: 50
+number_of_projects: 80
 
 projects:
   -
@@ -237,133 +236,40 @@ projects:
     image: /images/projetos/ideias.png
 
 schedule:
-  year: 2013
+  year: 2015
   data:
     -
-      month: Julho
+      month_pt: Julho
+      month_en: July
       weeks:
         -
-          date: 02/07
-          client: Samba Ads
-          status: client
+          date: 06/07
+          status: unavailable
         -
-          date: 09/07
-          client: Raciel
-          status: client
+          date: 13/07
+          status: unavailable
         -
-          date: 16/07
-          client: Danielle Meneses
-          status: client
+          date: 20/07
+          status: unavailable
         -
-          date: 23/07
+          date: 27/07
           status: free
-        -
-          date: 30/07
-          client: Sala de Ideias
-          status: client
     -
-      month: Agosto
+      month_pt: Agosto
+      month_en: August
       weeks:
         -
-          date: 06/08
+          date: 03/08
           status: free
         -
-          date: 13/08
-          client: Alexandre Assed
-          status: client
+          date: 10/08
+          status: unavailable
         -
-          date: 20/08
-          client: PerfilPlug
-          status: client
+          date: 17/08
+          status: unavailable
         -
-          date: 27/08
-          status: free
+          date: 24/08
+          status: unavailable
         -
-          date:
-          status:
-    -
-      month: Setembro
-      weeks:
-        -
-          date: 03/09
-          status:
-        -
-          date: 10/09
-          client: Marcos Valle
-          status: client
-        -
-          date: 17/09
-          status: free
-        -
-          date: 24/09
-          status: free
-        -
-          date:
-          status:
-
-schedule_en:
-  year: 2013
-  data:
-    -
-      month: July
-      weeks:
-        -
-          date: 02/07
-          client: Samba Ads
-          status: client
-        -
-          date: 09/07
-          client: Raciel
-          status: client
-        -
-          date: 16/07
-          client: Danielle Meneses
-          status: client
-        -
-          date: 23/07
-          client:
-          status: free
-        -
-          date: 30/07
-          client: Sala de Ideias
-          status: client
-    -
-      month: August
-      weeks:
-        -
-          date: 06/08
-          status: free
-        -
-          date: 13/08
-          client: Alexandre Assed
-          status: client
-        -
-          date: 20/08
-          client: PerfilPlug
-          status: client
-        -
-          date: 27/08
-          status: free
-        -
-          date:
-          status:
-    -
-      month: September
-      weeks:
-        -
-          date: 03/09
-          status:
-        -
-          date: 10/09
-          client: Marcos Valle
-          status: client
-        -
-          date: 17/09
-          status: free
-        -
-          date: 24/09
-          status: free
-        -
-          date:
-          status:
-
+          date: 31/08
+          status: unavailable

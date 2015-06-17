@@ -3,12 +3,12 @@ layout: default
 ---
 <div id="presentation-holder">
   <article id="presentation" class="container">
-    <h2>Sua startup web  pronta pra ser lançada</h2>
-    <h3>Somos pioneiros e criadores deste modelo único de trabalho para desenvolvimento web.<br/>Em um ano de trabalho desenvolvemos mais de {{ site.number_of_projects }} projetos.</h3>
+    <h2>Seu sistema web pronto pra ser usado</h2>
+    <h3>Metodologia de trabalho pioneira para desenvolvimento web que já entregou mais de {{ site.number_of_projects }} projetos.</h3>
     <ul id="workflow">
       <li id="idea">
         <div></div>
-        <p>Sua<br />idéia</p>
+        <p>Sua<br />demanda</p>
       </li>
       <li class="plus">
         <div></div>
@@ -22,42 +22,42 @@ layout: default
       </li>
       <li id="time">
         <div></div>
-        <p>2 dias de<br />trabalho</p>
+        <p>1 semana de<br />trabalho</p>
       </li>
       <li class="plus">
         <div></div>
       </li>
       <li id="investment">
         <div></div>
-        <p>Investimento<br />de R$ 12 mil</p>
+        <p>Investimento<br />de R$ 16 mil</p>
       </li>
       <li id="equals">
         <div></div>
       </li>
       <li id="online-app">
         <div></div>
-        <p>App online e<br/>cliente feliz!</p>
+        <p>Software <br/> desenvolvido!</p>
       </li>
     </ul>
     <div id="video-container">
-      <iframe id="presentation-video" class="video" width="953" height="535" src="http://embed.videolog.tv/v/index.php?id_video=796308&amp;width=953&amp;height=535&amp;related=&amp;hd=&amp;color1=&amp;color2=&amp;color3=&amp;slideshow=&amp;config_url=http://startupdev.com.br/videolog.xml" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <iframe id="presentation-video" width="953" height="535" src="https://www.youtube.com/embed/gZFXo82lXDM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="call-to-action">
-      <a href="#talk-to-us" class="button-talk-to-us" title="Fale conosco !">Fale conosco !</a>
+      <a href="/contratar" class="button-talk-to-us" title="Contratar">Contratar!</a>
       <span>ou</span>
       <a href="#what-is-startup-dev" class="button-learn-more" title="Saiba mais">Saiba mais</a>
     </div>
   </article>
 </div>
 <article id="schedule" class="container">
-  <h2>Veja quando seu projeto pode rolar...</h2>
+  <h2>Próximas semanas disponíveies</h2>
   <div id="calendar">
     <table>
     <tbody>
       {% for data in site.schedule.data %}
         <tr>
           <th>
-            <div class="day">{{ data.month }} {{ site.schedule.year }}</div>
+            <div class="day">{{ data.month_pt }} {{ site.schedule.year }}</div>
             <div>
             </div>
           </th>
@@ -68,17 +68,13 @@ layout: default
               {% endif %}
               <div class="day-content">
                 <strong>
-                  {% if week.status == 'client' %}
-                    {{ week.client }}
-                  {% elsif week.status == 'free' %}
-                    Livre :)
-                  {% elsif week.status == 'reserved' %}
-                    Reservado
-                  {% elsif week.status == 'unavailable' %}
-                    Indisponível
-                  {% else %}
-                    --
-                  {% endif %}
+                {% if week.status == 'free' %}
+                  Livre :)
+                {% elsif week.status == 'unavailable' %}
+                  Indisponível
+                {% else %}
+                  --
+                {% endif %}
                 </strong>
               </div>
             </td>
@@ -243,7 +239,7 @@ layout: default
       </nav>
     </div>
     <div class="call-to-action">
-      <a href="#talk-to-us" class="button-talk-to-us" title="Fale conosco !">Fale conosco !</a>
+      <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
     </div>
   </article>
 </div>
@@ -257,13 +253,13 @@ layout: default
     </div>
   </div>
   <div class="call-to-action">
-    <a href="#talk-to-us" class="button-talk-to-us" title="Fale conosco !">Fale conosco !</a>
+    <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
   </div>
 </article>
 <div class="dark-background">
   <article id="what-is-startup-dev">
     <h2>Como funciona o Startup DEV?</h2>
-    <h3>Nós realizamos uma reunião de trabalho onde entendemos a sua necessidade<br/> e montamos o escopo do projeto. Depois desenvolvemos tudo em 2 dias.</h3>
+    <h3>No período de uma semana nós realizamos uma reunião de trabalho onde entendemos a sua necessidade, <br/> montamos o escopo do projeto e entregamos um sistema on-line e funcionando.</h3>
     <article id="meeting" class="container">
       <ul>
         <li>Conhecer<br />o projeto</li>
@@ -271,60 +267,16 @@ layout: default
         <li id="flow">Montar o fluxo<br />de navegação</li>
         <li id="writer">Escrever as<br />tarefas</li>
         <li id="define">Definir as<br />prioridades</li>
-        <li id="scope">Fechar o escopo<br />do projeto</li>
       </ul>
-      <div id="dev-2-days">
-        <h3>2 dias de<br />desenvolvimento</h3>
-        <p>Nós entregamos em 2 dias um escopo<br/>que normalmente é feito em 15 dias de trabalho.</p>
-        <h4>Entregamos o sistema online<br />e pronto para ser lançado!</h4>
-        <a href="http://www.videolog.tv/helabsoficial" title="Para saber mais sobre essa etapa assista vídeos">Para saber mais<br />sobre essa etapa<br /><span>assista vídeos</span></a>
+      <div id="dev-7-days">
+        <h3>1 semana de<br />desenvolvimento</h3>
+        <p>Você estará contratando um time<br/>por uma iteração de 1 semana, nada além.</p>
+        <h4>Entregamos o sistema online<br />e pronto para ser usado!</h4>
+        <a href="https://www.youtube.com/user/helabsoficial/search?query=startup+dev" title="Para saber mais sobre essa etapa assista vídeos">Para saber mais<br />sobre essa etapa<br /><span>assista vídeos</span></a>
       </div>
     </article>
-  </article>
-</div>
-<article id="partners" class="container">
-  <h2>Nossos parceiros</h2>
-  <table>
-    <tbody>
-      <tr>
-        <td><a href="http://startupfarm.com.br" title="Startupfarm"><img src="/images/parceiros/startupfarm.jpg" width="148" height="33" alt="Startupfarm"></a></td>
-        <td><a href="http://www.fiap.com.br" title="FIAP"><img src="/images/parceiros/fiap.jpg" width="119" height="30" alt="FIAP"></a></td>
-        <td><a href="http://circuitostartup.com" title="Circuito Startup"><img src="/images/parceiros/circuito.jpg" width="157" height="55" alt="Circuito Startup"></a></td>
-        <td class="last"><a href="http://21212.com" title="21212"><img src="/images/parceiros/21212.jpg" width="102" height="91" alt="21212"></a></td>
-      </tr>
-      <tr class="last">
-        <td><a href="http://workshop.bootstrappers.com.br" title="Bootstrappers"><img src="/images/parceiros/bootstrapper.jpg" width="135" height="72" alt="Bootstrappers"></a></td>
-        <td><a href="http://www.ventureone.com.br" title="VentureOne"><img src="/images/parceiros/venture.jpg" width="162" height="41" alt="VentureOne"></a></td>
-        <td><a href="http://papayaventures.com/" title="Papaya Ventures"><img src="/images/parceiros/papaya.png" width="180" height="36" alt="Papaya Ventures"></a></td>
-        <td class="last"><a href="http://www.izupt.com/" title="iZupt connected ideas"><img src="/images/parceiros/izupt.png" alt="iZupt connected ideas"></a></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-<div class="dark-background">
-  <article id="talk-to-us" class="container">
-    <h2>Será um prazer atender você!</h2>
-
-    <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
-
-    <div id="form">
-      <script type="text/javascript">
-      var z7x3k1 = new WufooForm();
-      z7x3k1.initialize({
-      'userName':'helabs',
-      'formHash':'z7p9p1',
-      'autoResize':false,
-      'height':'600',
-      'ssl':false,
-      'header':'hide'});
-      z7x3k1.display();
-      </script>
+    <div class="call-to-action">
+      <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
     </div>
   </article>
 </div>
-<a name="video1ano"></a>
-<article id="party" class="container">
-  <h2>Um ano de projetos bem-sucedidos!</h2>
-
-  <iframe class="video" width="953" height="535" src="http://embed.videolog.tv/v/index.php?id_video=808061&amp;width=953&amp;height=535&amp;related=&amp;hd=&amp;color1=&amp;color2=&amp;color3=&amp;slideshow=" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-</article>

@@ -7,8 +7,8 @@ $(document).ready(function(){
   });
 
   $(".fancybox").fancybox({
-    'width'           : 800,
-    'height'          : 449,
+    'width'           : 650,
+    'height'          : 488,
     'scrolling'       : 'no',
     'autoScale'       : false,
     'transitionIn'    : 'none',

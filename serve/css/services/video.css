@@ -1,0 +1,90 @@
+/* color #179b95 */
+
+
+/* ====================
+Cover Landing
+==================== */
+
+.video_page #landing {
+  background: url('/images/mp/sistema-web/sistema_web_background.jpg')
+}
+
+.video_page #landing .bg-cover {
+  background: rgba(23, 155, 149, 0.85);
+}
+
+
+#landing .grid-video iframe{
+  box-shadow: 0px 0px 0px 6px rgba(23, 155, 149, 1);
+}
+
+#landing .grid-video {
+  text-shadow: 3px 4px 0px rgba(23, 155, 149, 1);
+}
+
+/* ====================
+Nav Bar
+==================== */
+
+.video_page #nav ul {
+  background: #179b95;
+}
+
+.video_page #nav.fxd {
+  background: rgba(23, 155, 149, 0.95);
+}
+
+
+
+/* ====================
+How Works
+==================== */
+
+.video_page .how-works #steps li.result {
+  background: url('/images/mp/video_result_step.png') center 16px no-repeat;
+}
+
+
+
+/* ====================
+Projects
+==================== */
+
+.video_page #projects_gallery {
+  padding-top: 24px;
+  background: url('/images/mp/gallery-video.png') center 7px no-repeat;
+}
+
+.video_page #projects_gallery ul {
+  width: 524px;
+}
+
+.video_page #projects_gallery ul li img {
+  margin-bottom: 60px;
+  width: 524px;
+  height: 297px;
+}
+
+
+
+/* ====================
+Who we are
+==================== */
+
+.video_page .who-we-are {
+  background: #fff;
+}
+
+.video_page .who-we-are .bg-cover {
+  background: rgba(23, 155, 149, 0.9);
+}
+
+
+
+/* ====================
+Calendar
+==================== */
+
+.video_page #calendar table tr th {
+  background:  #179b95;
+}

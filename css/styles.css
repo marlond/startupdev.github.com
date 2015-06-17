@@ -207,7 +207,7 @@ header h1 {
 }
 
 #menu li.english a {
-  margin-left: -116px; 
+  margin-left: -116px;
   background-position: 128px -313px;
   padding-right: 62px;
 }
@@ -317,7 +317,7 @@ header h1 {
 }
 
 #menu-en li.portuguese a {
-  margin-left: -148px; 
+  margin-left: -148px;
   background-position: 161px -352px;
   padding-right: 62px;
 }
@@ -453,8 +453,8 @@ header h1 {
   height: 79px;
   margin-bottom: 13px;
   width: 91px;
-  
-  
+
+
 }
 
 #workflow .plus div,
@@ -943,7 +943,8 @@ ol li:before {
   list-style: none;
   margin:0 auto 60px;
   overflow: hidden;
-  width:870px;
+  awidth:870px;
+  width: 716px;
 }
 
 #meeting li {
@@ -969,16 +970,11 @@ ol li:before {
   margin-right: 60px;
 }
 #meeting li#define {
-  margin-right: 40px;
+  margin-right: 0px;
 }
 
-#meeting li#scope {
-  margin-right: 0;
-  width: 120px;
-}
-
-#dev-2-days {
-  background: url("../images/48horas-category.png") no-repeat left top;
+#dev-7-days {
+  background: url("../images/7dias-category.png") no-repeat left top;
   height: 307px;
   margin: 0 0 0 240px;
   text-align: center;
@@ -988,7 +984,7 @@ ol li:before {
   width: 473px;
 }
 
-#dev-2-days h3 {
+#dev-7-days h3 {
   color: #FED247;
   font-family: HelveticaNeueCondensedBold;
   font-size: 2.8em;
@@ -996,15 +992,15 @@ ol li:before {
   text-transform: uppercase;
 }
 
-#dev-2-days h4 {
+#dev-7-days h4 {
  font-size: 2em;
 }
 
-#dev-2-days p {
+#dev-7-days p {
   margin-bottom: 10px;
 }
 
-#dev-2-days a {
+#dev-7-days a {
   color: #5E4E15;
   display: block;
   font-size: 1.8em;
@@ -1017,7 +1013,7 @@ ol li:before {
   height: 134px;
 }
 
-#dev-2-days a span {
+#dev-7-days a span {
   font-weight: bold;
   font-size: 1.1em;
   font-family: HelveticaNeueCondensedBold;
@@ -1340,10 +1336,10 @@ ol li:before {
   display: block;
   text-align: center;
 }
-
+/*
 #calendar table tr td.unavailable {
   background-color: #FFC5CA;
-}
+}*/
 #calendar table tr td.unavailable .day-content {
   color: #c66;
 }

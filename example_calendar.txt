@@ -1,44 +1,40 @@
-Status: unavailable, client, reserved, free
+Status: unavailable, free
 
 schedule:
-  year: 2013
+  year: 2015
   data:
     -
-      month: Janeiro
+      month_pt: Julho
+      month_en: July
       weeks:
         -
-          date: 01/01
+          date: 06/07
           status: unavailable
         -
-          date: 07/01
+          date: 13/07
           status: unavailable
         -
-          date: 14/01
-          client: Ronaldo Setti
-          status: client
+          date: 20/07
+          status: unavailable
         -
-          date: 21/01
-          client: Taynah Reis
-          status: client
-        -
-          date: 28/01
-          client: Wallace Correia
-          status: client
+          date: 27/07
+          status: free
     -
-      month: Fevereiro
+      month_pt: Agosto
+      month_en: August
       weeks:
         -
-          date: 04/02
-          status: Yasmin Cunha
+          date: 03/08
+          status: free
         -
-          date: 11/02
+          date: 10/08
           status: unavailable
         -
-          date: 18/02
-          status: free
+          date: 17/08
+          status: unavailable
         -
-          date: 25/02
-          status: free
+          date: 24/08
+          status: unavailable
         -
-          date: 
-          status: 
+          date: 31/08
+          status: unavailable
