@@ -236,40 +236,40 @@ projects:
     image: /images/projetos/ideias.png
 
 schedule:
-  year: 2015
+  year: 2016
   data:
     -
-      month_pt: Julho
-      month_en: July
+      month_pt: Janeiro
+      month_en: January
       weeks:
         -
-          date: 06/07
+          date: 04/01
           status: unavailable
         -
-          date: 13/07
-          status: unavailable
+          date: 11/01
+          status: free
         -
-          date: 20/07
-          status: unavailable
+          date: 18/01
+          status: free
         -
-          date: 27/07
+          date: 25/01
           status: free
     -
-      month_pt: Agosto
-      month_en: August
+      month_pt: Fevereiro
+      month_en: february
       weeks:
         -
-          date: 03/08
+          date: 01/02
           status: free
         -
-          date: 10/08
+          date: 08/02
           status: unavailable
         -
-          date: 17/08
-          status: unavailable
+          date: 15/02
+          status: free
         -
-          date: 24/08
-          status: unavailable
+          date: 22/02
+          status: free
         -
-          date: 31/08
+          date: 29/02
           status: unavailable
