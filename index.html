@@ -87,7 +87,7 @@ layout: default
     </div>
   </article>
 {% endif %}
-<div class="dark-background">
+<div class="dark-background without-margin-top">
   <article id="testimonials" class="container">
     <h2>Depoimentos de clientes</h2>
     <nav id="controls">
@@ -241,7 +241,7 @@ layout: default
       </nav>
     </div>
     <div class="call-to-action">
-      <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
+      <a href="#modal" class="button-talk-to-us" title="Contratar!">Contratar!</a>
     </div>
   </article>
 </div>
@@ -255,7 +255,7 @@ layout: default
     </div>
   </div>
   <div class="call-to-action">
-    <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
+    <a href="#modal" class="button-talk-to-us" title="Contratar!">Contratar!</a>
   </div>
 </article>
 <div class="dark-background">
@@ -278,7 +278,8 @@ layout: default
       </div>
     </article>
     <div class="call-to-action">
-      <a href="/contratar" class="button-talk-to-us" title="Contratar!">Contratar!</a>
+      <a href="#modal" class="button-talk-to-us" title="Contratar!">Contratar!</a>
     </div>
   </article>
 </div>
+{% include contact-modal.html %}

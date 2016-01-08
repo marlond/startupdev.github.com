@@ -1,4 +1,13 @@
 <script type="text/javascript">
+  var inst = $('[data-remodal-id=modal]').remodal();
+
+  $(".button-talk-to-us").on('click', function(e){
+    e.preventDefault();
+    inst.open();
+  });
+</script>
+
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-257015-24']);
   _gaq.push(['_trackPageview']);

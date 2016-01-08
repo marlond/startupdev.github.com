@@ -376,6 +376,10 @@ header h1 {
   background: url("../images/background-presentation.png");
 }
 
+.dark-background.without-margin-top {
+  margin-top:-1px;
+}
+
 /*
 +----------------------------------------------------------------+
   Presentation
