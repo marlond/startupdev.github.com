@@ -1,17 +1,7 @@
 # Startup DEV Website
 
-:warning: :warning: :warning: :warning:
-- Esta é a última versão do site.
-- Atualmente o startupdev.com.br é apenas um redirect para o helabs.com. Foi
-  mantido o conteúdo aqui para possiveis consultas ou mesmo a volta do
-  startupdev.com.br.
-- Propositalmente não estamos utilizando o branch `gh-pages` pois não queremos
-  que o github faça o deploy do site.
-
-:warning: :warning: :warning: :warning:
-
 ## Rodando
 
 Rode com
 
-    $ jekyll -w serve
+    $ foreman start
