@@ -49,46 +49,48 @@ layout: default-en
     </div>
   </article>
 </div>
-<article id="schedule" class="container">
-  <h2>Check when your project could be started ...</h2>
-  <div id="calendar">
-    <table>
-    <tbody>
-      {% for data in site.schedule.data %}
-        <tr>
-          <th>
-            <div class="day">{{ data.month_en }} {{ site.schedule.year }}</div>
-            <div>
-            </div>
-          </th>
-          {% for week in data.weeks %}
-            <td class="{{ week.status }}" >
-              {% if week.date %}
-                <div class="day">Week of day {{ week.date }}</div>
-              {% endif %}
-              <div class="day-content">
-                <strong>
-                  {% if week.status == 'client' %}
-                    {{ week.client }}
-                  {% elsif week.status == 'free' %}
-                    Free :)
-                  {% elsif week.status == 'reserved' %}
-                    Reserved
-                  {% elsif week.status == 'unavailable' %}
-                    Unavailable
-                  {% else %}
-                    --
-                  {% endif %}
-                </strong>
+{% if site.schedule.enabled %}
+  <article id="schedule" class="container">
+    <h2>Check when your project could be started ...</h2>
+    <div id="calendar">
+      <table>
+      <tbody>
+        {% for data in site.schedule.data %}
+          <tr>
+            <th>
+              <div class="day">{{ data.month_en }} {{ site.schedule.year }}</div>
+              <div>
               </div>
-            </td>
-          {% endfor %}
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  </div>
-</article>
+            </th>
+            {% for week in data.weeks %}
+              <td class="{{ week.status }}" >
+                {% if week.date %}
+                  <div class="day">Week of day {{ week.date }}</div>
+                {% endif %}
+                <div class="day-content">
+                  <strong>
+                    {% if week.status == 'client' %}
+                      {{ week.client }}
+                    {% elsif week.status == 'free' %}
+                      Free :)
+                    {% elsif week.status == 'reserved' %}
+                      Reserved
+                    {% elsif week.status == 'unavailable' %}
+                      Unavailable
+                    {% else %}
+                      --
+                    {% endif %}
+                  </strong>
+                </div>
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </article>
+{% endif %}
 <div class="dark-background">
   <article id="testimonials" class="container">
     <h2>Customer Testimonials</h2>

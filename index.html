@@ -49,42 +49,44 @@ layout: default
     </div>
   </article>
 </div>
-<article id="schedule" class="container">
-  <h2>Próximas semanas disponíveies</h2>
-  <div id="calendar">
-    <table>
-    <tbody>
-      {% for data in site.schedule.data %}
-        <tr>
-          <th>
-            <div class="day">{{ data.month_pt }} {{ site.schedule.year }}</div>
-            <div>
-            </div>
-          </th>
-          {% for week in data.weeks %}
-            <td class="{{ week.status }}" >
-              {% if week.date %}
-                <div class="day">Semana do dia {{ week.date }}</div>
-              {% endif %}
-              <div class="day-content">
-                <strong>
-                {% if week.status == 'free' %}
-                  Livre :)
-                {% elsif week.status == 'unavailable' %}
-                  Indisponível
-                {% else %}
-                  --
-                {% endif %}
-                </strong>
-              </div>
-            </td>
+{% if site.schedule.enabled %}
+  <article id="schedule" class="container">
+    <h2>Próximas semanas disponíveis</h2>
+    <div id="calendar">
+      <table>
+        <tbody>
+          {% for data in site.schedule.data %}
+            <tr>
+              <th>
+                <div class="day">{{ data.month_pt }} {{ site.schedule.year }}</div>
+                <div>
+                </div>
+              </th>
+              {% for week in data.weeks %}
+                <td class="{{ week.status }}" >
+                  {% if week.date %}
+                    <div class="day">Semana do dia {{ week.date }}</div>
+                  {% endif %}
+                  <div class="day-content">
+                    <strong>
+                    {% if week.status == 'free' %}
+                      Livre :)
+                    {% elsif week.status == 'unavailable' %}
+                      Indisponível
+                    {% else %}
+                      --
+                    {% endif %}
+                    </strong>
+                  </div>
+                </td>
+              {% endfor %}
+            </tr>
           {% endfor %}
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  </div>
-</article>
+        </tbody>
+      </table>
+    </div>
+  </article>
+{% endif %}
 <div class="dark-background">
   <article id="testimonials" class="container">
     <h2>Depoimentos de clientes</h2>

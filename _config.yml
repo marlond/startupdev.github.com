@@ -236,6 +236,7 @@ projects:
     image: /images/projetos/ideias.png
 
 schedule:
+  enabled: false
   year: 2016
   data:
     -
