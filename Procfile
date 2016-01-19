@@ -1,1 +1,1 @@
-web: jekyll -w serve
+web: jekyll serve --watch

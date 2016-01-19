@@ -1,5 +1,5 @@
 safe: true
-pygments: true
+highlighter: pygments
 exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb']
 permalink: :pretty
 
