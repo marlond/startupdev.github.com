@@ -1,9 +1,14 @@
-safe: true
+safe: false
 highlighter: pygments
-exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb']
+exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor']
 permalink: :pretty
 
 number_of_projects: 80
+
+gems: [bourbon, neat]
+
+sass:
+    style: expanded
 
 projects:
   -

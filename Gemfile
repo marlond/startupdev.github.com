@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 ruby '2.2.3'
 
 gem 'foreman'
@@ -10,3 +9,6 @@ gem 'maruku'
 gem 'rdiscount'
 gem 'RedCloth'
 gem 'kramdown'
+gem 'bourbon'
+gem 'neat'
+
