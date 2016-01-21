@@ -11,3 +11,15 @@ $(document).ready(function() {
     });
   });
 });
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    pager: false,
+    nextSelector: '.slider-testimonial__next',
+    prevSelector: '.slider-testimonial__prev',
+    nextText: 'Próximo',
+    prevText: 'Anterior'
+  });
+});
+
