@@ -1,22 +1,26 @@
-#{$all-buttons} {
-  appearance: none;
-  background-color: $action-color;
-  border: 0;
-  border-radius: $base-border-radius;
+// *************************************
+//
+//   Buttons
+//
+// *************************************
+
+.btn {
+  @include transition(all .3s);
+  @include user-select(none);
+  background: transparent;
+  border-radius: 4px;
   color: $white;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: $small-spacing $base-spacing;
+  font-size: 22px;
+  padding: 10px 25px 20px;
+  text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
-  user-select: none;
+  touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+  font-weight: 400;
 
   &:hover,
   &:focus {
@@ -32,4 +36,31 @@
       background-color: $action-color;
     }
   }
+
+  // types of buttons
+
+  // Use: class="btn btn--primary"
+  &--primary {
+    background: $nightrider;
+    &:hover,
+    &:focus {
+      background-color: shade($nightrider, 20%);
+      color: $white;
+    }
+  }
+
+  // Use: class="btn btn--secondary"
+  &--secondary {
+    background: $supernova;
+    &:hover,
+    &:focus {
+      background-color: shade($supernova, 20%);
+      color: $white;
+    }
+  }
+
+
 }
+
+
+

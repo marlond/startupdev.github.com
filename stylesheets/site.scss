@@ -3,8 +3,9 @@
 ---
 
 // ----- Imports ----- //
-@import "bourbon";
-@import "base/grid-settings";
-@import "neat";
-@import "base/base";
-@import "layouts/application";
+@import 'base/normalize.css';
+@import 'bourbon';
+@import 'base/grid-settings';
+@import 'neat';
+@import 'base/base';
+@import 'layouts/application';

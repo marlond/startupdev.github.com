@@ -1,0 +1,45 @@
+// *************************************
+//
+//   Footer
+//
+// *************************************
+
+.footer {
+  @include span-columns(12);
+  background: $nightrider;
+
+  &__content {
+    @include outer-container();
+  }
+}
+
+.footer-one {
+  @include fill-parent;
+  @include pad(rem(50) 0);
+
+  &__heading {
+    @include span-columns(10 of 12);
+    font-family: $base-font-family;
+  }
+
+  &__title {
+    color: $supernova;
+    font-size: rem(36);
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    color: $white;
+    font-size: rem(18);
+  }
+}
+
+.footer-two {
+  @include fill-parent;
+  @include size(100% 40px);
+  background: $nero;
+  font-family: $base-font-family;
+  font-size: rem(12);
+  padding-top: $small-spacing;
+  text-align: center;
+}

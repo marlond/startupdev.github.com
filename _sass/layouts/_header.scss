@@ -1,0 +1,87 @@
+// *************************************
+//
+//   Header
+//
+// *************************************
+
+.header {
+  @include size(100% rem(70));
+  background: $nightrider;
+
+  &::before {
+    @include position(absolute, 0 null null 0);
+    @include size(100% rem(5));
+    background: url('/images/2016/ruller.png') repeat-x $supernova;
+    content: '';
+  }
+
+  &__content {
+    @include outer-container();
+  }
+
+  &__logo {
+    @include size(rem(137) rem(37));
+    background: url('/images/2016/logo-startupdev.png') no-repeat top center;
+    display: block;
+    float: left;
+    margin-top: 28px;
+  }
+}
+
+// Navigation
+.header-navigation {
+  float: right;
+  margin-top: rem(25);
+
+  &__item {
+    display: inline-block;
+    font-family: $heading-font-family;
+    font-size: rem(16);
+    padding: 0 rem(20);
+
+    a {
+      @include size(100%);
+      @include transition(all .2s);
+      color: $white;
+      display: block;
+    }
+
+    &:hover {
+      a {
+        color: $supernova;
+      }
+    }
+  }
+}
+
+// Item button on Navigation
+.header-navigation__item--btn {
+  border: 1px solid $white;
+  border-radius: 4px;
+  padding: 6px 17px;
+
+  &::after {
+    background: url('/images/2016/arrow-btn.svg') no-repeat top center;
+    content: '';
+    display: block;
+    height: 9px;
+    position: static;
+    width: 63px;
+  }
+}
+
+// Mobile view
+.navigation-menu-button {
+  color: $white;
+  display: none;
+  float: right;
+  margin: 0;
+  padding-right: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}

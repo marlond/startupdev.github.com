@@ -1,0 +1,76 @@
+// *************************************
+//
+//   Main Layout
+//
+// *************************************
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $base-background-color;
+}
+
+.main-banner {
+  background: $nightrider;
+  min-height: rem(690);
+  width: 100%;
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(144);
+    text-align: center;
+  }
+
+  &__h1 {
+    color: $supernova;
+    font-family: $heading-font-family;
+    font-size: 48px;
+    margin-bottom: rem(18);
+  }
+
+  &__h2 {
+    color: $white;
+    font-family: $base-font-family;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: rem(40);
+
+    strong {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+}
+
+.protoapp {
+  @include span-columns(12);
+  background: $supernova;
+  min-height: rem(690);
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(144);
+    text-align: center;
+  }
+
+  &__col {
+    @include span-columns(6 of 12);
+  }
+
+  &__title {
+    color: $nightrider;
+    font-size: rem(46);
+    font-weight: 900;
+  }
+
+  &__description {
+    color: $white;
+    font-family: $base-font-family;
+    font-size: rem(20);
+  }
+
+}
