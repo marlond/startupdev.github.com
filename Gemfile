@@ -11,4 +11,5 @@ gem 'RedCloth'
 gem 'kramdown'
 gem 'bourbon'
 gem 'neat'
+gem 'scss_lint', require: false
 

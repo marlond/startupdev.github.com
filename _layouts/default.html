@@ -2,22 +2,34 @@
 <html lang='pt'>
   {% include head.html %}
   <body>
-    <section id='wrapper'>
-      <header id="home-section">
-        <h1>Startup DEV</h1>
-      </header>
-      {% include menu.html %}
-      <section>
-        {{ content }}
-      </section>
+
+    <header id="home-section" class="header">
+      <a href="" class="header__logo"></a>
+      <nav class="header-navigation">
+        <ul>
+          <li class="header-navigation__item"><a href="#item">ProtoApp</a></li>
+          <li class="header-navigation__item"><a href="#item">MVP Expresso</a></li>
+          <li class="header-navigation__item"><a href="#item">Resultado</a></li>
+          <li class="header-navigation__item"><a href="#item">Contrate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      {{ content }}
     </section>
+
     {% include footer.html %}
+
     <script type="text/javascript">
-    setTimeout(function(){var a=document.createElement("script");
-    var b=document.getElementsByTagName("script")[0];
-    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/4888.js?"+Math.floor(new Date().getTime()/3600000);
-    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/4888.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     </script>
+
     {% include head/javascripts.html %}
+
   </body>
+
 </html>
