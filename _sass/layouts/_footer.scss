@@ -32,6 +32,10 @@
     color: $white;
     font-size: rem(18);
   }
+
+  .btn {
+    @include span-columns(2 of 12);
+  }
 }
 
 .footer-two {

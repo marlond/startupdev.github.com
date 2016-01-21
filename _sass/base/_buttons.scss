@@ -14,7 +14,7 @@
   display: inline-block;
   font-family: $base-font-family;
   font-size: 22px;
-  padding: 10px 25px 20px;
+  padding: 10px 35px 15px;
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
@@ -26,6 +26,15 @@
   &:focus {
     background-color: shade($action-color, 20%);
     color: $white;
+  }
+
+  &::after {
+    background: url('/images/2016/arrow.svg') no-repeat top right;
+    content: '';
+    display: block;
+    height: 9px;
+    position: static;
+    width: 100%;
   }
 
   &:disabled {
@@ -44,7 +53,7 @@
     background: $nightrider;
     &:hover,
     &:focus {
-      background-color: shade($nightrider, 20%);
+      background-color: shade($nightrider, 30%);
       color: $white;
     }
   }
