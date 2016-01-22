@@ -304,32 +304,31 @@ body {
 
 .testimonials-video {
   @include span-columns(12);
-  margin-top: rem(100);
   @include row(table);
+  margin-top: rem(100);
+
+  figure {
+    @include size(100% auto);
+    float: left;
+    opacity: .4;
+    transition: opacity .2s;
+  }
+
+  img {
+    @include size(100% auto);
+    float: left;
+  }
 
   &__box {
-    @include omega;
     @include span-columns(3, table);
-    //background: $white;
+    @include omega;
+    cursor: pointer;
     height: 180px;
     margin: 0;
-    cursor: pointer;
     position: relative;
 
     @include media($screen-small) {
      @include span-columns(2, block);
-    }
-
-    figure {
-      @include size(100% auto);
-      float: left;
-      transition: opacity .2s;
-      opacity: .4;
-    }
-
-    img {
-      @include size(100% auto);
-      float: left;
     }
 
     &:hover > figure {
@@ -355,9 +354,8 @@ body {
   }
 
   &__author {
-    //width: 100%;
-    display: inline-block;
     color: $white;
+    display: inline-block;
     font-size: rem(18);
 
     &::before {
@@ -368,11 +366,11 @@ body {
   }
 
   &__project {
-    width: 100%;
-    display: inline-block;
     color: $supernova;
+    display: inline-block;
     font-family: $heading-font-family;
     font-size: rem(16);
     font-weight: 900;
+    width: 100%;
   }
 }
