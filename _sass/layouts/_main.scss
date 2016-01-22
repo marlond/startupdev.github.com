@@ -230,12 +230,12 @@ body {
 
   &__quote {
     font-family: $base-font-family;
-    font-size: rem(20);
+    font-size: rem(18);
     font-style: italic;
     font-weight: 300;
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: rem(570);
-    min-height: rem(172);
+    min-height: rem(220);
   }
 
   &__picture {
@@ -299,4 +299,80 @@ body {
     color: $supernova;
   }
 
+}
+
+
+.testimonials-video {
+  @include span-columns(12);
+  margin-top: rem(100);
+  @include row(table);
+
+  &__box {
+    @include omega;
+    @include span-columns(3, table);
+    //background: $white;
+    height: 180px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+
+    @include media($screen-small) {
+     @include span-columns(2, block);
+    }
+
+    figure {
+      @include size(100% auto);
+      float: left;
+      transition: opacity .2s;
+      opacity: .4;
+    }
+
+    img {
+      @include size(100% auto);
+      float: left;
+    }
+
+    &:hover > figure {
+      opacity: 1;
+    }
+
+    &:hover{
+      .testimonials-video__author::before {
+        background: url('/images/2016/arrow.svg') no-repeat top right;
+        content: '';
+        display: block;
+        height: 9px;
+        position: static;
+        width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    @include position(absolute, null null 10px null);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__author {
+    //width: 100%;
+    display: inline-block;
+    color: $white;
+    font-size: rem(18);
+
+    &::before {
+      @include transition(all .2s);
+      content: '';
+      width: 0;
+    }
+  }
+
+  &__project {
+    width: 100%;
+    display: inline-block;
+    color: $supernova;
+    font-family: $heading-font-family;
+    font-size: rem(16);
+    font-weight: 900;
+  }
 }
