@@ -23,7 +23,7 @@ body {
   @include media($screen-small) {
     background: url('/images/2016/background-header-mobile.jpg') no-repeat center center $nightrider;
     background-size: cover;
-    min-height: rem(600);
+    min-height: rem(520);
   }
 
   &__tablet {
