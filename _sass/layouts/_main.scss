@@ -15,20 +15,32 @@ body {
 }
 
 .main-banner {
-  background: $nightrider;
-  min-height: rem(690);
+  background: url('/images/2016/background-header.jpg') no-repeat center center $nightrider;
+  background-size: cover;
+  min-height: rem(800);
   width: 100%;
 
+  &__tablet {
+    @include span-columns(4 of 12);
+
+    img {
+      max-width: 590px;
+      padding-top: 150px;
+    }
+  }
+
   &__content {
-    @include outer-container();
-    padding-top: rem(144);
-    text-align: center;
+    @include span-columns(8 of 12);
+    max-width: 700px;
+    padding-top: rem(200);
+    text-align: left;
   }
 
   &__h1 {
     color: $supernova;
     font-family: $heading-font-family;
     font-size: 48px;
+    font-weight: 900;
     margin-bottom: rem(18);
   }
 
@@ -304,7 +316,6 @@ body {
 
 .testimonials-video {
   @include span-columns(12);
-  @include row(table);
   margin-top: rem(100);
 
   figure {
@@ -320,16 +331,13 @@ body {
   }
 
   &__box {
-    @include span-columns(3, table);
-    @include omega;
     cursor: pointer;
+    float: left;
     height: 180px;
     margin: 0;
+    overflow: hidden;
     position: relative;
-
-    @include media($screen-small) {
-     @include span-columns(2, block);
-    }
+    width: 25%;
 
     &:hover > figure {
       opacity: 1;
@@ -372,5 +380,94 @@ body {
     font-size: rem(16);
     font-weight: 900;
     width: 100%;
+  }
+}
+
+
+
+.projects {
+  @include span-columns(12);
+  background: $supernova;
+  min-height: rem(690);
+  clear: both;
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(50);
+    text-align: center;
+  }
+
+  &__result {
+    border-bottom: 5px solid $white;
+    color: $white;
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $nightrider;
+    font-size: rem(46);
+    font-weight: 900;
+    margin: rem(20) 0 rem(10) 0;
+  }
+
+  &__description {
+    font-family: $base-font-family;
+    font-size: rem(32);
+    font-weight: 200;
+  }
+
+  &__grid {
+    margin: 0 auto;
+    max-width: rem(1400);
+  }
+
+  &__item {
+    background: $nightrider;
+    float: left;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    width: 10%;
+
+    @include media($screen-medium) {
+      width: 20%;
+    }
+
+    @include media($screen-small) {
+      width: 50%;
+    }
+
+    img {
+      @include filter(grayscale(100%));
+      @include size(100% 120px);
+      float: left;
+      opacity: .8;
+      transition: all .2s;
+    }
+
+    &:hover {
+      img {
+        @include filter(grayscale(0));
+        opacity: 1;
+      }
+
+      .projects__name{
+        height: auto;
+      }
+
+    }
+  }
+
+  &__name {
+    //padding: 5px;
+    @include position(absolute, null null 0 0);
+    @include size(100% 0);
+    @include transition(all .2s);
+    background: $nightrider;
+    color: $white;
+    font-family: $base-font-family;
+    font-size: rem(14);
+    text-align: center;
   }
 }

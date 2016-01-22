@@ -3,9 +3,14 @@ layout: default
 ---
 
 <section class="main-banner" id="home">
+
+  <div class="main-banner__tablet">
+    <img src="/images/2016/pic-tablet.png" alt="">
+  </div>
+
   <div class="main-banner__content">
     <h1 class="main-banner__h1">
-      Soluções de desenvolvimento <br> e design de produto para sua Startup.
+      Soluções de <br>desenvolvimento e design <br> de produto para sua Startup.
     </h1>
     <h2 class="main-banner__h2">
       Transformamos sua idéia em um <strong>protótipo para validação</strong> e testes com usuários
@@ -13,6 +18,7 @@ layout: default
       de experts em produto e metodologia Ágil.
     </h2>
   </div>
+
 </section>
 
 <section class="protoapp" id="protoapp">
@@ -93,7 +99,7 @@ layout: default
           </p>
 
           <div class="slider-testimonial__picture">
-            <img src="/images/2016/avatar.png" alt="Author">
+            <img src="/images/avatars/{{ testimonial.picture }}.png" alt="Author">
           </div>
 
           <div class="slider-testimonial__author">{{ testimonial.author }}</div>
@@ -149,4 +155,24 @@ layout: default
 
   </div>
 
+</section>
+
+
+<section class="projects">
+  <div class="projects__content">
+    <span class="projects__result">resultado</span>
+    <h2 class="projects__title">Sucesso</h2>
+    <p class="projects__description">
+      Mais de 80 projetos bem sucedidos.
+    </p>
+  </div>
+
+  <div class="projects__grid">
+  {% for project in site.data.projects %}
+    <a class="projects__item" href="{{ project.url }}" target="_blank">
+      <img src="{{ project.image }}" alt="{{ project.name }}" />
+      <span class="projects__name">{{ project.name }}</span>
+    </a>
+  {% endfor %}
+  </div>
 </section>

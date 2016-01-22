@@ -5,8 +5,9 @@
 // *************************************
 
 .header {
+  @include position(absolute, 0 null null 0);
   @include size(100% rem(70));
-  background: $nightrider;
+  //background: $nightrider;
 
   &::before {
     @include position(absolute, 0 null null 0);
@@ -44,6 +45,7 @@
       @include transition(all .2s);
       color: $white;
       display: block;
+      text-align: center;
     }
 
     &:hover {
