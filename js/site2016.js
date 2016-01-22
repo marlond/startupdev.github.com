@@ -19,7 +19,9 @@ $(document).ready(function(){
     nextSelector: '.slider-testimonial__next',
     prevSelector: '.slider-testimonial__prev',
     nextText: 'Próximo',
-    prevText: 'Anterior'
+    prevText: 'Anterior',
+    adaptiveHeight: true,
+    responsive: true
   });
 });
 

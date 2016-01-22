@@ -10,6 +10,10 @@
 
   &__content {
     @include outer-container();
+    @include media($screen-small) {
+      @include pad($base-spacing);
+      text-align: center;
+    }
   }
 }
 
@@ -18,23 +22,44 @@
   @include pad(rem(50) 0);
 
   &__heading {
-    @include span-columns(10 of 12);
+    @include span-columns(8 of 12);
     font-family: $base-font-family;
+    @include media($screen-small) {
+      @include span-columns(12);
+      text-align: center;
+    }
   }
 
   &__title {
     color: $supernova;
     font-size: rem(36);
     font-weight: 400;
+
+    @include media($screen-small) {
+      font-size: rem(25);
+    }
+
   }
 
   &__subtitle {
     color: $white;
     font-size: rem(18);
+
+    @include media($screen-small) {
+      font-size: rem(16);
+      font-weight: 200;
+      margin-bottom: rem(20);
+      display: inline-block;
+    }
+
   }
 
   .btn {
-    @include span-columns(2 of 12);
+    float: right;
+    @include media($screen-small) {
+      float: none;
+      text-align: center;
+    }
   }
 }
 
@@ -46,4 +71,10 @@
   font-size: rem(12);
   padding-top: $small-spacing;
   text-align: center;
+
+  @include media($screen-small) {
+    @include size(100% auto);
+    padding: $small-spacing;
+  }
+
 }

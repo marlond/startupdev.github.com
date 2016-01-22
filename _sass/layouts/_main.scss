@@ -20,12 +20,23 @@ body {
   min-height: rem(800);
   width: 100%;
 
+  @include media($screen-small) {
+    background: url('/images/2016/background-header-mobile.jpg') no-repeat center center $nightrider;
+    background-size: cover;
+    min-height: rem(600);
+  }
+
   &__tablet {
     @include span-columns(4 of 12);
 
     img {
       max-width: 590px;
       padding-top: 150px;
+      width: 100%;
+    }
+
+    @include media($screen-small) {
+      display: none;
     }
   }
 
@@ -34,6 +45,13 @@ body {
     max-width: 700px;
     padding-top: rem(200);
     text-align: left;
+
+    @include media($screen-small) {
+      @include span-columns(12);
+      text-align: center;
+      @include pad(150px $base-spacing);
+    }
+
   }
 
   &__h1 {
@@ -42,6 +60,11 @@ body {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: rem(18);
+
+    @include media($screen-small) {
+      font-size: 25px;
+    }
+
   }
 
   &__h2 {
@@ -50,6 +73,12 @@ body {
     font-size: 26px;
     font-weight: 400;
     line-height: rem(40);
+    font-weight: 200;
+
+    @include media($screen-small) {
+      font-size: 16px;
+      line-height: rem(30);
+    }
 
     strong {
       font-weight: 600;
@@ -67,10 +96,24 @@ body {
     @include outer-container();
     padding-top: rem(144);
     text-align: center;
+    @include media($screen-small) {
+      @include pad($base-spacing);
+    }
   }
 
   &__col {
     @include span-columns(6 of 12);
+    @include media($screen-small) {
+      @include span-columns(12);
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    &--pic {
+
+    }
   }
 
   &__title {
@@ -83,6 +126,10 @@ body {
     color: $white;
     font-family: $base-font-family;
     font-size: rem(20);
+    font-weight: 200;
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
   }
 
   .btn {
@@ -101,10 +148,20 @@ body {
     @include outer-container();
     padding-top: rem(144);
     text-align: center;
+    @include media($screen-small) {
+      @include pad($base-spacing);
+    }
   }
 
   &__col {
     @include span-columns(6 of 12);
+    @include media($screen-small) {
+      @include span-columns(12);
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
 
   &__title {
@@ -117,10 +174,14 @@ body {
     color: $nero;
     font-family: $base-font-family;
     font-size: rem(20);
+    font-weight: 200;
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
   }
 
   .btn {
-    margin-top: rem(50);
+    margin: rem(30) 0 rem(30) 0;
   }
 
 }
@@ -136,6 +197,10 @@ body {
     @include outer-container();
     padding-top: rem(120);
     text-align: center;
+
+    @include media($screen-small) {
+      @include pad(rem(90) $base-spacing);
+    }
   }
 
   &__result {
@@ -155,6 +220,11 @@ body {
   &__description {
     font-family: $base-font-family;
     font-size: rem(32);
+    font-weight: 200;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
   }
 
   &__play {
@@ -248,6 +318,11 @@ body {
     margin: 20px auto;
     max-width: rem(570);
     min-height: rem(220);
+
+    @include media($screen-small) {
+      @include pad(0 $base-spacing*3);
+      font-size: rem(15);
+    }
   }
 
   &__picture {
@@ -280,6 +355,11 @@ body {
     font-weight: 300;
     z-index: 999;
 
+    @include media($screen-small) {
+      @include position(absolute, null null -50px 50px);
+      font-size: rem(17);
+    }
+
     &::after {
       background: url('/images/2016/arrow-prev.svg') no-repeat top left;
       content: '';
@@ -296,6 +376,11 @@ body {
     font-size: rem(22);
     font-weight: 300;
     z-index: 999;
+
+    @include media($screen-small) {
+      @include position(absolute, null 50px -50px null);
+      font-size: rem(17);
+    }
 
     &::after {
       background: url('/images/2016/arrow.svg') no-repeat top right;
@@ -333,11 +418,19 @@ body {
   &__box {
     cursor: pointer;
     float: left;
-    height: 180px;
+    //height: 180px;
     margin: 0;
     overflow: hidden;
     position: relative;
     width: 25%;
+
+    @include media($screen-small) {
+      width: 50%;
+    }
+
+    @include media($screen-tiny) {
+      width: 100%;
+    }
 
     &:hover > figure {
       opacity: 1;
