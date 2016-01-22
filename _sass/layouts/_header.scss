@@ -7,7 +7,6 @@
 .header {
   @include position(absolute, 0 null null 0);
   @include size(100% rem(70));
-  //background: $nightrider;
 
   &::before {
     @include position(absolute, 0 null null 0);
@@ -34,18 +33,18 @@
   float: right;
   margin-top: rem(25);
 
-  @include media($screen-tiny) {
+  @include media($screen-small) {
     @include transition(.3s);
-    position: absolute;
-    z-index: 5;
     -webkit-transform: none;
-    transform: none;
-    top: 60px;
-    left: -15px;
-    right: -15px;
     background-color: $supernova;
     height: 0;
+    left: -15px;
     overflow: hidden;
+    position: absolute;
+    right: -15px;
+    top: 60px;
+    transform: none;
+    z-index: 5;
     &--is-open {
       height: auto;
       padding-top: 20px;
@@ -59,7 +58,7 @@
     font-size: rem(16);
     padding: 0 rem(20);
 
-    @include media($screen-tiny) {
+    @include media($screen-small) {
       display: block;
       text-align: center;
       margin-bottom: 20px;
@@ -78,7 +77,7 @@
       a {
         color: $supernova;
 
-        @include media($screen-tiny) {
+        @include media($screen-small) {
           color: $nightrider;
         }
 
@@ -100,7 +99,7 @@
     height: 9px;
     position: static;
     width: 63px;
-    @include media($screen-tiny) {
+    @include media($screen-small) {
       background: url('/images/2016/arrow-btn.svg') no-repeat top center;
       width: 100%;
     }
@@ -136,7 +135,7 @@
   }
 
   // shows toggle icon on small screens
-  @include media($screen-tiny) {
+  @include media($screen-small) {
     &,
     &:before,
     &:after {

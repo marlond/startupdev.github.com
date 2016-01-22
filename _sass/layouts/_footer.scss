@@ -65,11 +65,11 @@
 
 .footer-two {
   @include fill-parent;
-  @include size(100% 40px);
+  @include size(100% 60px);
   background: $nero;
   font-family: $base-font-family;
   font-size: rem(12);
-  padding-top: $small-spacing;
+  padding: $small-spacing*2 0;
   text-align: center;
 
   @include media($screen-small) {
@@ -77,4 +77,28 @@
     padding: $small-spacing;
   }
 
+  &__copyright {
+    @include span-columns(8 of 12);
+    @include media($screen-small) {
+      @include span-columns(12);
+      padding: $small-spacing;
+    }
+  }
+
+}
+
+.footer-social {
+  @include span-columns(4 of 12);
+  @include media($screen-small) {
+    @include span-columns(12);
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-right: 20px;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
 }
