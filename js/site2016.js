@@ -1,17 +1,3 @@
-$(document).ready(function() {
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
-});
-
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     mode: 'fade',
@@ -25,3 +11,17 @@ $(document).ready(function(){
   });
 });
 
+$(function() {
+
+  // Hamburger mobile menu
+  //---------------------------------------------------------------
+  var $btnMenu = $('.js-toggle-menu');
+  var $navbar  = $('.js-navbar');
+
+  $btnMenu.on('click', function(e) {
+    e.preventDefault();
+    $btnMenu.toggleClass('toggle--close');
+    $navbar.toggleClass('header-navigation--is-open');
+  });
+
+});

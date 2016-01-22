@@ -34,11 +34,37 @@
   float: right;
   margin-top: rem(25);
 
+  @include media($screen-tiny) {
+    @include transition(.3s);
+    position: absolute;
+    z-index: 5;
+    -webkit-transform: none;
+    transform: none;
+    top: 60px;
+    left: -15px;
+    right: -15px;
+    background-color: $supernova;
+    height: 0;
+    overflow: hidden;
+    &--is-open {
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+  }
+
   &__item {
     display: inline-block;
     font-family: $heading-font-family;
     font-size: rem(16);
     padding: 0 rem(20);
+
+    @include media($screen-tiny) {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: rem(20);
+    }
 
     a {
       @include size(100%);
@@ -51,6 +77,11 @@
     &:hover {
       a {
         color: $supernova;
+
+        @include media($screen-tiny) {
+          color: $nightrider;
+        }
+
       }
     }
   }
@@ -58,8 +89,8 @@
 
 // Item button on Navigation
 .header-navigation__item--btn {
-  border: 1px solid $white;
   border-radius: 4px;
+  border: 1px solid $white;
   padding: 6px 17px;
 
   &::after {
@@ -69,21 +100,90 @@
     height: 9px;
     position: static;
     width: 63px;
+    @include media($screen-tiny) {
+      background: url('/images/2016/arrow-btn.svg') no-repeat top center;
+      width: 100%;
+    }
   }
 }
 
-// Mobile view
-.navigation-menu-button {
-  color: $white;
-  display: none;
-  float: right;
-  margin: 0;
-  padding-right: 1em;
+.btn-toggle:hover {
+  &::after,
+  &::before {
+      background: $supernova;
+  }
+}
+.btn-toggle {
+  @include vertical-align();
+  cursor: pointer;
+  position: absolute;
+  right: rem(20);
   text-decoration: none;
-  text-transform: uppercase;
 
-  &:focus,
+  &:hover{
+    background: $supernova;
+  }
+
+  // toggle icon hidden on large screens
+  &,
+  &:before,
+  &:after {
+    @include transition(.3s ease-in-out);
+    background-color: #fff;
+    display: none;
+    height: 3px;
+    width: 34px;
+  }
+
+  // shows toggle icon on small screens
+  @include media($screen-tiny) {
+    &,
+    &:before,
+    &:after {
+      display: block;
+    }
+  }
+
+  // hides 'menu' text
+  > span {
+    @extend %sr-only;
+  }
+
+  // top and bottom rows
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+
+  // top row
+  &:before {
+    top: -8px;
+  }
+
+  // bottom row
+  &:after {
+    bottom: -8px;
+  }
+}
+
+.toggle--close {
+  background-color: transparent;
+
+  &:before,
+  &:after {
+    top: 0;
+  }
+
   &:hover {
-    color: $white;
+    background-color: transparent;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
   }
 }
