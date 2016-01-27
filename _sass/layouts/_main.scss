@@ -550,7 +550,6 @@ body {
       @include filter(grayscale(100%));
       @include size(100% auto);
       float: left;
-      opacity: .8;
       transition: all .5s;
     }
 
@@ -558,7 +557,6 @@ body {
       img {
         @include filter(grayscale(0));
         opacity: 1;
-        transform: scale(1.05);
       }
 
       .projects__name{
