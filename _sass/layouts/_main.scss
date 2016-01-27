@@ -525,17 +525,17 @@ body {
     position: relative;
     width: 10%;
     &::after {
-      background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+      background: rgba($black, 0.4) none repeat scroll 0 0;
       content: "";
       display: block;
-      height: 200px;
+      height: rem(600);
       left: 0;
       position: absolute;
       width: 100%;
       transition: all .2s;
     }
     &:hover:after {
-      background: rgba(0, 0, 0, 0.0)
+      background: rgba($black, 0.0) none repeat scroll 0 0;
     }
 
     @include media($screen-medium) {
@@ -551,13 +551,14 @@ body {
       @include size(100% auto);
       float: left;
       opacity: .8;
-      transition: all .2s;
+      transition: all .5s;
     }
 
     &:hover {
       img {
         @include filter(grayscale(0));
         opacity: 1;
+        transform: scale(1.05);
       }
 
       .projects__name{
