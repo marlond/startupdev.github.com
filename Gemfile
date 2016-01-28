@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'foreman'
+gem 'rake'
 gem 'jekyll'
 gem 'liquid'
 gem 'redcarpet'
