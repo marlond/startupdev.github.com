@@ -12,25 +12,25 @@ body {
 }
 
 .steps {
-  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: #fff;
   height: 20em;
   list-style: none;
+  margin: 0 auto;
+  position: relative;
   width: 20em;
   z-index: 0;
-  position: relative;
-  color: #fff;
-  border: 2px solid white;
-  border-radius: 50%;
 }
 .steps__icon {
   padding-top: 2.5em;
   width: 50%;
 }
 .steps__description {
+  bottom: 2.5em;
+  font-size: 0.9em;
   padding: 0em 4em;
   position: absolute;
-  bottom: 3.5em;
-  font-size: 0.9em;
 }
 .steps__description span {
   font-weight: bold;
@@ -42,7 +42,6 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-
   border-bottom: 1px solid #373232;
   color: #373232;
   display: inline-block;
@@ -51,13 +50,13 @@ body {
   text-decoration: none;
 }
 .steps__description a:hover {
-  color: #fff;
   background: #373232;
+  color: #fff;
 }
 
 .is-active a {
-  font-size: 2em !important;
   background: #373232 !important;
+  font-size: 2em !important;
 }
 
 #steps-menu ul li {
@@ -77,17 +76,16 @@ body {
 }
 #steps-menu ul li:after {
   content: " ";
-  background: url("http://krystalcampioni.com/testes/arrow.png") red;
-  width: 0.7em;
-  height: 0.4em;
-  margin-left: -0.14em;
-  margin-top: -2.1em;
-  position: absolute;
-  font-size: 3.5em;
-  background-size: 100%;
-  background-color: transparent;
-  transform: rotate(-29deg);
+  background: url("http://krystalcampioni.com/testes/arrow.png");
   background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 3.5em;
+  height: 0.4em;
+  margin-left: -0.2em;
+  margin-top: -2em;
+  position: absolute;
+  transform: rotate(-29deg);
+  width: 0.7em;
 }
 #steps-menu ul li a {
   -moz-transition: all 0.5s ease-in-out;
@@ -96,17 +94,17 @@ body {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #FFB533;
-  color: #fff;
-  text-decoration: none;
-  position: absolute;
-  border: 2px solid #fff;
   border-radius: 50%;
-  text-align: center;
-  height: 2em;
-  width: 2em;
-  font-size: 1.6em;
-  line-height: 2;
+  border: 2px solid #fff;
   box-shadow: 0 0 0 0 transparent;
+  color: #fff;
+  font-size: 1.6em;
+  height: 2em;
+  line-height: 1.8;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 2em;
 }
 #steps-menu ul li a:hover {
   background: #373232;
