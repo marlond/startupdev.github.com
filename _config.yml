@@ -8,7 +8,8 @@ number_of_projects: 80
 gems: [bourbon, neat]
 
 sass:
-    style: expanded
+  sass_dir: _sass
+  style: expanded
 
 schedule:
   enabled: false
