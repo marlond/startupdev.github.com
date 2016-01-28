@@ -511,17 +511,32 @@ body {
   }
 
   &__grid {
+    background: black none repeat scroll 0 0;
+    float: left;
     margin: 0 auto;
-    max-width: rem(1400);
+    max-width: 100%;
+    // max-width: rem(1400);
   }
 
   &__item {
     background: $nightrider;
     float: left;
-    height: 120px;
     overflow: hidden;
     position: relative;
     width: 10%;
+    &::after {
+      background: rgba($black, 0.4) none repeat scroll 0 0;
+      content: "";
+      display: block;
+      height: rem(600);
+      left: 0;
+      position: absolute;
+      width: 100%;
+      transition: all .2s;
+    }
+    &:hover:after {
+      background: rgba($black, 0.0) none repeat scroll 0 0;
+    }
 
     @include media($screen-medium) {
       width: 20%;
@@ -533,10 +548,9 @@ body {
 
     img {
       @include filter(grayscale(100%));
-      @include size(100% 120px);
+      @include size(100% auto);
       float: left;
-      opacity: .8;
-      transition: all .2s;
+      transition: all .5s;
     }
 
     &:hover {
