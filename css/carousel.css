@@ -34,7 +34,6 @@ body {
 }
 .steps__description span {
   font-weight: bold;
-  padding-right: 0.3em;
 }
 .steps__description a {
   -moz-transition: all 0.5s ease-in-out;
