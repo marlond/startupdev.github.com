@@ -12,23 +12,22 @@ body {
 
 .steps {
   border-radius: 50%;
-  border: 2px solid white;
-  color: #fff;
-  //height: 20em;
   height: 24em;
   list-style: none;
   margin: 0 auto;
   position: relative;
-  //width: 20em;
   width: 24em;
   z-index: 0;
 }
+
+.steps.light { border: 2px solid white; }
+.steps.dark { border: 2px solid #373232; }
+
 .steps__icon {
   padding-top: 2.5em;
   width: 50%;
 }
 .steps__description {
-  //bottom: 2.5em;
   bottom: 4.5em;
   font-size: 0.9em;
   padding: 0em 6em;
@@ -44,8 +43,6 @@ body {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 
-  border-bottom: 1px solid #373232;
-  color: #373232;
   display: inline-block;
   font-size: 0.9em;
   padding: 0.2em 0.5em;
@@ -58,7 +55,6 @@ body {
 
 .is-active a {
   background: #373232 !important;
-  //font-size: 2em !important;
 }
 
 #steps-menu ul li {
@@ -68,7 +64,6 @@ body {
   -ms-transition: all 1.2s ease-in-out;
   transition: all 1.2s ease-in-out;
 
-  //border-left: 140px solid transparent;
   border-left: 170px solid transparent;
   border-top: 1px solid transparent;
   font-size: 0.65em;
@@ -85,12 +80,9 @@ body {
   background-size: 100%;
   font-size: 3.5em;
   height: 0.4em;
-  // margin-left: -0.2em;
-  // margin-top: -2em;
   margin-left: -0.15em;
   margin-top: -2.2em;
   position: absolute;
-  //transform: rotate(-29deg);
   transform: rotate(-22deg);
   width: 0.7em;
 }
@@ -101,26 +93,59 @@ body {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
-  background: #FFB533;
   border-radius: 50%;
-  border: 2px solid #fff;
   box-shadow: 0 0 0 0 transparent;
-  color: #fff;
   font-size: 1.6em;
-  //height: 2em;
-  //line-height: 1.8;
   height: 2.6em;
   line-height: 2.2;
   position: absolute;
   text-align: center;
   text-decoration: none;
-  //width: 2em;
   width: 2.6em;
 }
+
 #steps-menu ul li a:hover {
   background: #373232;
-  //box-shadow: 0 0 0px 3px #373232;
 }
+
+.steps.light #steps-menu ul li a {
+  background: #FFB533;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.steps.light #steps-menu ul li a:hover {
+  background: #373232;
+  color: #fff;
+}
+
+.steps.dark #steps-menu ul li a {
+  background: #F2EBEB;
+  border: 2px solid #373232;
+  color: #373232;
+}
+
+.steps.dark #steps-menu ul li.is-active a {
+  color: #fff;
+}
+
+.steps.dark #steps-menu ul li a:hover {
+  background: #373232;
+  color: #fff;
+}
+
+.steps.light { color: #fff; }
+.steps.dark { color: #373232; }
+
+.steps.light .steps__description a {
+  color: #373232;
+  border-bottom: 1px solid #373232;
+}
+.steps.dark .steps__description a {
+  color: #FFB533;
+  border-bottom: 1px solid #FFB533;
+}
+
 
 .step-1 ul li:nth-of-type(1) {
   transform: rotate(-97deg);
