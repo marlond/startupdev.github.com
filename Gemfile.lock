@@ -153,17 +153,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   bourbon
   foreman
   github-pages (= 43)
-  kramdown
-  liquid
-  maruku
   neat
   rake
-  rdiscount
-  redcarpet
   scss_lint
 
 BUNDLED WITH
