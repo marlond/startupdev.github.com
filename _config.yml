@@ -5,11 +5,9 @@ permalink: :pretty
 
 number_of_projects: 80
 
-gems: [bourbon, neat]
-
 sass:
   sass_dir: _sass
-  style: expanded
+  style: :compressed
 
 schedule:
   enabled: false
