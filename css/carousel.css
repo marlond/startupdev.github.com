@@ -74,7 +74,6 @@ body {
 }
 #steps-menu ul li:after {
   content: " ";
-  background: url("http://krystalcampioni.com/testes/arrow.png");
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 3.5em;
@@ -105,6 +104,14 @@ body {
 
 #steps-menu ul li a:hover {
   background: #373232;
+}
+
+.steps.light #steps-menu ul li:after {
+  background: url("../images/2016/arrow-light.svg");
+}
+
+.steps.dark #steps-menu ul li:after {
+  background: url("../images/2016/arrow-dark.svg");
 }
 
 .steps.light #steps-menu ul li a {
