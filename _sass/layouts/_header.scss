@@ -23,10 +23,10 @@
 
   &__logo {
     @include size(rem(137) rem(37));
-    background: url('/images/2016/logo-startupdev.png') no-repeat top center;
+    background: url('/images/2016/startupdev-logo.svg') no-repeat top center;
     display: block;
     float: left;
-    margin-top: 28px;
+    margin-top: 20px;
   }
 }
 
