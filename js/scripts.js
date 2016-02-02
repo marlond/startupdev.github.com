@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+  $('.projects__item').each(function(index, element) {
+      if($(element).attr("href") == "#") {
+        element.style.cursor = "default";
+        $(element).click(function(event){
+          event.preventDefault();
+        });
+      }
+  });
+
+
   $("a[rel^='external']").each(function() { $(this).attr("target","_blank"); });
 
   $('nav, .call-to-action').localScroll({
