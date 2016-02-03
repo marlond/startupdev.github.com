@@ -1,6 +1,6 @@
   -
     name: Perfil Plug
-    url: "http://www.perfilplug.com"
+    url: "#"
     image: /images/projetos/perfilplug.png
   -
     name: Assed & Cavalcante
@@ -12,7 +12,7 @@
     image: /images/projetos/saladeideias.png
   -
     name: Niili
-    url: "http://www.niili.com.br/"
+    url: "#"
     image: /images/projetos/niili.png
   -
     name: Samba Ads
@@ -28,7 +28,7 @@
     image: /images/projetos/seuorientador.png
   -
     name: BRtrax
-    url: http://app.brtrax.com
+    url: "#"
     image: /images/projetos/brtrax.png
   -
     name: RIO EM FOCO
@@ -36,7 +36,7 @@
     image: /images/projetos/rioemfoco.png
   -
     name: Dunno
-    url: http://www.dunno.vc
+    url: "#"
     image: /images/projetos/dunno.png
   -
     name: Vita Corporativa
@@ -44,11 +44,11 @@
     image: /images/projetos/vitacorporativa.png
   -
     name: Alugue Campo e Praia
-    url: http://www.aluguecampoepraia.com.br/
+    url: "#"
     image: /images/projetos/alugue-campo-e-praia.png
   -
     name: Timeeline
-    url: http://www.timeeline.com/
+    url: "#"
     image: /images/projetos/timeeline.png
   -
     name: Meu Baby Chá
@@ -60,11 +60,11 @@
     image: /images/projetos/tempo-eh-dinheiro.png
   -
     name: "Click&amp;Movimento"
-    url: http://www.clickemovimento.com.br
+    url: "#"
     image: /images/projetos/clickemovimento.png
   -
     name: MIIDAH
-    url: http://app.miidah.com
+    url: "#"
     image: /images/projetos/miidah.png
   -
     name: GiftBar
@@ -84,15 +84,15 @@
     image: /images/projetos/innterpretti.png
   -
     name: Orçamento Rápido
-    url: http://app.orcamentorapido.com.br/
+    url: "#"
     image: /images/projetos/orcamento-rapido.png
   -
     name: Incrível MEMO
-    url: http://incrivelmemo.com.br/
+    url: "#"
     image: /images/projetos/memo.png
   -
     name: Mo Recipes
-    url: http://morecipes.com.br/
+    url: "#"
     image: /images/projetos/morecipes.png
   -
     name: Horus
@@ -108,7 +108,7 @@
     image: /images/projetos/feedback-machine.png
   -
     name: Hintask
-    url: http://hintask.com/
+    url: "#"
     image: /images/projetos/hintask.png
   -
     name: Shop My Shop
@@ -116,11 +116,11 @@
     image: /images/projetos/shopmyshop.png
   -
     name: SMB Challenge
-    url: http://smbchallenge.com/
+    url: "#"
     image: /images/projetos/smbchallenge.png
   -
     name: neighbourz
-    url: http://app.neighbourz.com
+    url: "#"
     image: /images/projetos/neighbourz.png
   -
     name: hospedfácil
@@ -128,11 +128,11 @@
     image: /images/projetos/hospedfacil.png
   -
     name: Landing Commerce
-    url: http://app.landingcommerce.com.br/
+    url: "#"
     image: /images/projetos/landing-commerce.png
   -
     name: Mamãe eu Kero
-    url: http://www.mamaeeukero.com.br/
+    url: "#"
     image: /images/projetos/mamaeeukero.png
   -
     name: WEBSIMULADO
@@ -152,11 +152,11 @@
     image: /images/projetos/no-screen.png
   -
     name: Game Quiz
-    url: http://apps.facebook.com/gamequizbr/
+    url: "#"
     image: /images/projetos/gamequiz.png
   -
     name: Given 2 You
-    url: http://www.gv2u.com.br/
+    url: "#"
     image: /images/projetos/given2you.png
   -
     name: Sparkel
@@ -180,7 +180,7 @@
     image: /images/projetos/netadvocacia.png
   -
     name: Ultrapasse
-    url: "http://www.ultrapasseweb.com/"
+    url: "#"
     image: /images/projetos/ultrapasse.png
   -
     name: Publication of Labels
@@ -192,15 +192,15 @@
     image: /images/projetos/turbotaxi.png
   -
     name: Propsharely
-    url: "http://www.propsharely.com/"
+    url: "#"
     image: /images/projetos/propsharely.png
   -
     name: LMT
-    url: https://www.likemytip.com.br/
+    url: "#"
     image: /images/projetos/likemytip.png
   -
     name: Zupty
-    url: http://www.zupty.com/
+    url: "#"
     image: /images/projetos/zupty.png
   -
     name: Amigo não se Compra
