@@ -2,6 +2,14 @@
 
 ## Rodando
 
-Rode com
+Execute no terminal
 
     $ foreman start
+
+
+## Staging
+
+Execute no terminal
+
+  $ rake staging
+

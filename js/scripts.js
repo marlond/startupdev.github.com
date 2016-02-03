@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+  $('.projects__item').each(function(index, element) {
+      if($(element).attr("href") == "#") {
+        element.style.cursor = "default";
+        $(element).click(function(event){
+          event.preventDefault();
+        });
+      }
+  });
+
+
   $("a[rel^='external']").each(function() { $(this).attr("target","_blank"); });
 
   $('nav, .call-to-action').localScroll({
@@ -68,4 +79,13 @@ $(document).ready(function(){
       visible: 1,
       btnGo: ["#projects-slider-navigation .1", "#projects-slider-navigation .2", "#projects-slider-navigation .3"]
   });
+});
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $('.header').css("background", "rgba(55,50,50,0.8)");
+    }
+    else{
+        $('.header').css("background", "rgba(0,0,0,0.0)");
+    }
 });

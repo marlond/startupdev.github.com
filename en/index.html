@@ -1,255 +1,305 @@
 ---
 layout: default-en
 ---
-<div id="presentation-holder">
-  <article id="presentation" class="container">
-    <h2>Your web application ready to be used</h2>
-     <h3> Pioneer methodology for web software development that has delivered more than {{ site.number_of_projects }} projects.</h3>
-    <ul id="workflow">
-      <li id="idea">
-        <div></div>
-        <p>Your<br/>Demand</p>
-      </li>
-      <li class="plus">
-        <div></div>
-      </li>
-      <li id="team">
-        <div></div>
-        <p>2 Developers <br/>&amp; 1 Designer</p>
-      </li>
-      <li class="plus">
-        <div></div>
-      </li>
-      <li id="time">
-        <div></div>
-        <p>1 Working <br/>Week</p>
-      </li>
-      <li class="plus">
-        <div></div>
-      </li>
-      <li id="investment">
-        <div></div>
-        <p>US$ 8,000 <br/>Investiment</p>
-      </li>
-      <li id="equals">
-        <div></div>
-      </li>
-      <li id="online-app">
-        <div></div>
-        <p>Working<br/>Software!</p>
-      </li>
-    </ul>
-    <div id="video-container">
-      <iframe id="presentation-video" width="953" height="536" src="https://www.youtube.com/embed/gZFXo82lXDM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="call-to-action">
-      <a href="#modal" class="button-talk-to-us" title="Hire Us!">Hire Us!</a>
-      <span>or</span>
-      <a href="#what-is-startup-dev" class="button-learn-more" title="Saiba mais"> Learn More</a>
-    </div>
-  </article>
-</div>
-{% if site.schedule.enabled %}
-  <article id="schedule" class="container">
-    <h2>Check when your project could be started ...</h2>
-    <div id="calendar">
-      <table>
-      <tbody>
-        {% for data in site.schedule.data %}
-          <tr>
-            <th>
-              <div class="day">{{ data.month_en }} {{ site.schedule.year }}</div>
-              <div>
-              </div>
-            </th>
-            {% for week in data.weeks %}
-              <td class="{{ week.status }}" >
-                {% if week.date %}
-                  <div class="day">Week of day {{ week.date }}</div>
-                {% endif %}
-                <div class="day-content">
-                  <strong>
-                    {% if week.status == 'client' %}
-                      {{ week.client }}
-                    {% elsif week.status == 'free' %}
-                      Free :)
-                    {% elsif week.status == 'reserved' %}
-                      Reserved
-                    {% elsif week.status == 'unavailable' %}
-                      Unavailable
-                    {% else %}
-                      --
-                    {% endif %}
-                  </strong>
-                </div>
-              </td>
-            {% endfor %}
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    </div>
-  </article>
-{% endif %}
-<div class="dark-background">
-  <article id="testimonials" class="container">
-    <h2>Customer Testimonials</h2>
-    <nav id="controls">
-      <a href="#" id="testimonial-previous" title="Anterior">Previous</a> <a href="#" id="testimonial-next" title="Próximo">Next</a>
-    </nav>
-    <div class="testimonial">
-      <blockquote>
-        <span class="begin-quote">"</span>
-        <div class="slider-container">
-          <ul>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">"The Startup DEV service has overcome our expectations.we've got emphasize exactly the most important targets for the first stage. we're quite  sure that the fast and quality developed product was a great first step for our project! thank you for the experience".</p>
-                <p class="testimonial-author">Matheus Diaz e Ronnie Possatti</p>
-                <p class="testimonial-project">Horus</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">We can only thank the Startup DEV. The development team was extremely professional and managed to surpass all expectations. In 48 hours have a fully functional prototype with a design of choice is something monstrous. Congratulations!</p>
-                <p class="testimonial-author">Rodrigo Soares</p>
-                <p class="testimonial-project">Hintask</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">My experience with the Startup DEV was great. The work goal was delivered on time and with quality. Moreover, the technical advice made ​​all the difference, because the feeling at the end was to have received more than had been planned and contracted.</p>
-                <p class="testimonial-author">José Roberto H. da Gama</p>
-                <p class="testimonial-project">NetAdvocacia</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">Develop our project through the Startup DEV was the quickest way I found to get the project we envision in the air. Besides leaving satisfied with my design in the air in just three days, the process was a real lesson on how to organize projects related to software development. Recommend and I'm sure I will soon turn to other rounds.</p>
-                <p class="testimonial-author">Kauê Linden</p>
-                <p class="testimonial-project">Game Guiz</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">The work done by the team at Startup DEV is fantastic. Technical knowledge and ability of the team to understand the project and draw the MVP not only ensures the delivery of the project within exceptional as the product becomes more intelligent. Aprovadíssimo!</p>
-                <p class="testimonial-author">Amure Pinho</p>
-                <p class="testimonial-project">Amigo Não Se Compra / SyncMobile</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">With the help of the staff of Startup DEV, the Conversion could market a SEO tool innovative, simple and very functional. Our tool has millions of pageviews, which was very important to us.</p>
-                <p class="testimonial-author">Diego Ivo</p>
-                <p class="testimonial-project">Rank Monitor</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">The Startup DEV team brings not only the beloved software in three days, this time they teach us in practice what is a project of LEAN actually played with a lot of quality and whimsy.</p>
-                <p class="testimonial-author">Andre Diamand</p>
-                <p class="testimonial-project">Zupty / VentureOne</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">The experience with the Startup Sidetech DEV was very good. The proposed format is very productive because it uses techniques during the initial meeting which gives an overview of the project, before you even start. The points system gives you the flexibility to define what is really a priority and you can develop the rest later, when customers or investors take an interest in your project. <br> The staff is super responsible and development work was actually done in 48 hours.</p>
-                <p class="testimonial-author">Pablo Braga</p>
-                <p class="testimonial-project">Safetracking / Sidetech</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">The staff Startup DEV was essential to the realization of ContaCal. They not only manjam much software development and have enough experience in web business, which makes them great partners for creating MVP.</p>
-                <p class="testimonial-author">Joaquim Torres</p>
-                <p class="testimonial-project">ContaCal</p>
-              </div>
-            </li>
-            <li>
-              <div class="slider">
-                <p class="testimonial-content">I can confirm that the Startup DEV are extremely experienced people providing great service for people who wish to undertake on the internet and do not have the technological knowledge. However, the methodology is very effective for entrepreneurs who already have the MVP clearly defined so that in fact, the idea can be transformed into a prototype to be tested.</p>
-                <p class="testimonial-author">Mario Sousa de Alencar</p>
-                <p class="testimonial-project">Shopping Passion</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <span class="end-quote">"</span>
-      </blockquote>
-    </div>
-    <div id="more-testimonials">
-      <h3>More testimonials</h3>
 
-      <nav id="video-testimonials">
-        <ul>
-          <li>
-            <a href="/en/videos/arthur-granado.html" class="fancybox">
-              <img src="/images/testimonials/arthur-granado.png" alt="Arthur Granado" />
-              <p>Arthur Granado</p>
-            </a>
-          </li>
-          <li>
-            <a href="/en/videos/amure-pinho.html" class="fancybox">
-              <img src="/images/testimonials/amure-pinho.png" alt="Amure Pinho" />
-              <p>Amure Pinho</p>
-            </a>
-          </li>
-          <li>
-            <a href="/en/videos/cezar-souza.html" class="fancybox">
-              <img src="/images/testimonials/cezar-souza.png" alt="Cezar Souza" />
-              <p>Cezar Souza</p>
-            </a>
-          </li>
-          <li>
-            <a href="/en/videos/juan-bernabo.html" class="fancybox">
-              <img src="/images/testimonials/juan-bernabo.png" alt="Juan Bernabó" />
-              <p>Juan Bernabó</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="call-to-action">
-      <a href="#modal" class="button-talk-to-us" title="Hire Us!">Hire Us!</a>
-    </div>
-  </article>
-</div>
-<article id="developed-projects" class="container">
-  <h2>MORE THAN {{ site.number_of_projects }} SUCCESSFUL PROJECTS!</h2>
-  <div id="developed-projects-slider">
-    <a href="#" id="slider-next" title="Próximo">Próximo</a>
-    <a href="#" id="slider-previous" title="Anterior">Anterior</a>
-    <div>
-      {% include projects.html %}
-    </div>
+<section class="main-banner" id="home">
+
+  <div class="main-banner__tablet">
+    <img src="/images/2016/pic-tablet.png" alt="">
   </div>
-  <div class="call-to-action">
-    <a href="#modal" class="button-talk-to-us" title="Hire Us!">Hire Us!</a>
+
+  <div class="main-banner__content">
+    <h1 class="main-banner__h1">
+      Development and <br>product design solutions <br>for your Startup.
+    </h1>
+    <h2 class="main-banner__h2">
+      We transform your idea into a <strong>prototype for validation</strong> and tests with real users
+      or a <strong>MVP ready to go</strong> within two weeks, with our team of product and Agile experts.
+    </h2>
   </div>
-</article>
-<div class="dark-background without-margin-top">
-  <article id="what-is-startup-dev">
-    <h2>HOW DOES STARTUP DEV WORKS?</h2>
-      <h3>Within a week we conducted a working meeting where we understand your needs,<br/>
-        we set up the project scope and deliver an online system up and running.</h3>
-    <article id="meeting" class="container">
-      <ul>
-        <li>Project <br />Understanding</li>
-        <li id="draw">User<br />Interface</li>
-        <li id="flow">User <br />Experience</li>
-        <li id="writer">Tasks<br />Break Down</li>
-        <li id="define">Priority<br />Guidelines</li>
-      </ul>
-      <div id="dev-7-days">
-     <h3> 1 Working Week <br/>of Development </h3>
-       <p> You will be hiring a team <br/> for an interation of one week. </p>
-       <h4>We delivery the system <br/> online and ready to be used! </h4>
-       <a href="http://www.videolog.tv/helabsoficial" title="To know more about these steps">To know more<br />about these steps<br/><span>Watch the videos</span></a>
+
+</section>
+
+<section class="protoapp" id="protoapp">
+  <div class="protoapp__content">
+
+    <div class="protoapp__col">
+      <!-- Graphics -->
+      <div class="wrapper">
+        <div id="steps" class="steps light">
+          <div id="step-1" class="step-content">
+            <img src="/images/2016/papp-lifecycle-01.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-01.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              A ProtoApp project starts <span>bringing up the problems</span> from your idea.
+              <br>
+              <a href="#step-2" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-2" class="step-content">
+            <img src="/images/2016/papp-lifecycle-02.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-02.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              On the second day, we put up together all the <span>possible solutions.</span>
+              <br>
+              <a href="#step-3" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-3" class="step-content">
+            <img src="/images/2016/papp-lifecycle-03.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-03.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Drawing the first <span>wireframes</span> fill up the third day of the project.
+              <br>
+              <a href="#step-4" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-4" class="step-content">
+            <img src="/images/2016/papp-lifecycle-04.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-04.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Together, we prepare product's interface <span>mockups</span> on the fourth day of the week.
+              <br>
+              <a href="#step-5" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-5" class="step-content">
+            <img src="/images/2016/papp-lifecycle-05.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-05.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              We <span>test and validate</span> the solutions with <span>real users</span> finishing the first round.
+              <br>
+              <a href="#step-6" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-6" class="step-content">
+            <img src="/images/2016/papp-lifecycle-06.svg" onerror="this.onerror=null; this.src='/images/2016/papp-lifecycle-06.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Second week: we transform your product into a high-fidelity <span>interactive prototype.</span>
+              <br>
+              <a href="#step-1" class="read-more">Back to start</a>
+            </div>
+          </div>
+          <div id="steps-menu" class="step-1">
+            <ul>
+              <li class="is-active"><a id="link1" href="#step-1">1</a></li>
+              <li><a id="link2" href="#step-2">2</a></li>
+              <li><a id="link3" href="#step-3">3</a></li>
+              <li><a id="link4" href="#step-4">4</a></li>
+              <li><a id="link5" href="#step-5">5</a></li>
+              <li><a id="link6" href="#step-6">6</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </article>
-  <div class="call-to-action">
-    <a href="#modal" class="button-talk-to-us" title="Hire Us!">Hire Us!</a>
+      <!-- Graphics -->
+    </div>
+
+    <div class="protoapp__col">
+      <h2 class="protoapp__title">ProtoApp</h2>
+      <p class="protoapp__description">
+        Through design thinking and UX concepts,
+        we find out problemas e bring <strong>solutions to your idea</strong>,
+        delivering a <strong>prototype</strong> for demonstration, validation
+        and tests with real users, all that <strong>within two weeks.</strong>
+      </p>
+      <a href="#modal" class="btn btn--primary" id="cta-hire-protoapp">Hire Us</a>
+    </div>
+
   </div>
-  </article>
-</div>
+</section>
+
+<section class="mvp" id="mvp">
+  <div class="mvp__content">
+
+    <div class="mvp__col">
+      <h2 class="mvp__title">MVP Expresso</h2>
+      <p class="mvp__description">
+        Detailing your needs, we plan the whole project
+        and deliver a <strong>web or mobile app ready</strong> to hit your
+        audience within one (web) or two working weeks (mobile),
+        at a fixed investment.
+      </p>
+      <a href="#modal" class="btn btn--primary" id="cta-hire-mvpexpresso">Hire Us</a>
+    </div>
+
+    <div class="mvp__col">
+      <!-- Graphics -->
+      <div class="wrapper">
+        <div id="steps" class="steps dark">
+          <div id="step-1" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-01.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-01.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              First day is dedicated to planning the week and <span>getting to know your idea.</span>
+              <br>
+              <a href="#step-2" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-2" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-02.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-02.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Second step, we <span>draw screens</span> on paper and decide together what's best for your product.
+              <br>
+              <a href="#step-3" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-3" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-03.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-03.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Following, we split the planning into <span>tasks</span> for the next days of your project.
+              <br>
+              <a href="#step-4" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-4" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-04.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-04.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              End of the day one: we estimate tasks and you <span>prioritize</span> it, deciding what's most important for your MVP.
+              <br>
+              <a href="#step-5" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-5" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-05.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-05.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              We dedicate the next days to the <span>development</span> of the tasks in the order you've chosen before.
+              <br>
+              <a href="#step-6" class="read-more">Next step</a>
+            </div>
+          </div>
+          <div id="step-6" class="step-content">
+            <img src="/images/2016/mvpe-lifecycle-06.svg" onerror="this.onerror=null; this.src='/images/2016/mvpe-lifecycle-06.svg'" class="steps__icon"/>
+            <div class="steps__description">
+              Last step is dedicated to tests and <span>final delivery.</span> There you go: you get an App ready to use!
+              <br>
+              <a href="#step-1" class="read-more">Back to start</a>
+            </div>
+          </div>
+          <div id="steps-menu" class="step-1">
+            <ul>
+              <li class="is-active"><a id="link1" href="#step-1">1</a></li>
+              <li><a id="link2" href="#step-2">2</a></li>
+              <li><a id="link3" href="#step-3">3</a></li>
+              <li><a id="link4" href="#step-4">4</a></li>
+              <li><a id="link5" href="#step-5">5</a></li>
+              <li><a id="link6" href="#step-6">6</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Graphics -->
+    </div>
+
+  </div>
+</section>
+
+<section class="methodology" id="result">
+  <div class="methodology__content">
+
+    <span class="methodology__result">result</span>
+    <h2 class="methodology__title">Metodology</h2>
+    <p class="methodology__description">
+      Find out how your idea will become a successful <br>
+      App or Prototype within one or two working weeks.
+    </p>
+
+    <a class="fancybox methodology__play" href="/videos/apresentation.html">
+      <span class="icon"></span>
+      <span class="text">Watch our video</span>
+    </a>
+
+  </div>
+</section>
+
+
+<section class="testimonials">
+  <div class="testimonials__content">
+
+    <span class="testimonials__result">result</span>
+    <h2 class="testimonials__title">Testimonials</h2>
+
+    <div class="slider-testimonial">
+
+      <ul class="bxslider">
+      {% for testimonial in site.data.testimonials-en %}
+
+        <li>
+          <p class="slider-testimonial__quote">
+            {{ testimonial.quote }}
+          </p>
+
+          <div class="slider-testimonial__picture">
+            <img src="/images/avatars/{{ testimonial.picture }}.png" alt="Author">
+          </div>
+
+          <div class="slider-testimonial__author">{{ testimonial.author }}</div>
+          <div class="slider-testimonial__project">{{ testimonial.project }}</div>
+        </li>
+        <!-- end quote -->
+
+      {% endfor %}
+      </ul>
+
+      <!-- slider controls -->
+      <span class="slider-testimonial__prev"></span>
+      <span class="slider-testimonial__next"></span>
+
+    </div>
+    <!-- slider -->
+
+  </div>
+
+  <div class="testimonials-video">
+
+    <a class="testimonials-video__box fancybox" href="/videos/arthur-granado.html">
+      <figure><img src="/images/2016/testimonial1.jpg" alt="Arthur Granado"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Arthur Granado</span>
+        <span class="testimonials-video__project">21212</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" href="/videos/amure-pinho.html" >
+      <figure><img src="/images/2016/testimonial2.jpg" alt="Amure Pinho"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Amure Pinho</span>
+        <span class="testimonials-video__project">Amigo Não Se Compra</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" href="/videos/cezar-souza.html">
+      <figure><img src="/images/2016/testimonial3.jpg" alt="Cezar Souza"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Cezar Souza</span>
+        <span class="testimonials-video__project">VentureOne</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" href="/videos/juan-bernabo.html">
+      <figure><img src="/images/2016/testimonial4.jpg" alt="Juan Bernabó"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Juan Bernabó</span>
+        <span class="testimonials-video__project">TeamWare</span>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="projects">
+  <div class="projects__content">
+    <span class="projects__result">result</span>
+    <h2 class="projects__title">Success</h2>
+    <p class="projects__description">
+      More than 80 well succeeded projects.
+    </p>
+  </div>
+
+  <div class="projects__grid">
+  {% for project in site.data.projects %}
+    <a class="projects__item" href="{{ project.url }}" target="_blank">
+      <img src="{{ project.image }}" alt="{{ project.name }}" />
+      <span class="projects__name">{{ project.name }}</span>
+    </a>
+  {% endfor %}
+  </div>
+</section>
+
 {% include contact-modal.html %}
