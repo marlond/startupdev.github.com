@@ -147,6 +147,11 @@ body {
   color: #373232;
   border-bottom: 1px solid #373232;
 }
+
+.steps.light .steps__description a:hover{
+  color: #FFF;
+};
+
 .steps.dark .steps__description a {
   color: #FFB533;
   border-bottom: 1px solid #FFB533;
