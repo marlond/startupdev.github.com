@@ -1,67 +1,59 @@
 
 //============== Themes ==============//
-// Light
-.steps.light {
-  color: #fff;
-  border: 2px solid #fff;
-  @include media($screen-tiny) {  margin-bottom: 3em; }
-  ul li{
-    &::after {
-      background: url("../images/2016/arrow-light.svg");
+
+$theme-colors: dark $dark-color $light-color, light $light-color $dark-color;
+
+.steps {
+
+    @include media($screen-tiny) {
+      margin-bottom: 3em;
     }
-    a {
-      background: $background-color;
-      border: 2px solid #fff;
-      color: #fff;
-        box-shadow: 0 0 0 0px transparent;
-    }
-    a:hover {
-      background: $dark-color;
-      box-shadow: 0 0 0 3px $dark-color;
+
+    @each $theme, $color, $color-inverse in $theme-colors {
+      &.#{$theme} {
+        border: 2px solid #{$color};
+        color: #{$color};
+        ul li {
+
+          &::after {
+            background: url("../images/2016/arrow-#{$theme}.svg");
+          }
+
+          a {
+            @if $theme == light {
+              background: $background-color;
+            } @else {
+              background: $whisper;
+            }
+
+            border: 2px solid #{$color};
+            box-shadow: 0 0 0 0px transparent;
+            color: #{$color};
+          }
+
+          a:hover {
+            background: #{$color-inverse};
+            box-shadow: 0 0 0 3px #{$color-inverse};
+          }
+        }
+        .steps__description a {
+          @if $theme == light {
+            border-bottom: 1px solid #{$color-inverse};
+            color: #{$color-inverse};
+          } @else {
+            border-bottom: 1px solid $background-color;
+            color: $background-color;
+          }
+
+          &:hover {
+            background: #{$color-inverse};
+            color: #{$color};
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
     }
   }
-  .steps__description a {
-    color: $dark-color;
-    border-bottom: 1px solid $dark-color;
-    &:hover {
-      color: #fff;
-      background: $dark-color;
-    }
-  }
-}
-
-
-// Dark
-.steps.dark {
-  color: $dark-color;
-  border: 2px solid $dark-color;
-  @include media($screen-tiny) {  margin-bottom: 3em; }
-  ul li{
-    &::after {
-      background: url("../images/2016/arrow-dark.svg");
-    }
-    a {
-      background: #f2ebeb;
-      border: 2px solid $dark-color;
-      color: $dark-color;
-      box-shadow: 0 0 0 0px transparent;
-    }
-    a:hover {
-      background: $background-color;
-      box-shadow: 0 0 0 3px $background-color;
-    }
-  }
-  .steps__description a {
-    color: $background-color;
-    border-bottom: 1px solid $background-color;
-    &:hover {
-      color: $dark-color;
-      background: $background-color;
-    }
-  }
-}
-
-
 
 //============== Structure ==============//
 
