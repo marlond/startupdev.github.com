@@ -153,47 +153,19 @@
   }
 }
 
-@for $i from 1 through 6 {
-  .step-1 {
-    $new-angle: (60*$i)-157;
-      ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-      a { transform: rotate(#{-$new-angle}deg); }
+$angle-list: step-1 -200, step-2 -140, step-3 -80, step-4 -20, step-5 40, step-6 100;
+
+@each $step, $angle in $angle-list {
+  .#{$step} {
+    @for $i from 1 through 6 {
+      $new-angle: (60*$i)-$angle;
+      ul li:nth-of-type(#{$i}) {
+        transform: rotate(#{$new-angle}deg);
+        a {
+          transform: rotate(#{-$new-angle}deg);
+        }
+      }
     }
-  }
-
-  .step-2 {
-      $new-angle: (60*$i)-217;
-        ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-        a { transform: rotate(#{-$new-angle}deg); }
-      }
-  }
-
-  .step-3 {
-      $new-angle: (60*$i)-277;
-        ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-        a { transform: rotate(#{-$new-angle}deg); }
-      }
-  }
-
-  .step-4 {
-      $new-angle: (60*$i)-337;
-        ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-        a { transform: rotate(#{-$new-angle}deg); }
-      }
-  }
-
-  .step-5 {
-      $new-angle: (60*$i)-397;
-        ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-        a { transform: rotate(#{-$new-angle}deg); }
-      }
-  }
-
-  .step-6 {
-      $new-angle: (60*$i)-457;
-        ul li:nth-of-type(#{$i}){ transform: rotate(#{$new-angle}deg);
-        a { transform: rotate(#{-$new-angle}deg); }
-      }
   }
 }
 
