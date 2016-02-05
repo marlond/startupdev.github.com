@@ -17,11 +17,16 @@ $(function() {
   //---------------------------------------------------------------
   var $btnMenu = $('.js-toggle-menu');
   var $navbar  = $('.js-navbar');
+  var $menuItem = $('.header-navigation__item');
 
   $btnMenu.on('click', function(e) {
     e.preventDefault();
     $btnMenu.toggleClass('toggle--close');
     $navbar.toggleClass('header-navigation--is-open');
+  });
+  $menuItem.on('click', function(e) {
+    $navbar.removeClass('header-navigation--is-open');
+    $btnMenu.toggleClass('toggle--close');
   });
 
 });

@@ -27,6 +27,9 @@
     display: block;
     float: left;
     margin-top: 20px;
+    @include media($screen-small) {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -39,18 +42,25 @@
     @include transition(.3s);
     -webkit-transform: none;
     background-color: $supernova;
+    border-top: 68px solid $dark-color;
     height: 0;
     left: -15px;
+    margin: 0;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     right: -15px;
-    top: 60px;
+    top: 0px;
     transform: none;
-    z-index: 5;
+    z-index: -1;
     &--is-open {
-      height: auto;
-      padding-top: 20px;
+      border-top: 68px solid $dark-color;
+      position: fixed;
+      height: 100%;
+      margin-top: 0;
       padding-bottom: 25px;
+      padding-top: 30px;
+      top: 0;
+      z-index: -1;
     }
   }
 
@@ -78,6 +88,11 @@
       float: right;
       margin-bottom: 0.5rem;
       margin-top: -0.5rem;
+      @include media($screen-small) {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+      }
     }
 
     &:hover {
@@ -122,6 +137,7 @@
 .btn-toggle {
   @include vertical-align();
   cursor: pointer;
+  margin-top: 8px;
   position: absolute;
   right: rem(20);
   text-decoration: none;
@@ -150,9 +166,19 @@
     }
   }
 
-  // hides 'menu' text
+  // hides 'menu' text, increases the touch area of the button
   > span {
-    @extend %sr-only;
+     border: 0 none;
+     color: transparent;
+     height: 40px;
+     margin: 0;
+     overflow: hidden;
+     padding: 0;
+     position: fixed;
+     text-indent: 100px;
+     top: -23px;
+     width: 40px;
+    // @extend %sr-only;
   }
 
   // top and bottom rows
