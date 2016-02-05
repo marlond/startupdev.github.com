@@ -353,7 +353,7 @@ body {
     color: $white;
     font-size: rem(22);
     font-weight: 300;
-    z-index: 999;
+    z-index: 100;
 
     @include media($screen-small) {
       @include position(absolute, null null -50px 50px);
@@ -375,7 +375,7 @@ body {
     color: $white;
     font-size: rem(22);
     font-weight: 300;
-    z-index: 999;
+    z-index: 100;
 
     @include media($screen-small) {
       @include position(absolute, null 50px -50px null);
