@@ -48,9 +48,17 @@
     transform: none;
     z-index: 5;
     &--is-open {
-      height: auto;
-      padding-top: 20px;
+      border-top: 68px solid $dark-color;
+      position: fixed;
+      height: 100%;
+      margin-top: 0;
       padding-bottom: 25px;
+      padding-top: 30px;
+      top: 0;
+      z-index: -1;
+      // height: auto;
+      // padding-top: 20px;
+      // padding-bottom: 25px;
     }
   }
 
@@ -122,6 +130,7 @@
 .btn-toggle {
   @include vertical-align();
   cursor: pointer;
+  margin-top: 8px;
   position: absolute;
   right: rem(20);
   text-decoration: none;
