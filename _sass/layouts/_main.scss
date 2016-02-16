@@ -112,7 +112,9 @@ body {
     }
 
     &--pic {
-
+      @include media($screen-small) {
+        margin-bottom: 45px;
+      }
     }
   }
 
@@ -160,6 +162,12 @@ body {
       img {
         max-width: 80%;
         margin: 0 auto;
+      }
+    }
+
+    &--pic {
+      @include media($screen-small) {
+        margin-top: 45px;
       }
     }
   }
