@@ -86,37 +86,146 @@ $(document).ready(function(){
 
       Field43:{
         //name
-        required: "Por favor, preencha com seu nome."
+        required: "Por favor, preencha com seu nome.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
       },
 
       Field44:{
         // sobrenome
-        required: "Por favor, preencha com seu sobrenome."
+        required: "Por favor, preencha com seu sobrenome.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
       },
 
       Field41:{
         // projeto e empresa
-        required: "Por favor, preencha com o nome do projeto."
+        required: "Por favor, preencha com o nome do projeto.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
       },
 
       Field3:{
         // email
-        required: "Por favor, preencha com um e-mail válido."
+        required: "Por favor, preencha com um e-mail válido.",
+        email: "Por favor, preencha com um e-mail válido.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
       },
 
       Field16:{
         // telefone
-        required: "Por favor, preencha com um telefone válido."
+        required: "Por favor, preencha com um telefone válido.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
+        number: "Por favor, preencha com um telefone válido.",
       },
 
       Field52:{
         // skype
-        required: "Por favor, preencha com seu nome."
+        required: "Por favor, preencha com seu nome.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
       },
 
       Field48:{
         // descriçao do projeto
-        required: "Por favor, descreva brevemente seu projeto."
+        required: "Por favor, descreva brevemente seu projeto.",
+        minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
+      }
+
+    },
+
+    // submit form
+    submitHandler: function(form) {
+      form.submit();
+    }
+
+
+  });
+
+  // Form Wufoo validated with jquery - EN
+  //---------------------------------------------------------------
+  $(".js-register-form-en").validate({
+
+    //debug: true,
+
+    // Define as regras
+    rules:{
+
+      Field43:{
+        //name
+        required: true, minlength: 2
+      },
+
+      Field44:{
+        // sobrenome
+        required: true, minlength: 2
+      },
+
+      Field41:{
+        // projeto e empresa
+        required: true, minlength: 2
+      },
+
+      Field3:{
+        // email
+        required: true, email: true
+      },
+
+      Field16:{
+        // telefone
+        //number: true,
+        required: true,
+        minlength: 14,
+        maxlength: 15
+      },
+
+      Field52:{
+        // skype
+        required: false, minlength: 2
+      },
+
+      Field48:{
+        // descriçao do projeto
+        required: true, minlength: 2
+      }
+
+    },
+
+    // Define as mensagens de erro para cada regra
+    messages:{
+
+      maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+      minlength: jQuery.validator.format("Please enter at least {0} caracteres"),
+
+      Field43:{
+        //name
+        required: "Please fill out this field with your name"
+      },
+
+      Field44:{
+        // sobrenome
+        required: "Please fill out this field with your last name"
+      },
+
+      Field41:{
+        // projeto e empresa
+        required: "Please fill out with your project's name or company"
+      },
+
+      Field3:{
+        // email
+        required: "Please fill out this field with your email address"
+      },
+
+      Field16:{
+        // telefone
+        required: "Please fill out this field with your phone number"
+      },
+
+      Field52:{
+        // skype
+        required: "Please fill out this field with your username"
+      },
+
+      Field48:{
+        // descriçao do projeto
+        required: "Please, describe your project for us."
       }
 
     },
@@ -130,10 +239,7 @@ $(document).ready(function(){
   });
 
   jQuery.extend(jQuery.validator.messages, {
-    maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
-    minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
-    email: "Por favor, preencha com um e-mail válido.",
-    number: "Por favor, preencha com um telefone válido.",
+
   });
 
   // Hamburger mobile menu
