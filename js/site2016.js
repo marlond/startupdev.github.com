@@ -13,6 +13,22 @@ $(document).ready(function(){
     responsive: true
   });
 
+  // Phone number mask
+  //---------------------------------------------------------------
+  $("#Field16").mask("(99) 9999?9-9999");
+  $("#Field16").on("blur", function() {
+      var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
+
+      if( last.length == 3 ) {
+          var move = $(this).val().substr( $(this).val().indexOf("-") - 1, 1 );
+          var lastfour = move + last;
+
+          var first = $(this).val().substr( 0, 9 );
+
+          $(this).val( first + '-' + lastfour );
+      }
+  });
+
   // Form Wufoo validated with jquery
   //---------------------------------------------------------------
   $(".js-register-form").validate({
@@ -44,7 +60,9 @@ $(document).ready(function(){
 
       Field16:{
         // telefone
-        required: true, number: true
+        required: true,
+        minlength: 14,
+        maxlength: 15
       },
 
       Field52:{

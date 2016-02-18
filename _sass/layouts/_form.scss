@@ -37,6 +37,8 @@
 
   //submit
   input.submit {
+    background: url('/images/arrow-submit.svg') no-repeat center 40px $nightrider;
+    padding: rem(13) rem(46) rem(23);
     border: 0;
     outline: none;
     float: right;
