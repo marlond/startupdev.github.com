@@ -66,13 +66,13 @@
 
     // valid
     &.valid {
-      background: url('../images/valid-input.png') no-repeat center right 10px;
+      background: url('../images/valid-input.png') no-repeat center right 20px;
     }
   }
 
   // errors
   input.error {
-    background: url('../images/invalid-input.png') no-repeat center right 4%;
+    background: url('../images/invalid-input.png') no-repeat center right 20px;
     border: 1px solid #D0021B;
   }
 

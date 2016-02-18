@@ -27,6 +27,9 @@ $(document).ready(function(){
 
           $(this).val( first + '-' + lastfour );
       }
+
+      $("#Field16").valid();
+
   });
 
   // Form Wufoo validated with jquery
@@ -60,6 +63,7 @@ $(document).ready(function(){
 
       Field16:{
         // telefone
+        //number: true,
         required: true,
         minlength: 14,
         maxlength: 15
