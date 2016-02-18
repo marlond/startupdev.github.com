@@ -71,7 +71,7 @@ $(document).ready(function(){
 
       Field52:{
         // skype
-        required: true, minlength: 2
+        required: false, minlength: 2
       },
 
       Field48:{
