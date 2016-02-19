@@ -56,13 +56,13 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
-  padding: 35px;
+  padding: 40px;
 
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
   color: #2b2e38;
-  background: #fff;
+  background: #F2EBEB;
 }
 
 .remodal.remodal-is-opening,
@@ -296,7 +296,7 @@
 
 @media only screen and (min-width: 641px) {
   .remodal {
-    max-width: 700px;
+    max-width: 799px;
   }
 }
 
@@ -304,7 +304,7 @@
    ========================================================================== */
 
 .lt-ie9 .remodal-overlay {
-  background: #2b2e38;
+  background: rgba(0,0,0,0.70);
 }
 
 .lt-ie9 .remodal {
