@@ -15,24 +15,27 @@ body {
 }
 
 .main-banner {
-  background: url('/images/2016/background-header.jpg') no-repeat center center $nightrider;
+  background: url('/images/2016/cover.jpg') no-repeat center center $nightrider;
   background-size: cover;
   min-height: rem(800);
   width: 100%;
 
   @include media($screen-small) {
-    background: url('/images/2016/background-header-mobile.jpg') no-repeat center center $nightrider;
+    background: url('/images/2016/cover-mobile.jpg') no-repeat center center $nightrider;
     background-size: cover;
     min-height: rem(520);
   }
 
   &__tablet {
     @include span-columns(4 of 12);
+    float: right;
+    display: none;
 
     img {
-      max-width: 590px;
-      padding-top: 150px;
+      max-width: 390px;
+      padding-top: 180px;
       width: 100%;
+      float: right;
     }
 
     @include media($screen-small) {
@@ -41,15 +44,15 @@ body {
   }
 
   &__content {
-    @include span-columns(8 of 12);
     max-width: 700px;
     padding-top: rem(200);
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
 
     @include media($screen-small) {
       @include span-columns(12);
       text-align: center;
-      @include pad(150px $base-spacing);
+      @include pad(120px $base-spacing);
     }
 
   }
@@ -82,7 +85,6 @@ body {
 
     strong {
       font-weight: 600;
-      text-decoration: underline;
     }
   }
 }
