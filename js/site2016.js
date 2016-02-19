@@ -29,4 +29,14 @@ $(function() {
     $btnMenu.toggleClass('toggle--close');
   });
 
+  // Hash links
+  //---------------------------------------------------------------
+  $('a.hash').click(function (event) {
+    event.preventDefault();
+    if(history.pushState) {
+      history.pushState(null, null, $(this).attr('href'));
+    }
+    return false;
+  });
+
 });
