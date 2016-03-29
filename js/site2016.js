@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  var ptPage = $('html[lang=pt]');
   // Slider of testimonials
   //---------------------------------------------------------------
   $('.bxslider').bxSlider({
@@ -15,8 +16,8 @@ $(document).ready(function(){
 
   // Phone number mask
   //---------------------------------------------------------------
-  $("#Field16").mask("(99) 9999?9-9999");
-  $("#Field16").on("blur", function() {
+  ptPage.find("#Field16").mask("(99) 9999?9-9999");
+  ptPage.find("#Field16").on("blur", function() {
       var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
 
       if( last.length == 3 ) {
@@ -170,9 +171,7 @@ $(document).ready(function(){
       Field16:{
         // telefone
         //number: true,
-        required: true,
-        minlength: 14,
-        maxlength: 15
+        required: true
       },
 
       Field52:{
