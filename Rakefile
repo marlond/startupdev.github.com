@@ -25,6 +25,9 @@ task :staging do
   puts '=> Change CNAME...'
   File.open('CNAME', 'w') { |file| file.write 'staging.startupdev.com.br' }
 
+  puts '=> Change contact modal...'
+  cp('_includes/contact-modal-staging.html', '_includes/contact-modal.html')
+
   puts '=> Add everything...'
   system 'git add --all'
 
