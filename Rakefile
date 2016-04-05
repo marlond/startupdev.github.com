@@ -27,6 +27,7 @@ task :staging do
 
   puts '=> Change contact modal...'
   cp('_includes/contact-modal-staging.html', '_includes/contact-modal.html')
+  cp('_includes/contact-modal-en-staging.html', '_includes/contact-modal-en.html')
 
   puts '=> Add everything...'
   system 'git add --all'
