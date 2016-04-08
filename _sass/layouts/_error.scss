@@ -1,19 +1,20 @@
 .main-error {
   background: url('/images/2016/bg_404.jpg') no-repeat center center $nightrider;
+  background-position: 7%;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
 
   &__content {
     max-width: 960px;
-    padding-top: 40vh;
+    padding-top: 35vh;
     text-align: left;
     margin: 0 auto;
-    vertical-align: middle;
+    padding-left: 20px;
 
     @include media($screen-small) {
       @include span-columns(12);
-      padding-left: 20px;
+
     }
 
   }
@@ -21,26 +22,25 @@
   &__h1 {
     color: $orangey-yellow;
     font-family: $heading-font-family;
-    font-size: 48px;
+    font-size: rem(64);
     font-weight: 900;
     margin-bottom: rem(5);
 
-    // @include media($screen-small) {
-    //   font-size: 27px;
-    //   letter-spacing: .6px;
-    // }
+    @include media($screen-small) {
+      font-size: rem(54);
+    }
 
   }
 
   &__h2 {
     color: $white;
     font-family: $heading-font-family;
-    font-size: 30px;
+    font-size: rem(40);
     font-weight: 200;
-    max-width: 385px;
+    max-width: 550px;
 
     @include media($screen-small) {
-      font-size: 25px;
+      font-size: 28px;
     }
 
     strong {
@@ -50,14 +50,12 @@
 
   &__subtitle {
     color: $greyish;
-    font-size: 20px;
+    font-size: rem(30);
     letter-spacing: .2px;
 
-    // @include media($screen-small) {
-    //   font-size: 12px;
-    //   line-height: .6;
-    //   letter-spacing: .2px;
-    // }
+    @include media($screen-small) {
+      font-size: rem(24);
+    }
 
   }
 }
