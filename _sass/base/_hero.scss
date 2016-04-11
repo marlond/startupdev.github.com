@@ -1,0 +1,24 @@
+.hero {
+  padding: 290px 50px 0;
+  text-align: center;
+
+  &--protoapp {
+    $height: 720px;
+    @include retina-image('../images/2016/background-protoapp', 1440px $height);
+    height: $height;
+  }
+
+  &__title {
+    color: $supernova;
+    font: 700 40px $heading-font-family;
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: auto;
+    max-width: 550px;
+  }
+
+}
