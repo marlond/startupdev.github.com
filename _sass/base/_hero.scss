@@ -17,7 +17,7 @@
 
   &__text {
     font-size: 32px;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: auto;
     max-width: 800px;
   }
@@ -25,7 +25,7 @@
   &__icon {
     $size: 55px;
     @include size($size);
-    background-image: url(/images/2016/icon-scrolling.svg);
+    background-image: url('/images/2016/icon-scrolling.svg');
     bottom: 25px;
     display: block;
     left: 50%;

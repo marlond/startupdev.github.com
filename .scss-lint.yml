@@ -1,0 +1,9 @@
+scss_files: '_sass/{base,layouts}/*.scss'
+
+linters:
+  SelectorDepth:
+    max_depth: 4
+  NestingDepth:
+    max_depth: 4
+  SelectorFormat:
+    convention: 'hyphenated_BEM'
