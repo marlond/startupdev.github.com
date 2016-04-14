@@ -6,7 +6,7 @@
 
   &--protoapp {
     $height: 720px;
-    @include retina-image('../images/2016/background-protoapp', 1440px $height);
+    @include retina-image('../images/2016/background-protoapp', 1440px $height, 'png', null, '@2x');
     background-repeat: no-repeat;
     background-size: cover;
     height: $height;
