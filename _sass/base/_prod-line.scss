@@ -1,5 +1,7 @@
 .prod-line {
   $height: 100vh;
+  $top-padding: 50px;
+
   background: $supernova;
   transition: .2s;
 
@@ -100,6 +102,7 @@
     display: flex;
     justify-content: center;
     min-height: $height;
+    padding-top: $top-padding;
     position: absolute;
     width: 100%;
 
@@ -116,6 +119,7 @@
 
   &__protos {
     opacity: 0;
+    pointer-events: none;
     transform: translateY(-250px);
     transition: .5s;
 
@@ -127,16 +131,22 @@
 
   &__proto {
     max-height: calc(100vh - 140px);
+    opacity: 0;
     padding-right: 100px;
+    transition: .2s opacity;
 
     &--fixed {
       position: absolute;
-      top: 50%;
+      top: calc(50% + #{$top-padding / 2});
       transform: translateY(-50%);
     }
 
     &--invisible {
       visibility: hidden;
+    }
+
+    &.is-active {
+      opacity: 1;
     }
   }
 

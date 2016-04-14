@@ -8,7 +8,8 @@ $(function () {
   var $nav = $('#prod-line-nav');
   var $navItem = $nav.find('.prod-line__nav-item');
   var $protos = $('#prod-line-protos');
-  var $bgs = $('#prod-line-bgs');
+  var $protoItems = $protos.find('img');
+  var $bgs = $('#prod-line-bgs').children();
   var activeClass = 'is-active';
   var visibleClass = 'is-visible';
   var startIndex = 1;
@@ -43,7 +44,7 @@ $(function () {
     index = index < 0 ? 0 : index;
     $main.attr('data-index', index);
 
-    $.each([ $navItem, $protos.children(), $bgs.children() ], function () {
+    $.each([ $navItem, $protoItems, $bgs ], function () {
       $(this)
         .removeClass(activeClass)
         .eq(index)
