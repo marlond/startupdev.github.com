@@ -3,6 +3,7 @@ $(function () {
   /**
    * settings
    */
+  var $header = $('#home-section');
   var $main = $('#prod-line');
   var $nav = $('#prod-line-nav');
   var $navItem = $nav.find('.prod-line__nav-item');
@@ -38,6 +39,7 @@ $(function () {
    * @param {int} index [current index]
    */
   function updateState(index) {
+    $header[ index < 0 ? 'removeClass' : 'addClass' ]('header--dark');
     index = index < 0 ? 0 : index;
     $main.attr('data-index', index);
 

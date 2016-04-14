@@ -10,6 +10,10 @@
   position: fixed;
   z-index: 900;
 
+  &--dark {
+    background: $header-bg;
+  }
+
   &::before {
     @include position(absolute, 0 null null 0);
     @include size(100% rem(5));
