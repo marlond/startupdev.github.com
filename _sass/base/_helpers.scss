@@ -1,3 +1,12 @@
 .sr-only {
   @extend %sr-only;
 }
+
+.width-limiter {
+  margin: auto;
+  max-width: $max-width;
+
+  &--fixed {
+    width: $max-width;
+  }
+}

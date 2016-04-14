@@ -1,4 +1,5 @@
 .hero {
+  min-height: 100vh;
   padding: 280px 50px 0;
   position: relative;
   text-align: center;
@@ -6,7 +7,10 @@
   &--protoapp {
     $height: 720px;
     @include retina-image('../images/2016/background-protoapp', 1440px $height);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: $height;
+    z-index: 20;
   }
 
   &__title {
