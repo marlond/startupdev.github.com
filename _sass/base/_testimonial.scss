@@ -1,0 +1,41 @@
+.testimonial {
+  padding: 100px 0;
+  text-align: center;
+
+  &__quote {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 60px 100px;
+    position: relative;
+
+    &::before,
+    &::after {
+      color: $supernova;
+      font: 700 200px $heading-font-family;
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      content: '{';
+      left: 0;
+    }
+
+    &::after {
+      content: '}';
+      right: 0;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    margin: 10px 0 -5px;
+  }
+
+  &__info {
+    color: $supernova;
+    font-weight: 700;
+    margin: 0;
+  }
+}
