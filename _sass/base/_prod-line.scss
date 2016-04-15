@@ -130,7 +130,7 @@
   }
 
   &__proto {
-    max-height: calc(100vh - 140px);
+    height: calc(100vh - 160px);
     opacity: 0;
     padding-right: 100px;
     transition: .2s opacity;
@@ -143,6 +143,14 @@
 
     &--invisible {
       visibility: hidden;
+    }
+
+    &--last {
+      bottom: 0;
+      height: calc(100vh - 105px);
+      margin-left: -89px;
+      top: auto;
+      transform: none;
     }
 
     &.is-active {
