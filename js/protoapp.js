@@ -9,7 +9,8 @@ $(function () {
   var $navItem = $nav.find('.prod-line__nav-item');
   var $protos = $('#prod-line-protos');
   var $protoItems = $protos.find('img');
-  var $bgs = $('#prod-line-bgs').children();
+  var $bgs = $('#prod-line-bgs');
+  var $bgsItems = $bgs.children();
   var $cases = $('#cases-wrapper');
   var $casesImg = $cases.children('img');
   var activeClass = 'is-active';
@@ -24,6 +25,9 @@ $(function () {
   var screenHeight = $(window).height();
   var maxCasesX;
 
+  /**
+   * wait for case image to load before getting its width
+   */
   $casesImg.on('load', function () {
     maxCasesX = screenWidth - $casesImg.width();
     $cases.height(screenHeight + maxCasesX * -1);
@@ -54,9 +58,12 @@ $(function () {
   function updateState(index) {
     $header[ index < 0 ? 'removeClass' : 'addClass' ]('header--dark');
     index = index < 0 ? 0 : index;
-    $main.attr('data-index', index);
 
-    $.each([ $navItem, $protoItems, $bgs ], function () {
+    $.each([ $main, $bgs ], function () {
+      $(this).attr('data-index', index);
+    });
+
+    $.each([ $navItem, $protoItems, $bgsItems ], function () {
       $(this)
         .removeClass(activeClass)
         .eq(index)

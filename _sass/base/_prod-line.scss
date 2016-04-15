@@ -64,13 +64,27 @@
   &__bgs {
     @include position(fixed, 0 0 null null);
     @include size(100%);
+
+    &[data-index="5"] {
+      z-index: 1;
+    }
   }
 
   &__bg {
+    &:last-child {
+      height: 100vh;
+      position: relative;
+    }
+
     &.is-active {
       .prod-line__bg-img {
         opacity: 1;
         transform: none;
+      }
+
+      .prod-line__bg-img--hand {
+        bottom: -25vh;
+        transform: translateX(-65%);
       }
     }
   }
@@ -95,6 +109,19 @@
     &:nth-child(3) {
       transform: translateX(100px) translateY(50px);
       transition: .2s .1s;
+    }
+
+    &--hand {
+      height: calc(100vh - 160px);
+
+      :root & {
+        bottom: -40vh;
+        left: 0;
+        right: auto;
+        top: auto;
+        transform: translateX(-70%);
+        transition: .5s .1s;
+      }
     }
   }
 
