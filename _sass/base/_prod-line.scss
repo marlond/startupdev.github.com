@@ -130,9 +130,10 @@
   }
 
   &__proto {
+    $diff: 90px;
     height: calc(100vh - 160px);
     opacity: 0;
-    padding-right: 100px;
+    padding-right: 100px + $diff;
     transition: .2s opacity;
 
     &--fixed {
@@ -148,7 +149,7 @@
     &--last {
       bottom: 0;
       height: calc(100vh - 105px);
-      margin-left: -89px;
+      margin: 0 $diff * -1 0 -89px;
       top: auto;
       transform: none;
     }
