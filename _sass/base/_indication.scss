@@ -1,0 +1,35 @@
+.indication {
+  background: $whisper;
+  color: $grey;
+  padding: 100px 0;
+  text-align: center;
+
+  &__heading {
+    color: $supernova;
+    font: 700 46px $heading-font-family;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 28px;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  &__item {
+    padding: 0 20px;
+  }
+
+  &__subheading {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+  }
+
+  &__info {
+    line-height: 1.4;
+  }
+}

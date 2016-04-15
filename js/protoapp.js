@@ -72,7 +72,7 @@ $(function () {
   });
 
   /**
-   * cases scroll
+   * cases horizontal scroll
    */
   $cases.on('mousewheel', function (e) {
     var offset = $(window).scrollTop() - $cases.offset().top;
