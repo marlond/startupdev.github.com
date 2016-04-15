@@ -1,0 +1,10 @@
+.cases {
+  overflow-y: hidden;
+  position: relative;
+
+  &__img {
+    display: block;
+    height: 100vh;
+    max-width: none;
+  }
+}
