@@ -2,10 +2,10 @@
   $height: 100vh;
   $top-padding: 50px;
 
-  background: $supernova;
+  background: $grey;
   transition: .2s;
 
-  // Indexes are zero based, so data-index="1" is related to "step 2"
+  &[data-index="0"] { background: $supernova; }
   &[data-index="1"] { background: $green; }
   &[data-index="2"] { background: $blue; }
   &[data-index="3"] { background: $red; }
