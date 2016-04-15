@@ -1,0 +1,74 @@
+.investment {
+  background: $supernova;
+  color: $grey;
+  padding: 100px 0;
+  text-align: center;
+
+  &__heading {
+    font: 700 46px $heading-font-family;
+    margin: 0;
+  }
+
+  &__subheading {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+
+    &--large {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 28px;
+    margin: auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  &__item {
+    flex: 0 0 33.3333%;
+    padding: 0 20px;
+    position: relative;
+
+    &::after {
+      content: attr(data-suffix);
+      font: 700 46px $heading-font-family;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:first-child::after {
+      right: -25px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__icon {
+    height: 130px;
+    margin-bottom: 10px;
+  }
+
+  &__box {
+    border: 1px solid;
+    border-radius: 4px;
+    color: $white;
+    font-size: 36px;
+    margin: 5px auto 0;
+    max-width: 200px;
+    padding: 5px;
+  }
+}

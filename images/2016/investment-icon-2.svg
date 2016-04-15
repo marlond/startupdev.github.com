@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="131px" viewBox="0 0 180 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="8.5645933" width="178.143541" height="121.617225" rx="8"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="178.143541" height="121.617225" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="17.1291866" y="0" width="11.1339713" height="22.2679426" rx="8"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11.1339713" height="22.2679426" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="149.880383" y="0" width="11.1339713" height="22.2679426" rx="8"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11.1339713" height="22.2679426" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="investment" transform="translate(-643.000000, -308.000000)" stroke="#373232">
+            <g id="ic_calendar" transform="translate(643.905154, 308.000000)">
+                <use id="Rectangle-2535" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <use id="Rectangle-2535" mask="url(#mask-4)" stroke-width="4" fill="#FFB533" xlink:href="#path-3"></use>
+                <use id="Rectangle-2535" mask="url(#mask-6)" stroke-width="4" fill="#FFB533" xlink:href="#path-5"></use>
+                <path d="M0.920024671,27.4066986 L178.212685,27.4066986" id="Path-1122" stroke-width="2"></path>
+                <circle id="Oval-64" cx="47.1052632" cy="50.5311005" r="4.28229665"></circle>
+                <circle id="Oval-64" cx="68.5167464" cy="50.5311005" r="4.28229665"></circle>
+                <circle id="Oval-64" cx="89.9282297" cy="50.5311005" r="4.28229665"></circle>
+                <ellipse id="Oval-64" cx="111.339713" cy="50.5311005" rx="4.28229665" ry="4.28229665"></ellipse>
+                <ellipse id="Oval-64" cx="132.751196" cy="50.5311005" rx="4.28229665" ry="4.28229665"></ellipse>
+                <circle id="Oval-64" cx="47.1052632" cy="67.5311005" r="4.28229665"></circle>
+                <circle id="Oval-64" cx="68.5167464" cy="67.5311005" r="4.28229665"></circle>
+                <circle id="Oval-64" cx="89.9282297" cy="67.5311005" r="4.28229665"></circle>
+                <ellipse id="Oval-64" cx="111.339713" cy="67.5311005" rx="4.28229665" ry="4.28229665"></ellipse>
+                <ellipse id="Oval-64" cx="132.751196" cy="67.5311005" rx="4.28229665" ry="4.28229665"></ellipse>
+                <circle id="Oval-64" cx="25.6937799" cy="50.5311005" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="47.1052632" cy="50.5311005" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="68.5167464" cy="50.5311005" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="89.9282297" cy="50.5311005" rx="2.56937799" ry="2.56937799"></ellipse>
+                <circle id="Oval-64" cx="111.339713" cy="50.5311005" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="132.751196" cy="50.5311005" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="154.162679" cy="50.5311005" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="25.6937799" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="47.1052632" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="68.5167464" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="89.9282297" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="111.339713" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="132.751196" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="154.162679" cy="67.6602871" rx="2.56937799" ry="2.56937799"></ellipse>
+                <circle id="Oval-64" cx="25.6937799" cy="84.7894737" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="47.1052632" cy="84.7894737" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="68.5167464" cy="84.7894737" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="89.9282297" cy="84.7894737" rx="2.56937799" ry="2.56937799"></ellipse>
+                <circle id="Oval-64" cx="111.339713" cy="84.7894737" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="132.751196" cy="84.7894737" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="154.162679" cy="84.7894737" rx="2.56937799" ry="2.56937799"></ellipse>
+                <circle id="Oval-64" cx="25.6937799" cy="101.91866" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="47.1052632" cy="101.91866" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="68.5167464" cy="101.91866" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="89.9282297" cy="101.91866" rx="2.56937799" ry="2.56937799"></ellipse>
+                <circle id="Oval-64" cx="111.339713" cy="101.91866" r="2.56937799"></circle>
+                <ellipse id="Oval-64" cx="132.751196" cy="101.91866" rx="2.56937799" ry="2.56937799"></ellipse>
+                <ellipse id="Oval-64" cx="154.162679" cy="101.91866" rx="2.56937799" ry="2.56937799"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
