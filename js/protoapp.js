@@ -27,7 +27,7 @@ $(function () {
   $casesImg.on('load', function () {
     maxCasesX = screenWidth - $casesImg.width();
     $cases.height(screenHeight + maxCasesX * -1);
-  })
+  });
 
   /**
    * should navigation be visible

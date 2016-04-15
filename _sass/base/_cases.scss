@@ -1,11 +1,36 @@
 .cases {
-  overflow-y: hidden;
-  position: relative;
+
+  &__header {
+    background: $grey;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  &__heading {
+    color: $supernova;
+    font: 700 46px $heading-font-family;
+    margin: 0 0 10px;
+  }
+
+  &__text {
+    font-size: 28px;
+
+    em {
+      color: $supernova;
+      font-style: normal;
+    }
+  }
+
+  &__wrapper {
+    overflow-y: hidden;
+    position: relative;
+  }
 
   &__img {
     display: block;
     height: 100vh;
     max-width: none;
     position: relative;
+    top: -315px;
   }
 }
