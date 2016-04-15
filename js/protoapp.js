@@ -10,6 +10,8 @@ $(function () {
   var $protos = $('#prod-line-protos');
   var $protoItems = $protos.find('img');
   var $bgs = $('#prod-line-bgs').children();
+  var $cases = $('#cases-wrapper');
+  var $casesImg = $cases.children('img');
   var activeClass = 'is-active';
   var visibleClass = 'is-visible';
   var startIndex = 1;
@@ -17,6 +19,15 @@ $(function () {
   var totalSteps = 6;
   var endIndex = startIndex + totalSteps;
   var hasChanged = false;
+  var casesX = 0;
+  var screenWidth = $(window).width();
+  var screenHeight = $(window).height();
+  var maxCasesX;
+
+  $casesImg.on('load', function () {
+    maxCasesX = screenWidth - $casesImg.width();
+    $cases.height(screenHeight + maxCasesX * -1);
+  })
 
   /**
    * should navigation be visible
@@ -58,6 +69,19 @@ $(function () {
    */
   $navItem.on('click', function () {
     $.fn.fullpage.moveTo(this.href.substr(1));
+  });
+
+  /**
+   * cases scroll
+   */
+  $cases.on('mousewheel', function (e) {
+    var offset = $(window).scrollTop() - $cases.offset().top;
+    casesX += e.deltaY;
+
+    if (casesX > 0) casesX = 0;
+    else if (casesX < maxCasesX) casesX = maxCasesX;
+
+    $casesImg.css({ 'margin-left': casesX, top: offset });
   });
 
   /**
