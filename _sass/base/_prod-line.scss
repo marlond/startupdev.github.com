@@ -34,24 +34,24 @@
   }
 
   &__nav-item {
-    color: $black;
+    color: $grey;
     display: block;
     font: 300 12px / 1 $helvetica;
     opacity: .1;
     padding: 12px 18px;
     text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     transition: .2s;
 
-    &:hover,
-    &:focus {
-      color: $black;
+    &:hover {
+      color: $grey;
       opacity: 1;
     }
 
     &.is-active {
       background: $white;
-      color: $black;
+      color: $grey;
       opacity: 1;
     }
   }
@@ -187,7 +187,7 @@
   }
 
   &__title {
-    color: $black;
+    color: $grey;
     font: 700 46px / 1 $heading-font-family;
     margin: 0 0 .5em;
   }
