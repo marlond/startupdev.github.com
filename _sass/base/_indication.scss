@@ -24,12 +24,14 @@
   }
 
   &__subheading {
-    font-size: 18px;
+    color: $supernova;
+    font-size: 26px;
     font-weight: 700;
     margin: 15px 0 5px;
   }
 
   &__info {
+    font-size: 18px;
     line-height: 1.4;
   }
 }
