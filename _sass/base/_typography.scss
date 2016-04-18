@@ -18,6 +18,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/AvenirLTStd-Light.eot');
+  src: url('/fonts/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/AvenirLTStd-Light.woff') format('woff'),
+    url('/fonts/AvenirLTStd-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/AvenirLTStd-LightOblique.eot');
+  src: url('/fonts/AvenirLTStd-LightOblique.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/AvenirLTStd-LightOblique.woff') format('woff'),
+    url('/fonts/AvenirLTStd-LightOblique.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
 
 body {
   color: $base-font-color;
