@@ -57,17 +57,15 @@ $(function () {
    */
   function updateState(index) {
     $header[ index < 0 ? 'removeClass' : 'addClass' ]('header--dark');
-    index = index < 0 ? 0 : index;
 
     $.each([ $main, $bgs ], function () {
       $(this).attr('data-index', index);
     });
 
     $.each([ $navItem, $protoItems, $bgsItems ], function () {
-      $(this)
-        .removeClass(activeClass)
-        .eq(index)
-        .addClass(activeClass);
+      var $this = $(this);
+      $this.removeClass(activeClass);
+      if (index >= 0) $this.eq(index).addClass(activeClass);
     });
   }
 
