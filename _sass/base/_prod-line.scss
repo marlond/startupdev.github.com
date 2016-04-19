@@ -64,10 +64,6 @@
   &__bgs {
     @include position(fixed, 0 0 null null);
     @include size(100%);
-
-    &[data-index="5"] {
-      z-index: 1;
-    }
   }
 
   &__bg {
@@ -80,11 +76,6 @@
       .prod-line__bg-img {
         opacity: 1;
         transform: none;
-      }
-
-      .prod-line__bg-img--hand {
-        bottom: -25vh;
-        transform: translateX(-65%);
       }
     }
   }
@@ -113,13 +104,13 @@
 
     &--hand {
       height: calc(100vh - 160px);
+      z-index: 1;
 
       :root & {
         bottom: -40vh;
-        left: 0;
         right: auto;
         top: auto;
-        transform: translateX(-70%);
+        transform: translateX(-85%);
         transition: .5s .1s;
       }
     }
@@ -183,6 +174,12 @@
 
     &.is-active {
       opacity: 1;
+
+      + .prod-line__bg-img--hand {
+        bottom: -25vh;
+        opacity: 1;
+        transform: translateX(-70%);
+      }
     }
   }
 
