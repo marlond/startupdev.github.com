@@ -12,6 +12,7 @@ $(function () {
   var $bgs = $('#prod-line-bgs');
   var $bgsItems = $bgs.children();
   var activeClass = 'is-active';
+  var lastClass = 'is-last';
   var visibleClass = 'is-visible';
   var startIndex = 1;
   var offsetIndex = 2;
@@ -50,7 +51,14 @@ $(function () {
 
     $.each([ $navItem, $protoItems, $bgsItems ], function () {
       var $this = $(this);
-      $this.removeClass(activeClass);
+
+      $this
+        .removeClass(lastClass)
+        .filter('.' + activeClass)
+          .addClass(lastClass)
+          .end()
+        .removeClass(activeClass);
+
       if (index >= 0) $this.eq(index).addClass(activeClass);
     });
   }
