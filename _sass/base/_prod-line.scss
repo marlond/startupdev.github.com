@@ -155,27 +155,19 @@
 
   &__proto {
     $diff: 90px;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 105px);
+    margin-left: -70px;
     opacity: 0;
-    padding-right: 100px + $diff;
+    padding-right: 60px;
     transition: .2s opacity;
 
     &--fixed {
+      bottom: 0;
       position: absolute;
-      top: calc(50% + #{$top-padding / 2});
-      transform: translateY(-50%);
     }
 
     &--invisible {
       visibility: hidden;
-    }
-
-    &--last {
-      bottom: 0;
-      height: calc(100vh - 105px);
-      margin: 0 $diff * -1 0 -89px;
-      top: auto;
-      transform: none;
     }
 
     &.is-active {
@@ -184,7 +176,7 @@
       + .prod-line__bg-img--hand {
         bottom: -25vh;
         opacity: 1;
-        transform: translateX(-70%);
+        transform: translateX(-65%);
       }
     }
   }
