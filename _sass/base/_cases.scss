@@ -2,7 +2,7 @@
 
   &__header {
     background: $grey;
-    padding: 100px 20px;
+    padding: 0 20px 40px;
     text-align: center;
   }
 
@@ -21,16 +21,8 @@
     }
   }
 
-  &__wrapper {
-    overflow-y: hidden;
-    position: relative;
-  }
-
   &__img {
     display: block;
-    height: 100vh;
-    max-width: none;
-    position: relative;
-    top: -315px;
+    width: 100vw;
   }
 }

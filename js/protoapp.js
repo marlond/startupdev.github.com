@@ -66,23 +66,10 @@ $(function () {
    * initializer
    */
   $('#fullpage').fullpage({
-    anchors: [ 'descubra', 'etapa-1', 'etapa-2', 'etapa-3', 'etapa-4', 'etapa-5', 'etapa-6', 'cases' ],
+    anchors: [ 'descubra', 'etapa-1', 'etapa-2', 'etapa-3', 'etapa-4', 'etapa-5', 'etapa-6', 'cases', 'depoimento', 'indicação', 'investimento', '' ],
     onLeave: function (currentIndex, nextIndex, direction) {
       toggleVisibility(isFixedHidden(nextIndex));
       updateState(direction === 'down' ? nextIndex - offsetIndex : currentIndex - offsetIndex - startIndex);
-    },
-    afterLoad: function (anchorLink, index) {
-      var isOff = anchorLink === 'cases';
-
-      if (isOff) {
-        $.fn.fullpage.setFitToSection(false);
-        $.fn.fullpage.setAutoScrolling(false);
-        hasChanged = true;
-      } else if (hasChanged) {
-        $.fn.fullpage.setFitToSection(true);
-        $.fn.fullpage.setAutoScrolling(true);
-        hasChanged = false;
-      }
     }
   });
 });
