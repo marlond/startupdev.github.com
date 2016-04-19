@@ -3,7 +3,7 @@ $(function () {
   /**
    * settings
    */
-  var $header = $('#home-section');
+  var $header = $('#header-protoapp');
   var $main = $('#prod-line');
   var $nav = $('#prod-line-nav');
   var $navItem = $nav.find('.prod-line__nav-item');
