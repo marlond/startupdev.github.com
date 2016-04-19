@@ -22,6 +22,12 @@
     padding: 0 20px;
   }
 
+  &__icon {
+    @media only screen and (max-height: 700px) {
+      @include size(175px);
+    }
+  }
+
   &__subheading {
     color: $supernova;
     font-size: 26px;
