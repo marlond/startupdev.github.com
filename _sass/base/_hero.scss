@@ -17,7 +17,11 @@
     $bg: rgba(0, 0, 0, .2);
     background: $bg;
     flex: 1;
-    padding: 80px 0;
+    padding: 80px 20px;
+
+    @include media($screen-small) {
+      padding: 40px 20px;
+    }
   }
 
   &__title {
@@ -35,12 +39,15 @@
 
   &__icon {
     $size: 55px;
+    @include position(absolute, null null 25px 50%);
     @include size($size);
-    background-image: url('/images/2016/icon-scrolling.svg');
-    bottom: 25px;
+    background: url('/images/2016/icon-scrolling.svg') no-repeat center;
     display: block;
-    left: 50%;
     margin-left: -$size / 2;
-    position: absolute;
+
+    @include media($screen-small) {
+      background-image: url('/images/2016/icon-arrow-down.svg');
+      bottom: 15px;
+    }
   }
 }
