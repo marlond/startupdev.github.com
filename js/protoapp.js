@@ -11,6 +11,7 @@ $(function () {
   var $protoItems = $protos.find('img');
   var $bgs = $('#prod-line-bgs');
   var $bgsItems = $bgs.children();
+  var $casesImg = $('#cases-img');
   var activeClass = 'is-active';
   var lastClass = 'is-last';
   var visibleClass = 'is-visible';
@@ -64,6 +65,15 @@ $(function () {
   }
 
   /**
+   * animate case
+   * @param {Boolean} isCase [is at a case?]
+   */
+  function animateCase(isCase) {
+    var maxX = $(window).width() - $casesImg.width();
+    $casesImg.css('left', isCase ? maxX : 0);
+  }
+
+  /**
    * navigation controls
    */
   $navItem.on('click', function () {
@@ -74,10 +84,13 @@ $(function () {
    * initializer
    */
   $('#fullpage').fullpage({
-    anchors: [ 'descubra', 'etapa-1', 'etapa-2', 'etapa-3', 'etapa-4', 'etapa-5', 'etapa-6', 'cases', 'depoimento', 'indicação', 'investimento', '' ],
+    anchors: [ 'descubra', 'etapa-1', 'etapa-2', 'etapa-3', 'etapa-4', 'etapa-5', 'etapa-6', 'cases', 'whatsdoc', 'depoimento', 'indicação', 'investimento', '' ],
     onLeave: function (currentIndex, nextIndex, direction) {
       toggleVisibility(isFixedHidden(nextIndex));
       updateState(direction === 'down' ? nextIndex - offsetIndex : currentIndex - offsetIndex - startIndex);
+    },
+    afterLoad: function (anchorLink) {
+      animateCase(anchorLink === 'whatsdoc');
     }
   });
 });
