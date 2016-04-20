@@ -44,6 +44,11 @@
     text-transform: uppercase;
     transition: .2s;
 
+    @include media($screen-small) {
+      font-size: 9px;
+      padding: 8px 14px;
+    }
+
     &:hover {
       color: $grey;
       opacity: 1;
@@ -59,11 +64,19 @@
   &__id {
     display: block;
     font: 700 40px / 1 $helvetica;
+
+    @include media($screen-small) {
+      font-size: 30px;
+    }
   }
 
   &__bgs {
     @include position(fixed, 0 0 null null);
     @include size(100%);
+
+    @include media($screen-small) {
+      display: none;
+    }
   }
 
   &__bg {
@@ -118,6 +131,10 @@
         top: auto;
         transform: translateX(-85%);
         transition: .5s .1s;
+
+        @include media($screen-small) {
+          transform: translateX(-65%);
+        }
       }
     }
   }
@@ -126,19 +143,28 @@
     display: flex;
     justify-content: center;
     min-height: $height;
-    padding-top: $top-padding;
     position: absolute;
     width: 100%;
 
     &--fixed {
       position: fixed;
       z-index: 1;
+
+      @include media($screen-small) {
+        z-index: auto;
+      }
     }
   }
 
   &__content-wrapper {
     align-items: center;
     display: flex;
+
+    @include media($screen-small) {
+      flex-direction: column-reverse;
+      height: 100vh;
+      position: relative;
+    }
   }
 
   &__protos {
@@ -161,6 +187,14 @@
     padding-right: 60px;
     transition: .2s opacity;
 
+    @include media($screen-small) {
+      height: auto;
+      left: 52%;
+      margin-left: 0;
+      padding-right: 0;
+      transform: translateX(-50%);
+    }
+
     &--fixed {
       bottom: 0;
       position: absolute;
@@ -177,6 +211,10 @@
         bottom: -25vh;
         opacity: 1;
         transform: translateX(-65%);
+
+        @include media($screen-small) {
+          transform: translateX(-45%);
+        }
       }
     }
   }
@@ -185,10 +223,23 @@
     color: $grey;
     font: 700 46px / 1 $heading-font-family;
     margin: 0 0 .5em;
+
+    @include media($screen-small) {
+      font-size: 32px;
+      padding-top: 90px;
+      text-align: center;
+    }
   }
 
   &__text {
     font: 300 28px / 1.4 $base-font-family;
-  }
 
+    @include media($screen-small) {
+      $pos: 15px;
+      @include position(absolute, null $pos 2px $pos);
+      background: transparentize($grey, .11);
+      font-size: 18px;
+      padding: $pos;
+    }
+  }
 }
