@@ -69,8 +69,8 @@ $(function () {
    * @param {Boolean} isCase [is at a case?]
    */
   function animateCase(isCase) {
-    var maxX = $(window).width() - $casesImg.width();
-    $casesImg.css('left', isCase ? maxX : 0);
+    var maxX = ($(window).width() - $casesImg.width()) + 'px';
+    $casesImg.css('transform', 'translateX(' + (isCase ? maxX : 0) + ')');
   }
 
   /**
