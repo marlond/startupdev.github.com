@@ -1,5 +1,5 @@
 safe: false
-highlighter: pygments
+highlighter: rouge
 exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor']
 permalink: :pretty
 url: http://startupdev.com.br/
