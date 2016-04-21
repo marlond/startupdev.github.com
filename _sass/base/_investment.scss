@@ -17,10 +17,18 @@
     font-weight: 600;
     margin: 0;
 
+    @include media($screen-small) {
+      font-size: 22px;
+    }
+
     &--large {
       font-size: 32px;
       font-weight: 400;
       margin-bottom: 10px;
+
+      @include media($screen-small) {
+        font-size: 26px;
+      }
     }
   }
 
@@ -67,7 +75,8 @@
       transform: translateY(-50%);
 
       @include media($screen-small) {
-        bottom: -30px;
+        bottom: -22px;
+        font-size: 34px;
         left: 50%;
         right: auto;
         top: auto;
@@ -105,5 +114,11 @@
     margin: 5px auto 0;
     max-width: 200px;
     padding: 5px;
+
+    @include media($screen-small) {
+      font-size: 32px;
+      min-width: 150px;
+      padding: 0;
+    }
   }
 }

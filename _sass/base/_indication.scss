@@ -4,7 +4,7 @@
   text-align: center;
 
   @include media($screen-small) {
-    padding: 0 20px;
+    padding: 30px 20px 0;
   }
 
   &__heading {
@@ -42,7 +42,7 @@
     }
 
     @include media($screen-small) {
-      @include size(70vw);
+      @include size(60vw);
       margin-bottom: 15px;
     }
   }
