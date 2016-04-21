@@ -13,6 +13,7 @@ $(function () {
   var $bgsItems = $bgs.children();
   var $casesImg = $('#cases-img');
   var $indication = $('#indication');
+  var $investment = $('#investment');
   var activeClass = 'is-active';
   var lastClass = 'is-last';
   var visibleClass = 'is-visible';
@@ -95,7 +96,7 @@ $(function () {
   });
 
   /**
-   * split indication
+   * split indication items
    */
   function splitIndication() {
     var parentAnchor = $indication.attr('data-anchor');
@@ -113,7 +114,20 @@ $(function () {
       .remove();
   }
 
-  if (isMobile) splitIndication();
+  /**
+   * split investment into two blocks
+   */
+  function splitInvestment() {
+    var anchor = $investment.attr('data-anchor');
+    var $items = $('<div class="section investment" data-anchor="' + anchor + '-2"></div>');
+
+    $investment
+      .attr('data-anchor', anchor + '-1')
+      .find('.investment__items')
+      .appendTo($items);
+
+    $investment.after($items);
+  }
 
   /**
    * get anchors
@@ -127,6 +141,11 @@ $(function () {
     });
 
     return anchors;
+  }
+
+  if (isMobile) {
+    splitIndication();
+    splitInvestment();
   }
 
   /**
