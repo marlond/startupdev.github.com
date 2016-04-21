@@ -31,12 +31,14 @@
   }
 
   &__item {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   &__icon {
+    @include size(215px);
+
     @media only screen and (max-height: 700px) {
-      @include size(175px);
+      @include size(150px);
     }
 
     @include media($screen-small) {
