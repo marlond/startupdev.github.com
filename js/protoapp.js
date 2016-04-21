@@ -89,13 +89,6 @@ $(function () {
   }
 
   /**
-   * navigation controls
-   */
-  $navItem.on('click', function () {
-    $.fn.fullpage.moveTo(this.href.substr(1));
-  });
-
-  /**
    * split indication items
    */
   function splitIndication() {
