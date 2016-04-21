@@ -6,6 +6,10 @@
   &__heading {
     font: 700 46px $heading-font-family;
     margin: 0;
+
+    @include media($screen-small) {
+      display: none;
+    }
   }
 
   &__subheading {
@@ -26,17 +30,29 @@
     margin: auto;
     max-width: 800px;
     padding: 0 20px;
+
+    @include media($screen-small) {
+      display: none;
+    }
   }
 
   &__items {
     display: flex;
     margin-top: 60px;
+
+    @include media($screen-small) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     flex: 0 0 33.3333%;
     padding: 0 20px;
     position: relative;
+
+    @include media($screen-small) {
+      padding: 25px 10px;
+    }
 
     &::after {
       content: attr(data-suffix);
@@ -45,10 +61,22 @@
       right: -10px;
       top: 50%;
       transform: translateY(-50%);
+
+      @include media($screen-small) {
+        bottom: -30px;
+        left: 50%;
+        right: auto;
+        top: auto;
+        transform: translateX(-50%);
+      }
     }
 
     &:first-child::after {
       right: -25px;
+
+      @include media($screen-small) {
+        right: auto;
+      }
     }
 
     &:last-child::after {
@@ -59,6 +87,10 @@
   &__icon {
     height: 130px;
     margin-bottom: 10px;
+
+    @include media($screen-small) {
+      height: 15vh;
+    }
   }
 
   &__box {
