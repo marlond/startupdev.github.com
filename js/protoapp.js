@@ -100,18 +100,21 @@ $(function () {
    */
   function splitIndication() {
     var parentAnchor = $indication.attr('data-anchor');
-    var markup = '';
+    var $items = $indication.find('.indication__item');
+    var items = '';
 
-    $indication.find('.indication__item').each(function (i) {
-      var anchor = parentAnchor + '-' + (++i);
-      markup += '<div class="section indication" data-anchor="' + anchor + '">';
-      markup += $(this).html();
-      markup += '</div>';
+    $items.each(function (i) {
+      var anchor = parentAnchor + '-' + (i + 2);
+      items += '<div class="section indication" data-anchor="' + anchor + '">';
+      items += $(this).html();
+      items += '</div>';
     });
 
     $indication
-      .after(markup)
-      .remove();
+      .attr('data-anchor', parentAnchor + '-1')
+      .after(items);
+
+    $items.remove();
   }
 
   /**

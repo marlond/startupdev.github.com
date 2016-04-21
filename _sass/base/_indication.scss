@@ -11,10 +11,18 @@
     color: $supernova;
     font: 700 46px $heading-font-family;
     margin: 0;
+
+    @include media($screen-small) {
+      padding: 0 30px;
+    }
   }
 
   &__text {
     font-size: 28px;
+
+    @include media($screen-small) {
+      padding: 20px;
+    }
   }
 
   &__items {
@@ -33,6 +41,7 @@
 
     @include media($screen-small) {
       @include size(70vw);
+      margin-bottom: 15px;
     }
   }
 
