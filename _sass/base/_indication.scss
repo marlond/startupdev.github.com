@@ -3,6 +3,10 @@
   color: $grey;
   text-align: center;
 
+  @include media($screen-small) {
+    padding: 0 20px;
+  }
+
   &__heading {
     color: $supernova;
     font: 700 46px $heading-font-family;
@@ -26,6 +30,10 @@
     @media only screen and (max-height: 700px) {
       @include size(175px);
     }
+
+    @include media($screen-small) {
+      @include size(70vw);
+    }
   }
 
   &__subheading {
@@ -33,10 +41,18 @@
     font-size: 26px;
     font-weight: 700;
     margin: 15px 0 5px;
+
+    @include media($screen-small) {
+      font-size: 30px;
+    }
   }
 
   &__info {
     font-size: 18px;
     line-height: 1.4;
+
+    @include media($screen-small) {
+      font-size: 22px;
+    }
   }
 }
