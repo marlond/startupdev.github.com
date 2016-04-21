@@ -28,6 +28,10 @@
   &.fp-completely {
     .cases__img {
       transition: 20s linear;
+
+      @include media($screen-small) {
+        transition: none;
+      }
     }
   }
 
@@ -36,5 +40,10 @@
     height: 100vh;
     max-width: none;
     position: relative;
+
+    @include media($screen-small) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -138,7 +138,7 @@ $(function () {
       toggleVisibility(isFixedHidden(nextIndex));
       updateState(direction === 'down' ? nextIndex - offsetIndex : currentIndex - offsetIndex - startIndex);
     },
-    afterLoad: function (anchorLink) {
+    afterLoad: isMobile ? null : function (anchorLink) {
       animateCase(anchorLink === 'whatsdoc');
     }
   });
