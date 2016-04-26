@@ -1,11 +1,19 @@
 %center-content {
   @include position(absolute, null null null 50%);
   @include transform(translateX(-50%));
+
+  @include media($screen-small) {
+    left: 14%;
+  }
 }
 
 .timeline {
   margin-top: 70px;
   min-height: 200px;
+
+  @include media($screen-small) {
+    margin: 0;
+  }
 
   &__ruler {
     @extend %center-content;
@@ -20,11 +28,16 @@
     &--full {
       bottom: 0;
       height: 100%;
+      top: 0;
     }
 
     &--finish {
       height: 20%;
       top: 0;
+
+      @include media($screen-small) {
+        opacity: 0;
+      }
     }
   }
 
@@ -32,41 +45,77 @@
     @include size(calc(40% - 120px) 122px);
     position: absolute;
 
-    &--odd{
-      bottom: 12%;
+    @include media($screen-small) {
+      width: 70%;
+    }
+
+    &:not(.timeline__holder--second) {
       right: 120px;
       text-align: left;
-    }
 
-    &--even {
-      left: 120px;
-      text-align: right;
-      top: 12%;
+      @include media($screen-small) {
+        right: 10px;
+      }
     }
-  }
-
-  &__icon {
-    @extend %center-content;
-    @include size(140px);
-    border: 2px solid rgba($white, .25);
-    border-radius: 50%;
 
     &--first {
       bottom: 12%;
     }
 
     &--second {
-      top: 12%;
+      left: 120px;
+      text-align: right;
+      top: 20%;
+
+      @include media($screen-small) {
+        left: auto;
+        right: 10px;
+        text-align: left;
+        top: 15%;
+      }
     }
 
     &--third {
+      bottom: 20%;
+    }
+  }
+
+  &__icon {
+    @extend %center-content;
+    @include size(140px);
+    background-color: $nightrider;
+    border: 2px solid rgba($white, .25);
+    border-radius: 50%;
+
+    @include media($screen-small) {
+      @include size(70px);
+    }
+
+    &--first {
       bottom: 12%;
+    }
+
+    &--second {
+      top: 20%;
+    }
+
+    &--third {
+      bottom: 20%;
+    }
+
+    * {
+      display: table;
+      margin: 20px auto;
     }
   }
 
   &__heading {
     color: $green;
     font: 700 24px $heading-font-family;
+
+    @include media($screen-small) {
+      font-size: 18px;
+    }
   }
 
   &__text {
