@@ -47,11 +47,11 @@
   //inputs & textarea
   input.field,
   textarea {
-    @include box-sizing(border-box);
     background: transparent;
     border-radius: 4px;
     border: 1px solid #373232;
     box-shadow: none !important;
+    box-sizing: border-box;
     margin-bottom: 0;
     min-height: 55px;
     padding: rem(15) rem(10);
