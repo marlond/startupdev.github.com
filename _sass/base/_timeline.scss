@@ -106,6 +106,10 @@
     * {
       display: table;
       margin: 20px auto;
+
+      @include media($screen-small) {
+        @include size(45%);
+      }
     }
   }
 
