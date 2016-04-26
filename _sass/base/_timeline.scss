@@ -1,0 +1,48 @@
+.timeline {
+  margin-top: 70px;
+  min-height: 200px;
+
+  &__ruler {
+    @include position(absolute, null null null 50%);
+    @include transform(translateX(-50%));
+    background: rgba($white, .25);
+    width: 2px;
+
+    &--start {
+      bottom: 0;
+      height: 45%;
+    }
+
+    &--finish {
+      height: 100px;
+      top: 0;
+    }
+  }
+
+  &__holder {
+    @include position(absolute, null 120px 12% null);
+    @include size(calc(40% - 120px) 122px);
+    text-align: left;
+  }
+
+  &__icon {
+    @include position(absolute, null null null 50%);
+    @include size(140px);
+    @include transform(translateX(-50%));
+    border: 2px solid rgba($white, .25);
+    border-radius: 50%;
+
+    &--first {
+      bottom: 12%;
+    }
+  }
+
+  &__heading {
+    color: $green;
+    font: 700 24px $heading-font-family;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
