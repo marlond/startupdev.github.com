@@ -34,16 +34,24 @@
       content: '}';
       right: 0;
     }
+
+    &--protoapp {
+      font-size: 14px;
+
+      &::before,
+      &::after {
+        color: $green;
+        top: 30px;
+      }
+    }
   }
 
   &__break {
+
     &::after {
       content: ' ';
-
-      @include media($screen-small) {
-        display: block;
-        margin-top: 1em;
-      }
+      display: block;
+      margin-top: 1em;
     }
   }
 
@@ -53,8 +61,15 @@
   }
 
   &__info {
-    color: $supernova;
     font-weight: 700;
     margin: 0;
+
+    &:not(.testimonial__info--protoapp) {
+      color: $supernova;
+    }
+
+    &--protoapp {
+      color: $green;
+    }
   }
 }

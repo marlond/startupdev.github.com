@@ -7,7 +7,7 @@
   }
 
   &__heading {
-    color: $supernova;
+    color: $green;
     font: 700 46px $heading-font-family;
     margin: 0 0 10px;
   }
@@ -16,7 +16,7 @@
     font-size: 28px;
 
     em {
-      color: $supernova;
+      color: $green;
       font-style: normal;
     }
   }
@@ -26,6 +26,7 @@
   }
 
   &.fp-completely {
+
     .cases__img {
       transition: 20s linear;
 
