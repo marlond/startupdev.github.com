@@ -6,8 +6,8 @@
 
 .header {
   @include transition(.5s);
-  width: 100%;
   position: fixed;
+  width: 100%;
   z-index: 900;
 
   &--dark {
@@ -31,6 +31,7 @@
     display: block;
     float: left;
     margin-top: 20px;
+
     @include media($screen-small) {
       margin-left: 10px;
     }
@@ -44,7 +45,6 @@
 
   @include media($screen-small) {
     @include transition(.3s);
-    -webkit-transform: none;
     background-color: $supernova;
     border-top: 68px solid $dark-color;
     height: 0;
@@ -53,16 +53,17 @@
     overflow: hidden;
     position: fixed;
     right: -15px;
-    top: 0px;
+    top: 0;
     transform: none;
     z-index: -1;
+
     &--is-open {
       border-top: 68px solid $dark-color;
-      position: fixed;
       height: 100%;
       margin-top: 0;
       padding-bottom: 25px;
       padding-top: 30px;
+      position: fixed;
       top: 0;
       z-index: -1;
     }
@@ -76,9 +77,9 @@
 
     @include media($screen-small) {
       display: block;
-      text-align: center;
-      margin-bottom: 20px;
       font-size: rem(20);
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     a {
@@ -88,25 +89,24 @@
       display: block;
       text-align: center;
     }
+
     &:last-child {
       float: right;
-      margin-bottom: 0.5rem;
-      margin-top: -0.5rem;
+      margin-bottom: .5rem;
+      margin-top: -.5rem;
+
       @include media($screen-small) {
         float: none;
-        width: 80%;
         margin: 0 auto;
+        width: 80%;
       }
     }
 
-    &:hover {
-      a {
-        color: $supernova;
+    &:hover a {
+      color: $supernova;
 
-        @include media($screen-small) {
-          color: $nightrider;
-        }
-
+      @include media($screen-small) {
+        color: $nightrider;
       }
     }
   }
@@ -114,8 +114,8 @@
 
 // Item button on Navigation
 .header-navigation__item--btn {
-  border-radius: 4px;
   border: 1px solid $white;
+  border-radius: 4px;
   padding: 6px 17px;
 
   &::after {
@@ -125,6 +125,7 @@
     height: 9px;
     position: static;
     width: 63px;
+
     @include media($screen-small) {
       background: url('/images/2016/arrow-btn.svg') no-repeat top center;
       width: 100%;
@@ -133,11 +134,13 @@
 }
 
 .btn-toggle:hover {
+
   &::after,
   &::before {
-      background: $supernova;
+    background: $supernova;
   }
 }
+
 .btn-toggle {
   @include vertical-align();
   cursor: pointer;
@@ -146,59 +149,55 @@
   right: rem(20);
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     background: $supernova;
   }
 
   // toggle icon hidden on large screens
   &,
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     @include transition(.3s ease-in-out);
-    background-color: #fff;
+    background-color: $white;
     display: none;
     height: 3px;
     width: 34px;
-  }
 
-  // shows toggle icon on small screens
-  @include media($screen-small) {
-    &,
-    &:before,
-    &:after {
+    // shows toggle icon on small screens
+    @include media($screen-small) {
       display: block;
     }
   }
 
   // hides 'menu' text, increases the touch area of the button
   > span {
-     border: 0 none;
-     color: transparent;
-     height: 40px;
-     margin: 0;
-     overflow: hidden;
-     padding: 0;
-     position: fixed;
-     text-indent: 100px;
-     top: -23px;
-     width: 40px;
+    border: 0 none;
+    color: transparent;
+    height: 40px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    text-indent: 100px;
+    top: -23px;
+    width: 40px;
     // @extend %sr-only;
   }
 
   // top and bottom rows
-  &:before,
-  &:after {
-    content: "";
+  &::before,
+  &::after {
+    content: '';
     position: absolute;
   }
 
   // top row
-  &:before {
+  &::before {
     top: -8px;
   }
 
   // bottom row
-  &:after {
+  &::after {
     bottom: -8px;
   }
 }
@@ -206,8 +205,8 @@
 .toggle--close {
   background-color: transparent;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     top: 0;
   }
 
@@ -215,11 +214,11 @@
     background-color: transparent;
   }
 
-  &:before {
+  &::before {
     transform: rotate(45deg);
   }
 
-  &:after {
+  &::after {
     transform: rotate(-45deg);
   }
 }

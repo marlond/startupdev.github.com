@@ -16,6 +16,7 @@ body {
 
 .main-banner {
   background: url('/images/2016/cover.jpg') no-repeat center center $nightrider;
+  background-attachment: fixed;
   background-size: cover;
   min-height: rem(800);
   width: 100%;
@@ -28,33 +29,32 @@ body {
 
   &__tablet {
     @include span-columns(4 of 12);
-    float: right;
     display: none;
-
-    img {
-      max-width: 390px;
-      padding-top: 180px;
-      width: 100%;
-      float: right;
-    }
+    float: right;
 
     @include media($screen-small) {
       display: none;
     }
+
+    img {
+      float: right;
+      max-width: 390px;
+      padding-top: 180px;
+      width: 100%;
+    }
   }
 
   &__content {
+    margin: 0 auto;
     max-width: 700px;
     padding-top: rem(200);
     text-align: center;
-    margin: 0 auto;
 
     @include media($screen-small) {
+      @include pad(120px $base-spacing);
       @include span-columns(12);
       text-align: center;
-      @include pad(120px $base-spacing);
     }
-
   }
 
   &__h1 {
@@ -67,16 +67,14 @@ body {
     @include media($screen-small) {
       font-size: 25px;
     }
-
   }
 
   &__h2 {
     color: $white;
     font-family: $base-font-family;
     font-size: 26px;
-    font-weight: 400;
-    line-height: rem(40);
     font-weight: 200;
+    line-height: rem(40);
 
     @include media($screen-small) {
       font-size: 16px;
@@ -98,6 +96,7 @@ body {
     @include outer-container();
     padding-top: rem(144);
     text-align: center;
+
     @include media($screen-small) {
       @include pad($base-spacing);
     }
@@ -105,11 +104,13 @@ body {
 
   &__col {
     @include span-columns(6 of 12);
+
     @include media($screen-small) {
       @include span-columns(12);
+
       img {
-        max-width: 80%;
         margin: 0 auto;
+        max-width: 80%;
       }
     }
 
@@ -131,6 +132,7 @@ body {
     font-family: $base-font-family;
     font-size: rem(20);
     font-weight: 200;
+
     @include media($screen-small) {
       font-size: rem(18);
     }
@@ -139,7 +141,6 @@ body {
   .btn {
     margin-top: rem(50);
   }
-
 }
 
 
@@ -152,6 +153,7 @@ body {
     @include outer-container();
     padding-top: rem(144);
     text-align: center;
+
     @include media($screen-small) {
       @include pad($base-spacing);
     }
@@ -159,15 +161,18 @@ body {
 
   &__col {
     @include span-columns(6 of 12);
+
     @include media($screen-small) {
       @include span-columns(12);
+
       img {
-        max-width: 80%;
         margin: 0 auto;
+        max-width: 80%;
       }
     }
 
     &--pic {
+
       @include media($screen-small) {
         margin-top: 45px;
       }
@@ -185,15 +190,15 @@ body {
     font-family: $base-font-family;
     font-size: rem(20);
     font-weight: 200;
+
     @include media($screen-small) {
       font-size: rem(18);
     }
   }
 
   .btn {
-    margin: rem(30) 0 rem(30) 0;
+    margin: rem(30) 0;
   }
-
 }
 
 
@@ -330,7 +335,7 @@ body {
     min-height: rem(220);
 
     @include media($screen-small) {
-      @include pad(0 $base-spacing*3);
+      @include pad(0 $base-spacing * 3);
       font-size: rem(15);
     }
   }
@@ -406,8 +411,14 @@ body {
     color: $supernova;
   }
 
-}
+  // scss-lint:disable ImportantRule
+  li {
 
+    @include media($screen-small) {
+      width: 100% !important;
+    }
+  }
+}
 
 .testimonials-video {
   @include span-columns(12);
@@ -442,11 +453,12 @@ body {
       width: 100%;
     }
 
-    &:hover > figure {
-      opacity: 1;
-    }
+    &:hover {
 
-    &:hover{
+      > figure {
+        opacity: 1;
+      }
+
       .testimonials-video__author::before {
         background: url('/images/2016/arrow.svg') no-repeat top right;
         content: '';
@@ -486,13 +498,11 @@ body {
   }
 }
 
-
-
 .projects {
   @include span-columns(12);
   background: $supernova;
-  min-height: rem(690);
   clear: both;
+  min-height: rem(690);
 
   &__content {
     @include outer-container();
@@ -511,7 +521,7 @@ body {
     color: $nightrider;
     font-size: rem(46);
     font-weight: 900;
-    margin: rem(20) 0 rem(10) 0;
+    margin: rem(20) 0 rem(10);
   }
 
   &__description {
@@ -521,7 +531,7 @@ body {
   }
 
   &__grid {
-    background: black none repeat scroll 0 0;
+    background: $black none repeat scroll 0 0;
     float: left;
     margin: 0 auto;
     max-width: 100%;
@@ -534,19 +544,6 @@ body {
     overflow: hidden;
     position: relative;
     width: 10%;
-    &::after {
-      background: rgba($black, 0.4) none repeat scroll 0 0;
-      content: "";
-      display: block;
-      height: rem(600);
-      left: 0;
-      position: absolute;
-      width: 100%;
-      transition: all .2s;
-    }
-    &:hover:after {
-      background: rgba($black, 0.0) none repeat scroll 0 0;
-    }
 
     @include media($screen-medium) {
       width: 20%;
@@ -554,6 +551,21 @@ body {
 
     @include media($screen-small) {
       width: 50%;
+    }
+
+    &::after {
+      background: rgba($black, .4) none repeat scroll 0 0;
+      content: '';
+      display: block;
+      height: rem(600);
+      left: 0;
+      position: absolute;
+      transition: all .2s;
+      width: 100%;
+    }
+
+    &:hover::after {
+      background: rgba($black, 0) none repeat scroll 0 0;
     }
 
     img {
@@ -564,15 +576,15 @@ body {
     }
 
     &:hover {
+
       img {
         @include filter(grayscale(0));
         opacity: 1;
       }
 
-      .projects__name{
+      .projects__name {
         height: auto;
       }
-
     }
   }
 

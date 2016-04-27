@@ -1,7 +1,7 @@
 // Hides text except from screen readers
 %sr-only {
   border: 0;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -10,16 +10,16 @@
   width: 1px;
 }
 
-
 // Clear floated elements
 %clearfix {
-  &:before,
-  &:after {
-    content: " ";
+
+  &::before,
+  &::after {
+    content: ' ';
     display: table;
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }

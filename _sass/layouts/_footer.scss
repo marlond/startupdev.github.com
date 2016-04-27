@@ -45,12 +45,16 @@
   }
 
   &__title {
-    color: $green;
+    color: $supernova;
     font-size: rem(36);
     font-weight: 400;
 
     @include media($screen-small) {
       font-size: rem(25);
+    }
+
+    &--protoapp {
+      color: $green;
     }
   }
 
@@ -82,7 +86,7 @@
   background: $nero;
   font-family: $base-font-family;
   font-size: rem(12);
-  padding: $small-spacing*2 0;
+  padding: $small-spacing * 2 0;
   text-align: center;
 
   @include media($screen-small) {

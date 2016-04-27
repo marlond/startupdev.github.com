@@ -6,17 +6,15 @@
   width: 100%;
 
   &__content {
+    margin: 0 auto;
     max-width: 960px;
+    padding-left: 20px;
     padding-top: 35vh;
     text-align: left;
-    margin: 0 auto;
-    padding-left: 20px;
 
     @include media($screen-small) {
       @include span-columns(12);
-
     }
-
   }
 
   &__h1 {
@@ -29,7 +27,6 @@
     @include media($screen-small) {
       font-size: rem(54);
     }
-
   }
 
   &__h2 {
@@ -56,6 +53,5 @@
     @include media($screen-small) {
       font-size: rem(24);
     }
-
   }
 }

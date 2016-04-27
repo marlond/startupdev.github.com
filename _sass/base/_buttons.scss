@@ -14,13 +14,13 @@
   display: inline-block;
   font-family: $base-font-family;
   font-size: 22px;
+  font-weight: 400;
   padding: 10px 35px 15px;
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
-  font-weight: 400;
 
   &:hover,
   &:focus {
