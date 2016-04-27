@@ -26,8 +26,8 @@
   &--protoapp {
     @include position(absolute, null null 0);
 
-
     @include media($screen-small) {
+      background: transparent;
       padding: 0;
     }
   }
@@ -38,10 +38,10 @@
   @include pad(rem(50) 0);
 
   &--protoapp {
-    padding-bottom: rem(25);
+    padding: rem(25) 0 0;
 
     @include media($screen-small) {
-      padding: 0;
+
     }
   }
 
@@ -58,7 +58,7 @@
       text-align: left;
 
       @include media($screen-small) {
-        display: none;
+        text-align: center;
       }
     }
   }
@@ -74,6 +74,11 @@
 
     &--protoapp {
       color: $green;
+
+      @include media($screen-small) {
+        color: $white;
+        font-size: 20px;
+      }
     }
   }
 
@@ -86,6 +91,13 @@
       font-size: rem(16);
       font-weight: 200;
       margin-bottom: rem(20);
+    }
+
+    &--protoapp {
+
+      @include media($screen-small) {
+        display: none;
+      }
     }
   }
 
@@ -100,7 +112,7 @@
     &--protoapp {
 
       @include media($screen-small) {
-        font-size: 16px;
+        display: none;
       }
     }
   }
@@ -124,7 +136,7 @@
     color: $white;
 
     @include media($screen-small) {
-      display: none;
+      padding: 0;
     }
   }
 
@@ -136,6 +148,15 @@
       @include span-columns(12);
       padding: $small-spacing;
     }
+
+    &--protoapp {
+
+      @include media($screen-small) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -145,6 +166,17 @@
 
   @include media($screen-small) {
     @include span-columns(12);
+  }
+
+  &__list {
+
+    &--protoapp {
+
+      @include media($screen-small) {
+        display: table;
+        margin: auto;
+      }
+    }
   }
 
   &__icon {

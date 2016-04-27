@@ -4,7 +4,7 @@
   text-align: center;
 
   &__inner {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     @include media($screen-small) {
       margin-bottom: 50px;
@@ -17,7 +17,7 @@
 
     @include media($screen-small) {
       font-size: 32px;
-      padding: 20px 0;
+      padding: 0;
     }
   }
 
@@ -27,9 +27,9 @@
     margin: 0;
 
     @include media($screen-small) {
-      font-size: 22px;
+      font-size: 18px;
+      font-weight: normal;
       margin-top: 10px;
-      text-align: right;
     }
 
     &--large {
@@ -38,8 +38,7 @@
       margin-bottom: 10px;
 
       @include media($screen-small) {
-        font-size: 24px;
-        float: left;
+        font-size: 18px;
         margin: 10px 0 0;
       }
     }
@@ -54,7 +53,7 @@
 
     @include media($screen-small) {
       font-size: 16px;
-      padding: 10px;
+      padding: 10px 0 0;
     }
 
     strong {
@@ -67,7 +66,6 @@
     margin-top: 60px;
 
     @include media($screen-small) {
-      @include flex-direction(column);
       margin: 0;
     }
   }
@@ -90,11 +88,9 @@
       transform: translateY(-50%);
 
       @include media($screen-small) {
-        bottom: -22px;
-        font-size: 34px;
-        left: 50%;
-        right: auto;
-        top: auto;
+        font-size: 20px;
+        right: -8px;
+        top: 60px;
         transform: translateX(-50%);
       }
     }
@@ -103,7 +99,7 @@
       right: -25px;
 
       @include media($screen-small) {
-        right: auto;
+        right: -15px;
       }
     }
 
@@ -118,7 +114,6 @@
 
     @include media($screen-small) {
       @include size(75px auto);
-      float: left;
     }
   }
 
@@ -134,9 +129,8 @@
     @include media($screen-small) {
       float: right;
       font-size: 28px;
-      margin-right: 30px;
       padding: 0;
-      width: 120px;
+      width: 100px;
     }
   }
 }
