@@ -15,10 +15,21 @@
       @include pad($base-spacing);
       text-align: center;
     }
+
+    &--protoapp {
+      @include media($screen-small) {
+        @include pad($base-spacing - 1);
+      }
+    }
   }
 
   &--protoapp {
     @include position(absolute, null null 0);
+
+
+    @include media($screen-small) {
+      padding: 0;
+    }
   }
 }
 
@@ -28,6 +39,10 @@
 
   &--protoapp {
     padding-bottom: rem(25);
+
+    @include media($screen-small) {
+      padding: 0;
+    }
   }
 
   &__heading {
@@ -41,6 +56,10 @@
 
     &--protoapp {
       text-align: left;
+
+      @include media($screen-small) {
+        display: none;
+      }
     }
   }
 
@@ -77,6 +96,13 @@
       float: none;
       text-align: center;
     }
+
+    &--protoapp {
+
+      @include media($screen-small) {
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -96,6 +122,10 @@
 
   &--protoapp {
     color: $white;
+
+    @include media($screen-small) {
+      display: none;
+    }
   }
 
   &__copyright {

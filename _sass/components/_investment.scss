@@ -5,6 +5,10 @@
 
   &__inner {
     margin-bottom: 200px;
+
+    @include media($screen-small) {
+      margin-bottom: 50px;
+    }
   }
 
   &__heading {
@@ -12,7 +16,8 @@
     margin: 0;
 
     @include media($screen-small) {
-      padding: 20px 30px;
+      font-size: 32px;
+      padding: 20px 0;
     }
   }
 
@@ -23,6 +28,8 @@
 
     @include media($screen-small) {
       font-size: 22px;
+      margin-top: 10px;
+      text-align: right;
     }
 
     &--large {
@@ -31,7 +38,9 @@
       margin-bottom: 10px;
 
       @include media($screen-small) {
-        font-size: 26px;
+        font-size: 24px;
+        float: left;
+        margin: 10px 0 0;
       }
     }
   }
@@ -44,7 +53,8 @@
     padding: 0 20px;
 
     @include media($screen-small) {
-      padding: 20px;
+      font-size: 16px;
+      padding: 10px;
     }
 
     strong {
@@ -57,7 +67,8 @@
     margin-top: 60px;
 
     @include media($screen-small) {
-      flex-direction: column;
+      @include flex-direction(column);
+      margin: 0;
     }
   }
 
@@ -106,7 +117,8 @@
     margin-bottom: 10px;
 
     @include media($screen-small) {
-      height: 15vh;
+      @include size(75px auto);
+      float: left;
     }
   }
 
@@ -120,9 +132,11 @@
     padding: 5px;
 
     @include media($screen-small) {
-      font-size: 32px;
-      min-width: 150px;
+      float: right;
+      font-size: 28px;
+      margin-right: 30px;
       padding: 0;
+      width: 120px;
     }
   }
 }
