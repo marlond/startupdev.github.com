@@ -10,10 +10,15 @@
 
   &__content {
     @include outer-container();
+
     @include media($screen-small) {
       @include pad($base-spacing);
       text-align: center;
     }
+  }
+
+  &--protoapp {
+    @include position(absolute, null null 0);
   }
 }
 
@@ -21,24 +26,32 @@
   @include fill-parent;
   @include pad(rem(50) 0);
 
+  &--protoapp {
+    padding-bottom: rem(25);
+  }
+
   &__heading {
     @include span-columns(8 of 12);
     font-family: $base-font-family;
+
     @include media($screen-small) {
       @include span-columns(12);
       text-align: center;
     }
+
+    &--protoapp {
+      text-align: left;
+    }
   }
 
   &__title {
-    color: $supernova;
+    color: $green;
     font-size: rem(36);
     font-weight: 400;
 
     @include media($screen-small) {
       font-size: rem(25);
     }
-
   }
 
   &__subtitle {
@@ -46,16 +59,16 @@
     font-size: rem(18);
 
     @include media($screen-small) {
+      display: inline-block;
       font-size: rem(16);
       font-weight: 200;
       margin-bottom: rem(20);
-      display: inline-block;
     }
-
   }
 
   .btn {
     float: right;
+
     @include media($screen-small) {
       float: none;
       text-align: center;
@@ -77,20 +90,25 @@
     padding: $small-spacing;
   }
 
+  &--protoapp {
+    color: $white;
+  }
+
   &__copyright {
     @include span-columns(8 of 12);
     text-align: right;
+
     @include media($screen-small) {
       @include span-columns(12);
       padding: $small-spacing;
     }
   }
-
 }
 
 .footer-social {
   @include span-columns(4 of 12);
   text-align: left;
+
   @include media($screen-small) {
     @include span-columns(12);
   }
