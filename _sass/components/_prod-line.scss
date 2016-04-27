@@ -5,8 +5,8 @@
   background: $grey;
   transition: .2s;
 
-  &[data-index="0"] { background: $supernova; }
-  &[data-index="1"] { background: $green; }
+  &[data-index="0"] { background: $green; }
+  &[data-index="1"] { background: $supernova; }
   &[data-index="2"] { background: $blue; }
   &[data-index="3"] { background: $red; }
   &[data-index="4"] { background: $orangey-red; }

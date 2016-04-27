@@ -48,7 +48,7 @@
 
   // types of buttons
   // Use: class="btn btn--type"
-  $button-types: primary $nightrider, secondary $supernova;
+  $button-types: primary $nightrider, secondary $supernova, tertiary $green;
 
   @each $button, $color in $button-types {
     &--#{$button} {

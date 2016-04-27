@@ -3,6 +3,10 @@
   color: $grey;
   text-align: center;
 
+  &__inner {
+    margin-bottom: 200px;
+  }
+
   &__heading {
     font: 700 46px $heading-font-family;
     margin: 0;
@@ -107,9 +111,9 @@
   }
 
   &__box {
-    border: 1px solid;
+    border: 2px solid $grey;
     border-radius: 4px;
-    color: $white;
+    color: $grey;
     font-size: 36px;
     margin: 5px auto 0;
     max-width: 200px;

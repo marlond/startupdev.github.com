@@ -28,6 +28,10 @@
     color: $supernova;
     font: 700 46px $heading-font-family;
     margin: 0 0 20px;
+
+    &--protoapp {
+      color: $green;
+    }
   }
 
   &__text {
