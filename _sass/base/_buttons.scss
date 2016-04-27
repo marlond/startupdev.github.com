@@ -47,28 +47,19 @@
   }
 
   // types of buttons
+  // Use: class="btn btn--type"
+  $button-types: primary $nightrider, secondary $supernova;
 
-  // Use: class="btn btn--primary"
-  &--primary {
-    background: $nightrider;
-    &:hover,
-    &:focus {
-      background-color: shade($nightrider, 30%);
-      color: $white;
+  @each $button, $color in $button-types {
+    &--#{$button} {
+      background-color: $color;
+
+      &:hover,
+      &:focus {
+        background-color: shade($color, 25%);
+      }
     }
   }
-
-  // Use: class="btn btn--secondary"
-  &--secondary {
-    background: $supernova;
-    &:hover,
-    &:focus {
-      background-color: shade($supernova, 20%);
-      color: $white;
-    }
-  }
-
-
 }
 
 
