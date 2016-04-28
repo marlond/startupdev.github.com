@@ -29,6 +29,10 @@
     font: 700 46px $heading-font-family;
     margin: 0 0 20px;
 
+    @include media($screen-small) {
+      font-size: 32px;
+    }
+
     &--protoapp {
       color: $green;
     }
@@ -39,6 +43,10 @@
     line-height: 1.4;
     margin: auto;
     max-width: 800px;
+
+    @include media($screen-small) {
+      font-size: 20px;
+    }
   }
 
   &__icon {
