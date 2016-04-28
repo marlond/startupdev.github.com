@@ -66,6 +66,12 @@
     }
   }
 
+  &__sections {
+    > :not(:first-child) {
+      display: none;
+    }
+  }
+
   &__id {
     display: block;
     font: 700 40px / 1 $helvetica;
