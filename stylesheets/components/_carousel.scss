@@ -9,7 +9,7 @@ $theme-colors: dark $dark-color $light-color, light $light-color $dark-color;
     color: #{$color};
 
     ul li::after {
-      background: url("../images/2016/arrow-#{$theme}.svg");
+      background: url("../images/arrow-#{$theme}.svg");
     }
 
     ul li a {

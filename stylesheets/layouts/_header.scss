@@ -17,7 +17,7 @@
   &::before {
     @include position(absolute, 0 null null 0);
     @include size(100% rem(5));
-    background: url('/images/2016/ruller.png') repeat-x $supernova;
+    background: url('/images/ruller.png') repeat-x $supernova;
     content: '';
   }
 
@@ -27,7 +27,7 @@
 
   &__logo {
     @include size(rem(140) rem(34));
-    background: url('/images/2016/startupdev-logo.svg') no-repeat top center;
+    background: url('/images/startupdev-logo.svg') no-repeat top center;
     display: block;
     float: left;
     margin-top: 20px;
@@ -119,7 +119,7 @@
   padding: 6px 17px;
 
   &::after {
-    background: url('/images/2016/arrow-btn.svg') no-repeat top center;
+    background: url('/images/arrow-btn.svg') no-repeat top center;
     content: '';
     display: block;
     height: 9px;
@@ -127,7 +127,7 @@
     width: 63px;
 
     @include media($screen-small) {
-      background: url('/images/2016/arrow-btn.svg') no-repeat top center;
+      background: url('/images/arrow-btn.svg') no-repeat top center;
       width: 100%;
     }
   }

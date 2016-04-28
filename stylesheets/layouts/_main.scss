@@ -15,14 +15,14 @@ body {
 }
 
 .main-banner {
-  background: url('/images/2016/cover.jpg') no-repeat center center $nightrider;
+  background: url('/images/cover.jpg') no-repeat center center $nightrider;
   background-attachment: fixed;
   background-size: cover;
   min-height: rem(800);
   width: 100%;
 
   @include media($screen-small) {
-    background: url('/images/2016/cover-mobile.jpg') no-repeat center center $nightrider;
+    background: url('/images/cover-mobile.jpg') no-repeat center center $nightrider;
     background-size: cover;
     min-height: rem(520);
   }
@@ -204,7 +204,7 @@ body {
 
 .methodology {
   @include span-columns(12);
-  background: url('/images/2016/background-meto.jpg') no-repeat top center $nightrider;
+  background: url('/images/background-meto.jpg') no-repeat top center $nightrider;
   background-size: cover;
   min-height: rem(690);
 
@@ -249,7 +249,7 @@ body {
 
     .icon {
       @include size(140px);
-      background: url('/images/2016/play-video.svg') no-repeat top center;
+      background: url('/images/play-video.svg') no-repeat top center;
       display: block;
       margin: 0 auto;
     }
@@ -260,7 +260,7 @@ body {
       margin-top: rem(10);
 
       &::after {
-        background: url('/images/2016/arrow.svg') no-repeat top right;
+        background: url('/images/arrow.svg') no-repeat top right;
         content: '';
         display: block;
         height: 9px;
@@ -314,14 +314,14 @@ body {
   &::before {
     @include position(absolute, 0 null null 0);
     @include size(47px 199px);
-    background: url('/images/2016/slider-testimonials-background.png') no-repeat top left;
+    background: url('/images/slider-testimonials-background.png') no-repeat top left;
     content: '';
   }
 
   &::after {
     @include position(absolute, 0 0 null null);
     @include size(47px 199px);
-    background: url('/images/2016/slider-testimonials-background.png') no-repeat top right;
+    background: url('/images/slider-testimonials-background.png') no-repeat top right;
     content: '';
   }
 
@@ -342,7 +342,7 @@ body {
 
   &__picture {
     @include size(200px 110px);
-    background: url('/images/2016/slider-background-author.svg') no-repeat top center;
+    background: url('/images/slider-background-author.svg') no-repeat top center;
     display: inline-block;
     margin: 0 auto;
 
@@ -376,7 +376,7 @@ body {
     }
 
     &::after {
-      background: url('/images/2016/arrow-prev.svg') no-repeat top left;
+      background: url('/images/arrow-prev.svg') no-repeat top left;
       content: '';
       display: block;
       height: 9px;
@@ -398,7 +398,7 @@ body {
     }
 
     &::after {
-      background: url('/images/2016/arrow.svg') no-repeat top right;
+      background: url('/images/arrow.svg') no-repeat top right;
       content: '';
       display: block;
       height: 9px;
@@ -460,7 +460,7 @@ body {
       }
 
       .testimonials-video__author::before {
-        background: url('/images/2016/arrow.svg') no-repeat top right;
+        background: url('/images/arrow.svg') no-repeat top right;
         content: '';
         display: block;
         height: 9px;

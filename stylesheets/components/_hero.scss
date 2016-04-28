@@ -60,12 +60,12 @@
     $size: 55px;
     @include position(absolute, null null 25px 50%);
     @include size($size);
-    background: url('/images/2016/icon-scrolling.svg') no-repeat center;
+    background: url('/images/icon-scrolling.svg') no-repeat center;
     display: block;
     margin-left: -$size / 2;
 
     @include media($screen-small) {
-      background-image: url('/images/2016/icon-arrow-down.svg');
+      background-image: url('/images/icon-arrow-down.svg');
       bottom: 15px;
     }
   }
