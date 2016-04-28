@@ -37,19 +37,12 @@ $(function () {
     return check;
   }
 
-
   /**
    * check if window is lower than 768px
    * @return {Boolean} [is browser]
    */
   function checkWidth() {
-    var width = $(window).width();
-
-    (function (w) {
-      if (width <= 768)
-      width = true
-    });
-    return width;
+    return $(window).width() >= 768;
   }
 
   /**
