@@ -4,15 +4,16 @@
 @charset "utf-8";
 
 // Base
-@import "vendors/bourbon/bourbon";
-@import "vendors/neat/neat-helpers";
+@import "vendor/bourbon/bourbon";
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat-helpers";
 @import "base/grid-settings";
-@import "vendors/neat/neat";
-@import "vendors/reset";
+@import "vendor/neat/neat";
+@import "vendor/reset";
 @import "base/base";
 @import "components/components";
 @import "layouts/application";
 
 // Vendors
-//@import "vendors/jquery.bxslider.css";
-@import "vendors/jquery.fullPage";
+//@import "vendor/jquery.bxslider.css";
+@import "vendor/jquery.fullPage";
