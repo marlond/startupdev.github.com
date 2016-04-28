@@ -42,7 +42,7 @@ $(function () {
    * @return {Boolean} [is browser]
    */
   function checkWidth() {
-    return $(window).width() >= 768;
+    return $(window).width() <= 768;
   }
 
   /**
