@@ -9,11 +9,11 @@
   text-align: center;
 
   &--protoapp {
-    @include retina-image('../images/2016/protoapp/background-hero', cover, 'jpg', null, '@2x');
+    @include retina-image('../images/protoapp/background-hero', cover, 'jpg', null, '@2x');
   }
 
   &--mvp {
-    @include retina-image('../images/2016/mvp/background-hero', cover, 'jpg', null, '@2x');
+    @include retina-image('../images/mvp/background-hero', cover, 'jpg', null, '@2x');
   }
 
   &__wrapper {
