@@ -5,6 +5,9 @@ permalink: :pretty
 url: http://startupdev.com.br/
 number_of_projects: 80
 
+gems:
+  - jekyll-redirect-from
+
 sass:
   sass_dir: _sass
   style: :compressed

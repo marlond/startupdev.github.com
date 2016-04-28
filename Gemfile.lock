@@ -134,6 +134,7 @@ DEPENDENCIES
   bourbon
   foreman
   github-pages (= 22)
+  jekyll-redirect-from
   neat
   rake
   scss_lint
