@@ -1,5 +1,7 @@
 .hero {
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -7,10 +9,11 @@
   text-align: center;
 
   &--protoapp {
-    $height: 720px;
-    @include retina-image('../images/2016/background-protoapp', cover, 'jpg', null, '@2x');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include retina-image('../images/2016/protoapp/background-hero', cover, 'jpg', null, '@2x');
+  }
+
+  &--mvp {
+    @include retina-image('../images/2016/mvp/background-hero', cover, 'jpg', null, '@2x');
   }
 
   &__wrapper {
@@ -35,6 +38,10 @@
 
     &--protoapp {
       color: $green;
+    }
+
+    &--mvp {
+      color: $sun;
     }
   }
 
