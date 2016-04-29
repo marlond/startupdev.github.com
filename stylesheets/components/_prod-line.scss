@@ -91,12 +91,14 @@
   }
 
   &__bg {
+
     &:last-child {
       height: 100vh;
       position: relative;
     }
 
     &.is-active {
+
       .prod-line__bg-img {
         opacity: 1;
         transform: none;
@@ -104,6 +106,7 @@
     }
 
     &.is-last {
+
       .prod-line__bg-img {
         transition: .2s;
       }
