@@ -1,62 +1,60 @@
-$(document).ready(function(){
+$(function () {
 
-  $('nav, .call-to-action').localScroll({
+  /**
+   * settings
+   */
+  var $window = $(window);
+  var $header = $('#home-section');
+
+  /**
+   * change header class based on scroll position
+   */
+  function changeHeaderClass() {
+    $header[ $window.scrollTop() > 100 ? 'addClass' : 'removeClass' ]('header--dark');
+  }
+
+  /**
+   * Events
+   */
+  $window
+    .on('scroll', changeHeaderClass)
+    .trigger('scroll');
+
+  /**
+   * plugins setup
+   */
+  // smooth scroll on header navigation items click
+  $('.header-navigation').localScroll({
     duration: 1000,
     axis: 'y'
   });
 
-  $(".fancybox").fancybox({
-    'width'           : 650,
-    'height'          : 488,
-    'scrolling'       : 'no',
-    'autoScale'       : false,
-    'transitionIn'    : 'none',
-    'transitionOut'   : 'none',
-    'type'            : 'iframe',
-    'overlayColor'    : "#000000",
-    'overlayOpacity'  : 0.6
+  // fancybox setup
+  $('.fancybox').fancybox({
+    width: 650,
+    height: 488,
+    scrolling: 'no',
+    autoScale: false,
+    transitionIn: 'none',
+    transitionOut: 'none',
+    type: 'iframe',
+    overlayColor: '#000000',
+    overlayOpacity: 0.6
   });
 
-  $("#testimonials .slider-container").jCarouselLite({
-    btnNext: "#testimonial-next",
-    btnPrev: "#testimonial-previous",
+  // testimonials slider
+  $('#testimonials .slider-container').jCarouselLite({
+    btnNext: '#testimonial-next',
+    btnPrev: '#testimonial-previous',
     visible: 1,
     speed: 1000,
-    beforeStart: function(e){
-      $(e).animate({opacity:0});
-      // We need both to be updated because the user can go either left or right.
-      $(e).prev().css({opacity: 100})
-      $(e).next().css({opacity: 100})
+    beforeStart: function (e) {
+      var $e = $(e);
+      var visible = { opacity: 100 };
+
+      $e.animate({ opacity: 0 });
+      $e.prev().css(visible);
+      $e.next().css(visible);
     }
   });
-
-  var $c = $('#developed-projects-slider ul');
-  while ($c.children('div').length) {
-    $c.children('div:lt(15)').wrapAll('<li>');
-  }
-
-  $("#developed-projects-slider ul div:nth-child(5)").addClass("last")
-  $("#developed-projects-slider ul div:nth-child(10)").addClass("last")
-  $("#developed-projects-slider ul div:nth-child(15)").addClass("last")
-
-  $("#projects-slider-navigation a").click(function(){
-    $("#projects-slider-navigation a").removeClass("selected");
-    $(this).addClass("selected");
-  });
-
-  $("#developed-projects-slider div").jCarouselLite({
-      btnNext: "#slider-next",
-      btnPrev: "#slider-previous",
-      visible: 1,
-      btnGo: ["#projects-slider-navigation .1", "#projects-slider-navigation .2", "#projects-slider-navigation .3"]
-  });
-});
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
-        $('#home-section').css("background", "rgba(55,50,50,0.8)");
-    }
-    else{
-        $('#home-section').css("background", "rgba(0,0,0,0.0)");
-    }
 });
