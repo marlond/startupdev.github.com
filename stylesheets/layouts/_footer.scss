@@ -16,14 +16,16 @@
       text-align: center;
     }
 
-    &--protoapp {
+    &--protoapp,
+    &--mvp {
       @include media($screen-small) {
         @include pad($base-spacing - 1);
       }
     }
   }
 
-  &--protoapp {
+  &--protoapp,
+  &--mvp {
     @include position(absolute, null null 0);
 
     @include media($screen-small) {
@@ -37,7 +39,8 @@
   @include fill-parent;
   @include pad(rem(50) 0);
 
-  &--protoapp {
+  &--protoapp,
+  &--mvp {
     padding: rem(25) 0 0;
 
     @include media($screen-small) {
@@ -54,7 +57,8 @@
       text-align: center;
     }
 
-    &--protoapp {
+    &--protoapp,
+    &--mvp {
       text-align: left;
 
       @include media($screen-small) {
@@ -72,8 +76,15 @@
       font-size: rem(25);
     }
 
-    &--protoapp {
-      color: $green;
+    @each $page, $color in $protoapp-mvp-colors {
+
+      &--#{$page} {
+        color: $color;
+      }
+    }
+
+    &--protoapp,
+    &--mvp {
 
       @include media($screen-small) {
         color: $white;
@@ -109,7 +120,8 @@
       text-align: center;
     }
 
-    &--protoapp {
+    &--protoapp,
+    &--mvp {
 
       @include media($screen-small) {
         display: none;
@@ -132,7 +144,8 @@
     padding: $small-spacing;
   }
 
-  &--protoapp {
+  &--protoapp,
+  &--mvp {
     color: $white;
 
     @include media($screen-small) {
@@ -149,7 +162,8 @@
       padding: $small-spacing;
     }
 
-    &--protoapp {
+    &--protoapp,
+    &--mvp {
 
       @include media($screen-small) {
         margin-bottom: 0;
@@ -170,7 +184,8 @@
 
   &__list {
 
-    &--protoapp {
+    &--protoapp,
+    &--mvp {
 
       @include media($screen-small) {
         display: table;

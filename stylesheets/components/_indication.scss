@@ -8,12 +8,33 @@
   }
 
   &__heading {
-    color: $green;
     font: 700 46px $heading-font-family;
     margin: 0;
 
     @include media($screen-small) {
       padding: 0 30px;
+    }
+  }
+
+
+  &__subheading {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+
+    @include media($screen-small) {
+      font-size: 30px;
+    }
+  }
+
+  &__heading,
+  &__subheading {
+
+    @each $page, $color in $protoapp-mvp-colors {
+
+      &--#{$page} {
+        color: $color;
+      }
     }
   }
 
@@ -44,17 +65,6 @@
     @include media($screen-small) {
       @include size(60vw);
       margin-bottom: 15px;
-    }
-  }
-
-  &__subheading {
-    color: $green;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 15px 0 5px;
-
-    @include media($screen-small) {
-      font-size: 30px;
     }
   }
 

@@ -102,23 +102,36 @@
     &--third {
       bottom: 20%;
     }
+  }
 
-    * {
-      display: table;
+  &__img {
+    display: table;
+
+    @include media($screen-small) {
+      @include size(45%);
+    }
+
+    &--protoapp {
       margin: 20px auto;
+    }
 
-      @include media($screen-small) {
-        @include size(45%);
-      }
+    &--mvp {
+      margin: 0 auto;
     }
   }
 
   &__heading {
-    color: $green;
     font: 700 24px $heading-font-family;
 
     @include media($screen-small) {
       font-size: 18px;
+    }
+
+    @each $page, $color in $protoapp-mvp-colors {
+
+      &--#{$page} {
+        color: $color;
+      }
     }
   }
 

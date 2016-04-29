@@ -7,7 +7,6 @@
   }
 
   &__heading {
-    color: $green;
     font: 700 46px $heading-font-family;
     margin: 0 0 10px;
 
@@ -22,10 +21,20 @@
     @include media($screen-small) {
       font-size: 16px;
     }
+  }
 
-    em {
-      color: $green;
-      font-style: normal;
+  &__emphasis {
+    font-style: normal;
+  }
+
+  &__heading,
+  &__emphasis {
+
+    @each $page, $color in $protoapp-mvp-colors {
+
+      &--#{$page} {
+        color: $color;
+      }
     }
   }
 

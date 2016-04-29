@@ -1,7 +1,13 @@
 .investment {
-  background: $green;
   color: $grey;
   text-align: center;
+
+  @each $page, $color in $protoapp-mvp-colors {
+
+    &--#{$page} {
+      background-color: $color;
+    }
+  }
 
   &__inner {
     margin-bottom: 100px;
