@@ -199,18 +199,28 @@
 
   &__proto {
     $diff: 90px;
-    height: calc(100vh - 105px);
     margin-left: -70px;
     opacity: 0;
     padding-right: 10px;
     transition: .2s opacity;
 
     @include media($screen-small) {
-      height: 70vh;
       left: 52%;
       margin-left: 0;
       padding-right: 0;
       transform: translateX(-50%);
+    }
+
+    &--protoapp {
+      height: calc(100vh - 105px);
+
+      @include media($screen-small) {
+        height: 70vh;
+      }
+    }
+
+    &--mvp {
+      height: auto;
     }
 
     &--fixed {
