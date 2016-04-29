@@ -48,11 +48,15 @@
 
   // types of buttons
   // Use: class="btn btn--type"
-  $button-types: primary $nightrider, secondary $supernova, protoapp $green, mvp $sun;
+  $button-types: primary $nightrider, secondary $supernova, outline transparent, protoapp $green, mvp $sun;
 
   @each $button, $color in $button-types {
     &--#{$button} {
       background-color: $color;
+
+      @if $button == outline {
+        border: 1px solid $white;
+      }
 
       &:hover,
       &:focus {

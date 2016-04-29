@@ -1,9 +1,18 @@
 <div class="section talk is-web" data-anchor="talk">
-  <div class="hero hero--{{ page.title }}" data-anchor="descubra">
-    <div class="hero__wrapper">
-      <h1 class="hero__title hero__title--{{ page.title }}">{{ page.appname }}</h1>
-      <p class="hero__text">{{ page.intro }}</p>
-      <i class="hero__icon"></i>
+  <div class="hero" data-anchor="descubra">
+    <div class="hero__wrapper hero__wrapper--invisible">
+      <h1 class="hero__title hero__title--{{ page.title }}">Vamos Conversar?</h1>
+      <p class="hero__text">Fique à vontade para entrar em contato e verificar
+se sua ideia se encaixa ao MVP Expresso!</p>
+      <a href="#modal" class="hero__btn btn btn--outline">Fale Conosco</a>
     </div>
   </div>
+
+  <footer class="footer footer--{{ page.title }}">
+
+    <div class="footer-two footer-two--{{ page.title }}">
+      {% include footer-social.html %}
+    </div>
+
+  </footer>
 </div>

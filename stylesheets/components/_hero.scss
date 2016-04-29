@@ -8,19 +8,21 @@
   position: relative;
   text-align: center;
 
-  &--protoapp {
-    @include retina-image('../images/protoapp/background-hero', cover, 'jpg', null, '@2x');
-  }
+  @each $page, $color in $protoapp-mvp-colors {
 
-  &--mvp {
-    @include retina-image('../images/mvp/background-hero', cover, 'jpg', null, '@2x');
+    &--#{$page} {
+      @include retina-image('../images/#{$page}/background-hero', cover, 'jpg', null, '@2x');
+    }
   }
 
   &__wrapper {
-    $bg: rgba(0, 0, 0, .2);
-    background: $bg;
     flex: 1;
     padding: 80px 20px;
+
+    &:not(.hero__wrapper--invisible) {
+      $bg: rgba(0, 0, 0, .2);
+      background: $bg;
+    }
 
     @include media($screen-small) {
       padding: 40px 20px;
@@ -36,12 +38,11 @@
       font-size: 32px;
     }
 
-    &--protoapp {
-      color: $green;
-    }
+    @each $page, $color in $protoapp-mvp-colors {
 
-    &--mvp {
-      color: $sun;
+      &--#{$page} {
+        color: $color;
+      }
     }
   }
 
@@ -54,6 +55,10 @@
     @include media($screen-small) {
       font-size: 20px;
     }
+  }
+
+  &__btn {
+    margin: 30px 0 0;
   }
 
   &__icon {
