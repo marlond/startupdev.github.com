@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang='pt'>
+<html lang='{{ page.lang }}'>
 
   {% include head.html %}
 
   <body>
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K37P86"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K37P86');</script>
-    <!-- End Google Tag Manager -->
+    {% include google-tag-manager.html %}
+
+    {% include contact-modal.html %}
 
     {% include header.html %}
 
@@ -33,13 +27,16 @@
       a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     </script>
 
-    {% include head/javascripts.html %}
+    {% include javascripts.html %}
 
-    {% if page.url != '/index.html' %}
-
-      <script src="/js/jquery.fullPage.js"></script>
+    {% if page.ref == 'home' %}
+      <script src="/js/vendor/jcarousellite_1.0.1.js"></script>
+      <script src="/js/vendor/jquery.bxslider.min.js"></script>
+      <script src="/js/home.js"></script>
+      <script src="/js/site2016.js"></script>
+    {% else if page.ref == 'protoapp' %}
+      <script src="/js/vendor/jquery.fullPage.js"></script>
       <script src="/js/protoapp.js"></script>
-
     {% endif %}
 
   </body>

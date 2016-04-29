@@ -260,24 +260,11 @@ $(document).ready(function(){
 
   // Hash links
   //---------------------------------------------------------------
-  $('a.hash').click(function (event) {
-    event.preventDefault();
-    if(history.pushState) {
+  $('a.hash[href^="/#"]').on('click', function (e) {
+    e.preventDefault();
+    if (history.pushState) {
       history.pushState(null, null, $(this).attr('href'));
     }
-    return false;
   });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,9 +9,9 @@
         {% for header in site.data.headers %}
           <li class="header-navigation__item">
             {% if header.name != 'Contrate' %}
-              <a title="{{ header.name }}" href="#{{ header.link }}" class="hash">{{ header.name }}</a>
+              <a title="{{ header.name }}" href="{{ header.link }}" class="hash">{{ header.name }}</a>
             {% else %}
-              <a class="header-navigation__item--btn" title="{{ header.name }}" href="#{{ header.link }}" id="cta-hire-topbar">{{ header.name }}</a>
+              <a class="header-navigation__item--btn" title="{{ header.name }}" data-remodal-target="{{ header.link }}" id="cta-hire-topbar">{{ header.name }}</a>
             {% endif %}
           </li>
         {% endfor %}

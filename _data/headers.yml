@@ -1,14 +1,14 @@
 - name: ProtoApp
-  link: protoapp
+  link: /#protoapp
 
 - name: MVP Expresso
-  link: mvp
+  link: /#mvp
 
 - name: Resultado
-  link: resultado
+  link: /#resultado
 
 - name: EN
-  link: /en
+  link: /en/index.html
 
 - name: Contrate
   link: modal
