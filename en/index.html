@@ -306,14 +306,7 @@ redirect_from:
     </p>
   </div>
 
-  <div class="projects__grid">
-  {% for project in site.data.projects %}
-    <a class="projects__item" href="{{ project.url }}" target="_blank" title="{{ project.name }}">
-      <img src="{{ project.image }}" alt="{{ project.name }}" />
-      <span class="projects__name">{{ project.name }}</span>
-    </a>
-  {% endfor %}
-  </div>
+  {% include projects.html %}
 </section>
 
 {% include contact-modal-en.html %}

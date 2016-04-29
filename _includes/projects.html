@@ -1,8 +1,16 @@
-<ul>
-  {% for project in site.projects %}
-    <div>
-      <h3>{{ project.name }}</h3>
-      <img src="{{ project.image }}" width="142" height="100" alt="{{ project.name }}" />
-    </div>
+<div class="projects__grid">
+  {% for project in site.data.projects %}
+    {% if project.url == '#' %}
+    <span class="projects__item" target="_blank" title="Projeto {{ project.name }}">
+    {% else %}
+    <a class="projects__item" href="{{ project.url }}" target="_blank" title="Projeto {{ project.name }}">
+    {% endif %}
+      <img src="{{ project.image }}" alt="{{ project.name }}" />
+      <span class="projects__name">{{ project.name }}</span>
+    {% if project.url == '#' %}
+    </span>
+    {% else %}
+    </a>
+    {% endif %}
   {% endfor %}
-</ul>
+</div>
