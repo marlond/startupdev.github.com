@@ -51,7 +51,7 @@
 
     @include media($screen-small) {
       font-size: 9px;
-      padding: 8px 14px;
+      padding: 8px 10px;
     }
 
     &:hover {
@@ -77,7 +77,7 @@
     font: 700 40px / 1 $helvetica;
 
     @include media($screen-small) {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 
