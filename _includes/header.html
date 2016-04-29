@@ -1,17 +1,17 @@
 <header id="{{ page.headerid }}" class="header">
   <div class="header__content">
     <a href="" class="header__logo" title="Startup DEV"></a>
-    <a class="btn-toggle js-toggle-menu" href="#" title="Menu Principal">
+    <a class="btn-toggle js-toggle-menu" href="#">
       <span>Menu</span>
     </a>
     <nav class="header-navigation js-navbar" role="navigation">
       <ul id="js-navigation-menu">
-        {% for header in site.data.headers %}
+        {% for header in site.data[page.lang].headers %}
           <li class="header-navigation__item">
-            {% if header.name != 'Contrate' %}
-              <a title="{{ header.name }}" href="{{ header.link }}" class="hash">{{ header.name }}</a>
-            {% else %}
+            {% if header.link == 'modal' %}
               <a class="header-navigation__item--btn" title="{{ header.name }}" data-remodal-target="{{ header.link }}" id="cta-hire-topbar">{{ header.name }}</a>
+            {% else %}
+              <a title="{{ header.name }}" href="{{ header.link }}" class="hash">{{ header.name }}</a>
             {% endif %}
           </li>
         {% endfor %}
