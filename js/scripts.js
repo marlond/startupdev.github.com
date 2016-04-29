@@ -17,23 +17,6 @@ $(document).ready(function(){
     'overlayOpacity'  : 0.6
   });
 
-  $(".js-menu li").hover(
-    function(){
-      var link = $(this).find("a");
-      if (link.data('original-margin') == undefined) {
-        link.data('original-margin', link.css("margin-left"));
-      }
-      link.animate({
-           marginLeft: '0',
-      }, 250);
-    },
-    function(){
-      var link = $(this).find("a");
-      link.animate({
-          marginLeft: link.data('original-margin'),
-      }, 250);
-    }
-  );
   $("#testimonials .slider-container").jCarouselLite({
     btnNext: "#testimonial-next",
     btnPrev: "#testimonial-previous",
