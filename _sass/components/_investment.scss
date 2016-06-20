@@ -1,0 +1,138 @@
+.investment {
+  color: $nero;
+  text-align: center;
+
+  &__inner {
+    margin-bottom: 100px;
+
+    @include media($screen-small) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__heading {
+    font: 700 46px $heading-font-family;
+    margin: 0;
+
+    @include media($screen-small) {
+      font-size: 32px;
+      padding: 0;
+    }
+  }
+
+  &__subheading {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+
+    @include media($screen-small) {
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    &--large {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 10px;
+
+      @include media($screen-small) {
+        font-size: 24px;
+        margin: 10px 0 0;
+      }
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 28px;
+    margin: auto;
+    max-width: 800px;
+    padding: 0 20px;
+
+    @include media($screen-small) {
+      font-size: 16px;
+      padding: 10px 0 0;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 60px;
+
+    @include media($screen-small) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    color: $nero;
+    flex: 0 0 33.3333%;
+    padding: 0 20px;
+    position: relative;
+
+    @include media($screen-small) {
+      flex: 0 0 100%;
+      padding: 25px 10px;
+    }
+
+    &::after {
+      color: $nero;
+      content: attr(data-suffix);
+      font: 700 46px $heading-font-family;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include media($screen-small) {
+        font-size: 20px;
+        right: -8px;
+        top: 60px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &:first-child::after {
+      right: -25px;
+
+      @include media($screen-small) {
+        right: -15px;
+      }
+    }
+
+    &:not(:last-child) {
+
+      @include media($screen-small) {
+        display: none;
+      }
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__icon {
+    height: 60px;
+    margin-bottom: 10px;
+
+    @include media($screen-small) {
+      @include size(75px auto);
+    }
+  }
+
+  &__box {
+    border: 2px solid $nero;
+    border-radius: 4px;
+    color: $nero;
+    font-size: 22px;
+    margin: 5px auto 0;
+    max-width: 200px;
+    padding: 5px;
+  }
+}
