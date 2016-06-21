@@ -2,7 +2,40 @@
   color: $nero;
   text-align: center;
 
+  &__col {
+    @include span-columns(2 of 12);
+  }
+
+  &__center {
+    @include span-columns(8 of 12);
+    @include omega();
+  }
+
+  &__spacer {
+    padding-top: 90px;
+
+    &--small {
+      padding-top: 40px; 
+    }
+  }
+
+
+  &__title {
+    color: $nero;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__arrow {
+    float: right;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-top: 10px;
+  }
+
   &__inner {
+    @include span-columns(12);
     margin-bottom: 100px;
 
     @include media($screen-small) {
@@ -75,6 +108,8 @@
     padding: 0 20px;
     position: relative;
 
+    &--small { flex: 0 0 24.3333%; }
+
     @include media($screen-small) {
       flex: 0 0 100%;
       padding: 25px 10px;
@@ -132,7 +167,7 @@
     color: $nero;
     font-size: 22px;
     margin: 5px auto 0;
-    max-width: 200px;
+    max-width: 120px;
     padding: 5px;
   }
 }

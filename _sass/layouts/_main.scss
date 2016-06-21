@@ -159,6 +159,8 @@ body {
 
   &__col {
     @include span-columns(6 of 12);
+    @include omega(2n);
+
     @include media($screen-small) {
       @include span-columns(12);
       img {
