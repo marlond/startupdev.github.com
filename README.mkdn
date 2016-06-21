@@ -1,0 +1,19 @@
+# Startup DEV Website
+
+## Dependências
+
+Execute no terminal
+
+    $ bundle install
+
+## Rodando
+
+Execute no terminal
+
+    $ foreman start
+
+## Staging
+
+Execute no terminal
+
+    $ rake staging

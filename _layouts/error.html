@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='pt'>
+  {% include head.html %}
+  <body id="{{ page.body_id }}" class="page-{{ page.body_id }}">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K37P86"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K37P86');</script>
+    <!-- End Google Tag Manager -->
+
+    <header id="home-section" class="header">
+      <div class="header__content">
+        <a href="{{ site.url }}" class="header__logo" title="Startup DEV"></a>
+        <a class="btn-toggle js-toggle-menu" href="#" title="Menu Principal">
+          <span>Menu</span>
+        </a>
+        <nav class="header-navigation js-navbar" role="navigation">
+          <ul id="js-navigation-menu">
+            <li class="header-navigation__item"><a title="ProtoApp" href="{{ site.url }}#protoapp">ProtoApp</a></li>
+            <li class="header-navigation__item"><a title="MVP Expresso" href="{{ site.url }}#mvp">MVP Expresso</a></li>
+            <li class="header-navigation__item"><a title="Resultado" href="{{ site.url }}#resultado">Resultado</a></li>
+            <li class="header-navigation__item"><a title="EN" href="{{ site.url }}en/">EN</a></li>
+            <li class="header-navigation__item"><a class="header-navigation__item--btn" title="Contrate" href="{{ site.url }}#modal" id="cta-hire-topbar">Contrate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <script type="text/javascript">
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/4888.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+
+    {% include head/javascripts.html %}
+
+  </body>
+
+</html>

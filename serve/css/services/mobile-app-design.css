@@ -1,0 +1,72 @@
+/* ====================
+Cover Landing
+==================== */
+
+.mobile_app_design_page #landing {
+  background: url('/images/mp/mvp/mvp_background.jpg') 80% center no-repeat;
+}
+
+.mobile_app_design_page #landing .bg-cover {
+  background: rgba(13, 168, 191, 0.8);
+}
+
+
+
+/* ====================
+Nav Bar
+==================== */
+
+.mobile_app_design_page #nav ul {
+  background: rgba(13, 168, 191, 1.0);
+}
+
+.mobile_app_design_page #nav li a:hover,
+.mobile_app_design_page #nav li a.active {
+  color: #f4b809;
+}
+
+.mobile_app_design_page #nav.fxd {
+  background: rgba(13, 168, 191, 0.9);
+}
+
+
+
+/* ====================
+Projects
+==================== */
+
+.mobile_app_design_page #projects_gallery {
+  padding-top: 20px;
+}
+
+.mobile_app_design_page #projects_gallery ul {
+  width: 580px;
+}
+
+.mobile_app_design_page #projects_gallery ul li img {
+  margin-bottom: 20px;
+}
+
+
+
+/* ====================
+Who we are
+==================== */
+
+.mobile_app_design_page .who-we-are {
+  background: url('/images/mp/mobile/time-hemobile.jpg') center 0 repeat;
+}
+
+.mobile_app_design_page .who-we-are .bg-cover {
+  background: rgba(13, 168, 191, 0.8);
+}
+
+
+
+/* ====================
+Calendar
+==================== */
+
+.mobile_app_design_page #calendar table tr th {
+  background: rgba(13, 168, 191, 1.0);
+}

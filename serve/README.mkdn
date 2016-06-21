@@ -1,0 +1,7 @@
+# Startup DEV Website
+
+## Rodando
+
+Rode com
+
+    $ jekyll -w serve

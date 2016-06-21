@@ -1,0 +1,50 @@
+safe: false
+highlighter: rouge
+exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor']
+permalink: :pretty
+url: http://startupdev.com.br/
+number_of_projects: 80
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+schedule:
+  enabled: false
+  year: 2016
+  data:
+    -
+      month_pt: Janeiro
+      month_en: January
+      weeks:
+        -
+          date: 04/01
+          status: unavailable
+        -
+          date: 11/01
+          status: free
+        -
+          date: 18/01
+          status: free
+        -
+          date: 25/01
+          status: free
+    -
+      month_pt: Fevereiro
+      month_en: february
+      weeks:
+        -
+          date: 01/02
+          status: free
+        -
+          date: 08/02
+          status: unavailable
+        -
+          date: 15/02
+          status: free
+        -
+          date: 22/02
+          status: free
+        -
+          date: 29/02
+          status: unavailable

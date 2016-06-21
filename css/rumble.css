@@ -1,0 +1,1054 @@
+/* MAIN */
+
+html {
+  background: #4a6224 url("/images/rumble/pattern.jpg");
+}
+
+body {
+  font-size: 75%;
+  line-height: 1.25;
+  font-family: Helvetica, Arial, sans-serif;
+  background: transparent url("/images/rumble/bg-head.png") no-repeat center top;
+  color: #fff;
+}
+
+a, a:visited {
+  color: #fff;
+  border-bottom: 1px solid #ffd40c;
+}
+
+a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+nav:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+/* HEADING */
+
+h1 {
+  color: #ffd40c;
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+
+h1#home-title {
+  color: #ffd40c;
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  font-weight: bold;
+  letter-spacing: 0px;
+
+}
+
+h2 {
+  margin: 2em 0 0;
+  color: #ffd40c;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 1.2em;
+}
+
+h1 + h2 {
+  margin: 0;
+}
+
+
+
+h4 {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  font-weight: bold;
+  letter-spacing: 0px;
+  margin-top: 30px;
+}
+
+/* HEADER */
+
+header {
+  width: 960px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+header nav ul li {
+  float: left;
+}
+
+nav#language-selector {
+  margin-top: 20px;
+  height: 40px;
+  float: right;
+  font-size: 12px;
+}
+
+nav#language-selector a,
+nav#language-selector a:visited {
+  border-bottom: 1px solid #fff;
+}
+
+nav#language-selector a:hover {
+  border-bottom: 1px solid #ffd40c;
+}
+
+nav#language-selector ul li:before {
+  margin-left: 10px;
+  padding-right: 10px;
+  content: "|";
+}
+
+nav#language-selector ul li:first-child:before {
+  content: "";
+}
+
+nav#menu {
+  float: left;
+  font-size: 13px;
+}
+
+nav#menu ul li {
+  margin: 0 3px;
+  height: 94px;
+}
+
+nav#menu ul li.current {
+  background: transparent url("/images/rumble/sprites.png") no-repeat 0 -385px;
+}
+
+nav#menu ul li a {
+  display: block;
+  padding: 25px 15px 20px 52px;
+  text-transform: uppercase;
+  border-bottom: none;
+  font-size: .9em;
+  background-repeat: no-repeat;
+  background-image: url("/images/rumble/sprites.png");
+}
+
+nav#menu ul li#home a {
+  background-position: 0 -168px;
+}
+
+nav#menu ul li#rules a {
+  background-position: 0 -258px;
+}
+
+nav#menu ul li#faq a {
+  background-position: 0 -77px;
+}
+
+nav#menu ul li#prizes a {
+  background-position: 0 12px;
+}
+
+nav#menu ul li#evaluators a {
+  background-position: 0 -495px;
+}
+
+nav#menu ul li#teams a {
+  background-position: 0 -670px;
+}
+
+nav#menu ul li#projects a {
+  background-position: 0 -748px;
+}
+
+nav#menu ul li#issues a {
+  background-position: 0 -582px;
+}
+
+nav#menu ul li a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+#logo {
+  padding: 25px 0 0 0;
+  width: 352px;
+  height: 122px;
+  clear: left;
+}
+
+#logo a {
+  display: block;
+  width: 352px;
+  height: 122px;
+  background: url("/images/rumble/startupdev-rumble-logo.png") no-repeat 0 0;
+  text-indent: -9999px;
+  border: none;
+}
+
+#logo a:hover {
+  opacity: .8;
+}
+
+#info {
+  margin-top: -145px;
+  width: 525px;
+  font-weight: bold;
+  float: right;
+}
+
+#info a {
+  display: block;
+  width: 164px;
+  height: 164px;
+  border-bottom: none;
+  text-indent: -9999px;
+  float: right;
+}
+
+#info a#join-badge-pt {
+  background: url("/images/rumble/bt-faca-sua-inscricao.png") no-repeat 0 0;
+}
+
+#info a#join-badge-en {
+  background: url("/images/rumble/bt-make-your-subscription.png") no-repeat 0 0;
+}
+
+#info a#join-badge-pt:hover,
+#info a#join-badge-en:hover {
+  opacity: .8;
+}
+
+#info #when {
+  padding: 40px 170px 20px 5px;
+  color: #ffd40c;
+  font-size: 1.8em;
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+#info #when .numeral {
+  font-size: 0.6em;
+  vertical-align: top;
+}
+
+#info #preamble {
+  padding: 0 195px 0 0;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  text-align: center;
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+#info #preamble span {
+  display: block;
+  font-size: 1.3em;
+}
+
+/* MASTHEAD */
+
+header.fixed {
+  padding-top: 95px;
+}
+
+header.fixed #masthead {
+  width: 948px;
+  margin-left: -4px;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  background: transparent url("/images/rumble/bg-masthead.png") no-repeat 0 0;
+  z-index: 999;
+}
+
+#masthead:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+/* CONTAINER */
+
+#container {
+  margin: 40px 0;
+  background: transparent url("/images/rumble/bg-content.png");
+  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+  clear: both;
+}
+
+/* SECTION */
+
+#container section {
+  width: 880px;
+  margin: auto;
+  padding: 40px 0;
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+#container section p,
+#container section li {
+  margin: 1.4em 0;
+}
+
+#container section h1 {
+  margin: .5em 0;
+  text-align: center;
+  font-size: 2em;
+  background: transparent url("/images/rumble/bg-main-heading.png") no-repeat center center;
+}
+
+#container section.home {
+  position: relative;
+  width: 540px;
+  padding: 20px 510px 20px 110px;
+
+}
+
+#container section.home p {
+  margin-right: 90px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: .9em;
+}
+
+#container section.home h1 {
+  text-align: left;
+  font-size: 1.8em;
+  background: none;
+}
+
+#container section.home + #container section.home {
+  background: none;
+}
+
+#container section.language h1 {
+  font-size: 1.2em;
+  letter-spacing: 0;
+}
+
+#container section.language h1 span {
+  padding: 0 20px;
+}
+
+#container section.language ul {
+  padding-right: 75px;
+  text-align: center;
+}
+
+#container section.language ul li {
+  display: inline;
+  padding: 0 40px;
+}
+
+#call-to-action {
+  position: absolute;
+  width: 500px;
+  top: 160px;
+  right: 40px;
+  text-shadow: 0 2px 2px #000;
+}
+
+#call-to-action p strong {
+  font-size: 1.8em;
+}
+
+p#remote-info-pt,
+p#remote-info-en {
+  width: 353px;
+  height: 44px;
+  text-indent: -9999px;
+}
+
+p#remote-info-pt {
+  background: url("/images/rumble/participacao-remota.png") no-repeat 0 0;
+}
+
+p#remote-info-en {
+  background: url("/images/rumble/online-challenge.png") no-repeat 0 0;
+}
+
+a#bt-join-now-pt,
+a#bt-join-now-en {
+  display: block;
+  margin: 0 0 40px -40px;
+  width: 425px;
+  height: 57px;
+  border-bottom: none;
+  text-indent: -9999px;
+}
+
+a#bt-join-now-pt:hover,
+a#bt-join-now-en:hover {
+  opacity: .8;
+}
+
+a#bt-join-now-pt {
+  background: url("/images/rumble/bt-inscreva-seu-time.png") no-repeat 0 0;
+}
+
+a#bt-join-now-en {
+  background: url("/images/rumble/bt-register-your-team.png") no-repeat 0 0;
+}
+
+/* ASIDE */
+
+aside {
+  width: 400px;
+  text-align: center;
+}
+
+aside p {
+  margin: 1em 0 !important;
+  padding: 0 !important;
+}
+
+/* COMPLEMENTARY CONTENT */
+
+section#advices {
+  margin: auto;
+  width: 960px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+#dates {
+  background-color: #293f10;
+  width: 320px;
+  float: left;
+  padding: 30px;
+}
+
+#remember {
+  background-color: #293f10;
+  width: 490px;
+  float: right;
+  padding: 30px;
+}
+
+#dates h1 {
+  font-size: 1.8em;
+}
+
+#dates p {
+  margin: .6em 0 0;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+
+#remember h1 {
+  font-size: 1.8em;
+}
+
+#remember li {
+  background: url("/images/rumble/bullet.png") no-repeat 0 5px;
+  padding-left: 15px;
+  margin: .6em 0 0;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+
+
+section#banner {
+  margin: auto;
+  width: 800px;
+  height: 134px;
+  padding: 30px 30px 0 120px;
+  background: url("/images/rumble/bg-banner.png") no-repeat 0 0;
+}
+
+section#banner h1 {
+  font-size: 2.5em;
+}
+
+section#banner p {
+  margin: .6em 0 0;
+  line-height: 1.4;
+  font-size: 1.4em;
+}
+
+section[role="complementary"] {
+  margin: 40px 0 10px;
+  background-color: #fff;
+  -moz-box-shadow: 0 0 30px rgba(0,0,0,.8);
+  -webkit-box-shadow: 0 0 30px rgba(0,0,0,.8);
+  -ms-box-shadow: 0 0 30px rgba(0,0,0,.8);
+  -o-box-shadow: 0 0 30px rgba(0,0,0,.8);
+  box-shadow: 0 0 30px rgba(0,0,0,.8);
+}
+
+section[role="complementary"] #section-content {
+  width: 960px;
+  margin: auto;
+}
+
+section[role="complementary"]:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+section[role="complementary"] h1 {
+  margin: 0 0 2em;
+  padding-left: 15px;
+  text-shadow: none;
+  color: #758067;
+  letter-spacing: 0;
+  font-size: 1.2em;
+  background: url("/images/rumble/heading-bullet.png") no-repeat 0 3px;
+}
+
+section[role="complementary"] a {
+  border-bottom: none;
+  opacity: .9;
+}
+
+section[role="complementary"] a img {
+  vertical-align: middle;
+}
+
+section[role="complementary"] a:hover {
+  opacity: 1;
+}
+
+section[role="complementary"] ul li {
+  display: inline;
+  margin: 0 30px 0 0;
+  height: 90px;
+}
+
+section[role="complementary"] nav.column {
+  padding: 40px 20px 50px;
+  float: left;
+}
+
+section[role="complementary"] nav#infrastructure,
+section[role="complementary"] nav#sponsors {
+  background: url("/images/rumble/shadow.png") no-repeat top right;
+  min-height: 110px;
+}
+
+section[role="complementary"] nav#infrastructure {
+  padding-right: 60px;
+}
+
+section[role="complementary"] nav#sponsors {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+section[role="complementary"] nav#support {
+  padding: 30px 20px 50px;
+  border-top: 1px solid #e6e6e6;
+  clear: both;
+}
+
+section[role="complementary"] nav#support h1 {
+  margin: 0 0 1em;
+}
+
+#evaluators-content:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+#evaluators-content ul li {
+  width: 220px;
+  height: 240px;
+  text-align: center;
+  font-size: .9em;
+  float: left;
+}
+#evaluators-content ul li img {
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -ms-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+#evaluators-content ul li h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: normal;
+  margin: .4em 0 0;
+  letter-spacing: 0;
+}
+
+#evaluators-content ul li p {
+  margin: 0 0 .4em;
+}
+
+#evaluators-content a {
+  color: #ffd40c;
+}
+
+
+
+/* TEAMS */
+
+#teams-content:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+
+#teams-content h6 {
+  color: #fff;
+  margin: .4em 0 0;
+  background: url("/images/rumble/head-team3.png") no-repeat 0 5px;
+  margin-bottom: -20px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+
+#teams-content ul li {
+  width: 220px;
+  min-height: 200px;
+  font-size: .8em;
+  float: left;
+  background-color: #526e25;
+  opacity: 0.9;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+#teams-content ul li img {
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -ms-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,.6);
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+  width: 120px;
+  height: 120px;
+}
+
+#teams-content ul li h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: normal;
+  margin: .4em 0 0;
+  letter-spacing: 0;
+
+}
+
+
+
+#teams-content ul li p {
+  margin: 0 0 .4em;
+}
+
+#teams-content a {
+  color: #ffd40c;
+}
+
+#space {
+  color: #526E25;
+  text-align: center;
+  text-shadow: none;
+}
+
+
+
+/* SUPPORT */
+
+section#support {
+  margin: 40px 0 20px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba(0,0,0,.2);
+}
+
+section#support h1 {
+  margin: .5em 0;
+  font-size: 2em;
+  letter-spacing: -1px;
+}
+
+
+section#support nav ul li {
+  padding: 40px;
+  display: inline;
+}
+
+section#support nav {
+  padding: 20px 0;
+  background-color: #fff;
+  background-color: rgba(255,255,255,.7);
+}
+
+
+
+
+#support table {
+  border: medium none;
+  width: 920px;
+}
+
+
+#support td {
+  height: 100px;
+  width: 185px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+#support a {
+  border-bottom: none;
+}
+
+section#support a img {
+  vertical-align: middle;
+}
+
+#support a:hover {
+  opacity: .8;
+}
+
+section#prizes h2 {
+  width: 880px;
+  height: 159px;
+  text-indent: -9000px;
+  margin-top: 4em;
+}
+
+section#prizes h2#pt-first-place {
+  margin-top: 2em;
+  background: transparent url("/images/rumble/prizes/pt_01.png") no-repeat right top;
+}
+section#prizes h2#pt-second-place {
+  background: transparent url("/images/rumble/prizes/pt_02.png") no-repeat right top;
+}
+section#prizes h2#pt-third-place {
+  background: transparent url("/images/rumble/prizes/pt_03.png") no-repeat right top;
+}
+section#prizes h2#pt-fourth-place {
+  background: transparent url("/images/rumble/prizes/pt_04.png") no-repeat right top;
+}
+section#prizes h2#en-first-place {
+  margin-top: 2em;
+  background: transparent url("/images/rumble/prizes/en_01.png") no-repeat right top;
+}
+section#prizes h2#en-second-place {
+  background: transparent url("/images/rumble/prizes/en_02.png") no-repeat right top;
+}
+section#prizes h2#en-third-place {
+  background: transparent url("/images/rumble/prizes/en_03.png") no-repeat right top;
+}
+section#prizes h2#en-fourth-place {
+  background: transparent url("/images/rumble/prizes/en_04.png") no-repeat right top;
+}
+
+section#prizes li {
+  background: url("/images/rumble/bullet.png") no-repeat 0 5px;
+  padding-left: 15px;
+  margin: .6em 0 0 1em;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media all and (max-width: 1170px) {
+  #container {
+    max-width: 1170px;
+    overflow: hidden;
+  }
+
+  #container section.home {
+    width: 500px;
+    padding: 20px 460px 20px 0;
+    background: transparent url("/images/rumble/bg-kindle.png") no-repeat right top;
+  }
+
+  #container section.home p {
+    margin-right: 120px;
+  }
+
+  aside {
+    width: 320px;
+  }
+}
+
+
+
+
+
+a#bt-check-now-pt,
+a#bt-check-now-en {
+  display: block;
+  margin: 245px 0 40px 210px;
+  width: 425px;
+  height: 57px;
+  border-bottom: none;
+  text-indent: -9999px;
+}
+
+a#bt-check-now-pt:hover,
+a#bt-check-now-en:hover {
+  opacity: .8;
+}
+
+a#bt-check-now-pt {
+  background: url("/images/rumble/bt-acompanhe-projeto.png") no-repeat 0 0;
+}
+
+a#bt-check-now-en {
+  background: url("/images/rumble/bt-register-your-team.png") no-repeat 0 0;
+}
+
+
+
+
+
+#twitter-list {
+  position: absolute;
+  width: 500px;
+  top: 0px;
+  right: 0px;
+  text-shadow: none;
+}
+
+
+
+
+
+/* PROJECTS */
+
+#projects-content .project:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  min-height: 0;
+}
+
+
+#projects-content .project {
+  width: 880px;
+  margin-bottom: 40px;
+  clear: left;
+}
+
+
+#projects-content .project-title {
+  background: url("/images/rumble/head-team3.png") no-repeat 0 0;
+  height: 44px;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+
+#projects-content .right {
+  background-color: #526E25;
+  width: 580px;
+  min-height: 230px;
+  float: right;
+  padding: 10px 20px;
+}
+
+#projects-content .project-description {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#projects-content .team-member {
+  height: 100px;
+  width: 62px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border-radius: none;
+}
+
+#projects-content .team-member a {
+  display: block;
+  border-bottom: none;
+  width: 62px;
+  line-height: 1;
+}
+
+#projects-content .team-member a img {
+  border: 1px solid #455F1C;
+}
+
+#projects-content .team-member a:hover img {
+  border: 1px solid #FFD40C;
+}
+
+#projects-content .team-member p {
+  margin: .2em 0;
+  line-height: 1.2;
+  font-size: .7em;
+  text-align: center !important;
+  overflow: hidden;
+}
+
+#projects-content .left {
+  width: 230px;
+  float: left;
+  padding: 0px 10px 10px 20px;
+}
+
+
+#projects-content .image img {
+  height: 200px;
+  width: 230px;
+}
+
+#projects-content .launch {
+  height: 60px;
+  width: 230px;
+  margin-top: -10px;
+}
+
+
+
+#projects-content .btn-launch {
+  display: block;
+  color: #5e4d00;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-size: 16px;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fed30c), to(#dcb70a));
+  background-image: -moz-linear-gradient(top, #fed30c, #dcb70a);
+  background-image: -ms-linear-gradient(top, #fed30c, #dcb70a);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fed30c), color-stop(100%, #dcb70a));
+  background-image: -webkit-linear-gradient(top, #fed30c, #dcb70a);
+  background-image: -o-linear-gradient(top, #fed30c, #dcb70a);
+  background-image: linear-gradient(top, #fed30c, #dcb70a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fed30c', endColorstr='#dcb70a', GradientType=0);
+  text-shadow: none;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 0;
+}
+
+
+#projects-content .meta-infos {
+  background-color: #455f1c;
+  height: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+#projects-content .evaluations {
+  background-color: #455f1c;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 13px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#projects-content .evaluations h2 {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+#projects-content .evaluations > div {
+  float: left;
+  width: 280px;
+  margin: 12px 0px 12px 0;
+}
+
+#projects-content .evaluations li{
+  font-size: 11px;
+  margin: 5px 4px 5px 0;
+  float: left;
+  background: #526E25;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+#projects-content .position-comp {
+  float: left;
+  margin-right: 30px;
+  margin-left: 10px;
+  color: #FFD40C;
+  font-weight: bold;
+}
+
+#projects-content .language {
+  float: left;
+  margin-right: 30px;
+}
+
+#projects-content .commits,
+#projects-content .team {
+  float: left;
+  margin-right: 30px;
+}
+
+#projects-content .team-members {
+  color: #aaba92;
+  text-shadow: 0 1px 1px rgba(1, 1, 1, 0.6);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#projects-content #footnote {
+  margin: 2em 0;
+  color: #000;
+  opacity: .4;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+

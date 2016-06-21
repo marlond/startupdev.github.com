@@ -1,0 +1,68 @@
+/* ====================
+Cover Landing
+==================== */
+
+.press_page #landing {
+  background: url('/images/mp/press/press_background.jpg') center center no-repeat;
+}
+
+.press_page #landing .bg-cover {
+  background: rgba(69, 35, 59, 0.8);
+}
+
+
+
+/* ====================
+Nav Bar
+==================== */
+
+.press_page #nav ul {
+  background: #45233b;
+}
+
+.press_page #nav.fxd {
+  background: rgba(69, 35, 59, 0.9);
+}
+
+
+
+/* ====================
+Projects
+==================== */
+
+.press_page #projects_gallery {
+  padding-top: 28px;
+  background: url('/images/mp/gallery-laptop.png') center 0 no-repeat;
+}
+
+.press_page #projects_gallery ul {
+  width: 527px;
+}
+
+.press_page #projects_gallery ul li img {
+  margin-bottom: 30px;
+}
+
+
+
+/* ====================
+Who we are
+==================== */
+
+.press_page .who-we-are {
+
+}
+
+.press_page .who-we-are .bg-cover {
+  background: rgba(69, 35, 59, 0.9);
+}
+
+
+
+/* ====================
+Calendar
+==================== */
+
+.press_page #calendar table tr th {
+  background:  #45233b;
+}

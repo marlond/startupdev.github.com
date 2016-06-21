@@ -1,0 +1,81 @@
+/* color #ff2211 */
+
+
+/* ====================
+Cover Landing
+==================== */
+
+.mvp_page #landing {
+  background: url('/images/mp/mvp/mvp_background.jpg') 80% center no-repeat;
+}
+
+.mvp_page #landing .bg-cover {
+  background: rgba(255, 34, 17, 0.8);
+}
+
+#landing .grid-mvp iframe{
+  box-shadow: 0px 0px 0px 6px rgba(255, 34, 17, 1);;
+}
+
+#landing .grid-mvp {
+  text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+#landing .grid-mvp .desc p {
+  font-size: 1.5em;
+}
+
+/* ====================
+Nav Bar
+==================== */
+
+.mvp_page #nav ul {
+  background: #ff2211;
+}
+
+.mvp_page #nav.fxd {
+  background: rgba(255, 34, 17, 0.9);
+}
+
+
+
+/* ====================
+Projects
+==================== */
+
+.mvp_page #projects_gallery {
+  padding-top: 28px;
+  background: url('/images/mp/gallery-laptop.png') center 0 no-repeat;
+}
+
+.mvp_page #projects_gallery ul {
+  width: 527px;
+}
+
+.mvp_page #projects_gallery ul li img {
+  margin-bottom: 30px;
+}
+
+
+
+/* ====================
+Who we are
+==================== */
+
+.mvp_page .who-we-are {
+  background: url('/images/mp/mvp/time-he.jpg') center 0 repeat;
+}
+
+.mvp_page .who-we-are .bg-cover {
+  background: rgba(255, 34, 17, 0.85);
+}
+
+
+
+/* ====================
+Calendar
+==================== */
+
+.mvp_page #calendar table tr th {
+  background:  #ff2211;
+}
