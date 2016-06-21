@@ -2,23 +2,42 @@
   color: $nero;
   text-align: center;
 
-  &__col {
-    @include span-columns(2 of 12);
-  }
 
   &__center {
     @include span-columns(8 of 12);
     @include omega();
+
+    @include media($screen-small) {
+      @include span-columns(6 of 12);
+      @include omega();
+    }
   }
 
   &__spacer {
     padding-top: 90px;
 
     &--small {
-      padding-top: 40px; 
+      padding-top: 40px;
     }
   }
 
+  &__button-wrapper {
+    @include span-columns(2 of 12);
+
+    @include media($screen-small) {
+      @include span-columns(12 of 12);
+      @include omega();
+    }
+  }
+
+  &__title-wrapper {
+    @include span-columns(2 of 12);
+
+    @include media($screen-small) {
+      @include span-columns(6 of 12);
+      margin-top: 43px;
+    }
+  }
 
   &__title {
     color: $nero;
@@ -40,6 +59,7 @@
 
     @include media($screen-small) {
       margin-bottom: 50px;
+      margin-top: 50px;
     }
   }
 
@@ -98,7 +118,9 @@
     margin-top: 60px;
 
     @include media($screen-small) {
-      margin: 0;
+      flex: 0 0 100%;
+      padding: 0;
+      margin-top: 0;
     }
   }
 
@@ -108,12 +130,15 @@
     padding: 0 20px;
     position: relative;
 
-    &--small { flex: 0 0 24.3333%; }
-
     @include media($screen-small) {
       flex: 0 0 100%;
-      padding: 25px 10px;
+      padding: 0;
+      margin: 0;
     }
+
+    &--small { flex: 0 0 24.3333%; }
+
+
 
     &::after {
       color: $nero;
