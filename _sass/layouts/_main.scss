@@ -150,7 +150,7 @@ body {
 
   &__content {
     @include outer-container();
-    padding-top: rem(144);
+    padding-top: 5rem;
     text-align: center;
     @include media($screen-small) {
       @include pad($base-spacing);
