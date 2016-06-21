@@ -180,6 +180,10 @@ body {
     color: $supernova;
     font-size: rem(46);
     font-weight: 900;
+
+    @include media($screen-medium-up) {
+      margin-top: rem(81);
+    }
   }
 
   &__description {
