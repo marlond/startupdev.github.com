@@ -52,6 +52,11 @@
     font-size: rem(30);
     font-weight: bold;
     margin-right: rem(20);
+
+    span {
+      font-size: rem(12);
+      float: left;
+    }
   }
 
   &__arrow {
@@ -81,6 +86,10 @@
       margin-top: rem(50);
       margin-left: 0;
       margin-right: 0;
+    }
+
+    &--divider {
+      border-bottom: 1px solid $supernova;
     }
   }
 
