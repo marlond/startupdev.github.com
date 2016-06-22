@@ -6,6 +6,8 @@ Execute no terminal
 
     $ bundle install
 
+> OBS.: Crie um branch novo para suas alterações. As alterações feitas no gh-pages vão para produção, aos olhos do *mundo inteiro*
+
 ## Rodando
 
 Execute no terminal
@@ -17,3 +19,7 @@ Execute no terminal
 Execute no terminal
 
     $ rake staging
+
+## Produção
+
+Crie um pull request com suas alterações no github. Ao mergear o seu branch com o gh-pages, as alterações estarão no ar! \o/
