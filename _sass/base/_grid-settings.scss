@@ -13,3 +13,4 @@ $device-medium : 992px;
 $screen-tiny   : new-breakpoint(max-width $device-tiny 4);
 $screen-small  : new-breakpoint(max-width $device-small);
 $screen-medium : new-breakpoint(max-width $device-medium);
+$screen-medium-up : new-breakpoint(min-width $device-medium);

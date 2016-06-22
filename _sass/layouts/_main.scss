@@ -150,7 +150,7 @@ body {
 
   &__content {
     @include outer-container();
-    padding-top: rem(144);
+    padding-top: 5rem;
     text-align: center;
     @include media($screen-small) {
       @include pad($base-spacing);
@@ -159,6 +159,8 @@ body {
 
   &__col {
     @include span-columns(6 of 12);
+    @include omega(2n);
+
     @include media($screen-small) {
       @include span-columns(12);
       img {
@@ -178,6 +180,10 @@ body {
     color: $supernova;
     font-size: rem(46);
     font-weight: 900;
+
+    @include media($screen-medium-up) {
+      margin-top: rem(81);
+    }
   }
 
   &__description {
