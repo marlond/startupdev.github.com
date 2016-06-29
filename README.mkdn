@@ -13,7 +13,6 @@ Execute no terminal
     $ foreman start
 
 > :warning: Crie um branch novo para suas alterações. As alterações feitas no gh-pages vão para produção, aos olhos do *mundo inteiro*
-> :warning: As páginas index.html e en/index.html possuem conteúdo duplicado nas páginas proposta-enviada.html e quote-sent.html. Enquanto o problema não é resolvido, lembre de implementar as alterações feitas no index também nas páginas duplicadas.   
 
 ## Staging
 
