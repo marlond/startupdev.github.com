@@ -268,26 +268,5 @@ $(document).ready(function(){
     return false;
   });
 
-  // Check url parameter
-  //---------------------------------------------------------------
-  // $.urlParam = function(name){
-  //   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-  //   if (results==null){
-  //      return null;
-  //   }
-  //   else{
-  //      return results[1] || 0;
-  //   }
-  // }
-  //
-  // var sent= $.urlParam('sent');
-  //
-  // if(sent == "en") {
-  //   console.log("Enviado em ingles");
-  // } else if(sent == "pt") {
-  //   console.log("Enviado em portugues");
-  // }
-
-
 
 });
