@@ -7,6 +7,8 @@
 .footer {
   @include span-columns(12);
   background: $nightrider;
+  position: fixed;
+  bottom: 0;
 
   &__content {
     @include outer-container();
